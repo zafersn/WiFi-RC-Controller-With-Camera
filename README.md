@@ -161,7 +161,9 @@ Aracın kontrolü için gerekli uygulamanın kurulumu son derece basittir. Sadec
 
 ### UYGULAMA KULLANIMI VE İPUCULARI
 #### Raspberry pi bağlantı bilgileri
-![Screen Shot](images/device-2016-06-30-193829.png)<br>![Screen Shot](images/device-2016-07-07-231729.png)
+* Uygulamamız ilk açıldığında aşağıdaki gibi bir giriş erkranı kullanıcıyı karşılamaktadır.Bu ekran' da yapmanız gereken raspberry pi' nizin bağlı bulunduğu Wi-Fi ağdaki bilgilerinin girilmesi.<br>![Screen Shot](images/device-2016-06-30-193829.png)
+
+* Örnek bir raspberry pi bilgileri girilmiş şekli<br>![Screen Shot](images/device-2016-06-30-200150.png)
 
 ### UYGULAMA ICON 'UMUZ:
 
