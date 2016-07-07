@@ -167,6 +167,7 @@ Aracın kontrolü için gerekli uygulamanın kurulumu son derece basittir. Sadec
 * Bu bilgileri başarı ile girildiğinde aşağıdaki kontrol arayüzünün sizi karşılaması gerekmektedir.<br>![Screen Shot](images/device-2016-06-30-195734.png)
 * Eğer raspberry pi' nize herhangi bir nedenden dolayı kontrol ekranına ulaşamazsanız ve aşağıdaki resimdeki gibi `Balantı başarısız. Lütfen tekrar deneyiniz.` hatasını alıyor iseniz.Lütfen raspberry pi bağlantı ayarlarınızı,bağlantı bilgilerinizi kontrol ediniz.Çünkü bu hatanın sebebi, telefonun raspberry pi' de oluşturduğumuz ve çalıştırdığımız `robotcontrolV1.pyc` bağlanamamasından ötürüdür.<br>![Screen Shot](images/device-2016-07-08-001102.png)
 * Bu hatanın çözümü için `Raspberry Pi ANA KURULUM` bölümünde anlatılan adımların tekrar gözden geçirmeniz ve kurulumu kontrol etmeniz.
+
 #### UYGULAMA DETAYLARI
 * Uygulamamız 3 temel esasa dayanmaktadır. Bunlar;
 *  1. Aracın yön kontrolünün sağlanması.
