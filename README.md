@@ -12,7 +12,7 @@
 
 ### ARDUINO KURULUMU VE PIN BAĞLANTI ŞEMASI
 
-[![Screen Shot](images/wificontrol.png)](http://georgeosddev.github.com/markdown-edit)
+![Screen shot WiFi Maunt](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/wificontrol.png)
 
 
 * Arduino, Raspberry pi,Raspberry pi camera modülü, L298N motor sürücü, Motorlar, Güç kaynağının bağlantılarını  yukarıdaki resimdeki gibi gerçekleştiriniz.
@@ -21,11 +21,13 @@ Bunu sıra ile şu  şekilde yapabilirsiniz.
 
 * 1. `androidToRaspberry.ino` adlı arduino kodumuzu indiriniz ve çift tıklayarak açınız.
 
-* 2. Açılan proje dosyasını arduino' ya yüklemek için sıra ile  sekmelerden `Tools` => `Board`  ve buradan kullandığınız arduino modelinizi seçiniz.<br>[![Screen Shot](images/wificontrol.png)](http://georgeosddev.github.com/markdown-edit)
+* 2. Açılan proje dosyasını arduino' ya yüklemek için sıra ile  sekmelerden `Tools` => `Board`  ve buradan kullandığınız arduino modelinizi seçiniz.<br>
+![Screen Shot RA1](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/ra1.png)
 
 * 3. Tekrar `Tools` sekmesinden takmış olduğunuz arduino' nuzun hangi port' a takılı olduğunu gösteriniz.  `Tools` => `port`
 
-* 4. Yukarıdaki adımları gerçekleştirdikten sonra şimdi programımızı arduino' muza yükleyebiliriz.Sol üst köşede `Upload` butonuna basarak yükleme işlemini tamamlamış oluyoruz.<br><br>[![Screen Shot](images/wificontrol.png)](http://georgeosddev.github.com/markdown-edit)
+* 4. Yukarıdaki adımları gerçekleştirdikten sonra şimdi programımızı arduino' muza yükleyebiliriz.Sol üst köşede `Upload` butonuna basarak yükleme işlemini tamamlamış oluyoruz.<br>
+[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/ra2.png)]
 
 
 
@@ -50,14 +52,14 @@ SSH ile bağlandıktan sonra terminal ekranından sıra ile ;<br>
 
 * 1.	`sudo nano /etc/apt/sources.list`
 Yazıp enter’a basınız. Açılan ekranda<br>
-[![Screen Shot](images/wificontrol.png)](http://georgeosddev.github.com/markdown-edit)
+[![Screen Shot](images/r1.png)]
 
 * 2.	`deb http://vontaene.de/raspbian-updates/ . main`
 Komutunu yazınız ve **CTRL + O  ==>  Y** diyerek sayfadan ayrılınız. <br>
-[![Screen Shot](images/wificontrol.png)](http://georgeosddev.github.com/markdown-edit)
+[![Screen Shot](images/r2.png)]
 
 * 3.	`sudo apt-get update`<br>
-[![Screen Shot](images/wificontrol.png)](http://georgeosddev.github.com/markdown-edit)
+[![Screen Shot](images/r3.png)]
 
 Diyerek en son güncelemeyi alınız.Daha sonra aşağıdaki adımları sıra ile uygulayınız.
 
@@ -66,6 +68,8 @@ Diyerek en son güncelemeyi alınız.Daha sonra aşağıdaki adımları sıra il
 * 5.	`sudo reboot`
 
 * 6.	`sudo apt-get install gstreamer-1.0`
+
+[![Screen Shot](images/r4.png)]
 
 * 7.	`sudo apt-get install gstreamer1.0-tools`
 
@@ -90,6 +94,8 @@ Ve bu adımlar sonrasında başarı ile gstreamer paketini kurmuş olduk.
 * 3.	` cd Wi-Fi-Gstreamer-Server ` diyerek bu dosyanın içine giriyoruz. Burada `ls` diyerek `robotcontrolV1.pyc` adında python uygulamamız görünecektir.
 
 * 4.	`robotcontrolV1.pyc` dosyamızı `sudo cp robotcontrolV1.pyc /home/pi` diyerek mutlaka dosyamızı `/home/pi` dizinine taşımamız gerekmektedir. Aksi taktirde telefon uygulamasından bağlanılamayacaktır.
+* 
+[![Screen Shot](images/r5.png)]
 
 * 5. Bu gibi ve ya herhangi bir bağlantının android üzerinden otomatik olarak gerçekleşmediği taktirde.Uygulamayı manuel olarak başlatarak çalıştırmayı deneyiniz.Bunu şu şekilde yapabilirsiniz ; Ana terminal üzerinde `sudo python robotcontrolV1.pyc` diyerek programı çalıştırınız.Eyer programı başarılı bir şekilde kurdu iseniz ekranda `Client Baglantisi Bekleniyor...` çıktısı görmelisiniz.
 
