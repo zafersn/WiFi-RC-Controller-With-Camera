@@ -33,6 +33,19 @@
 * Arduino 'ya gelen veri doğrudan motorlara gidecek pwm aralığı olarak gelmektedir.Sadece aracın yön tayini için ` + (ileri)` ve ya `- (geri)` değerini almaktadır.
 * Yukarıdaki durum göz önüne alınarak çeşitli modifikasyonlar yapılabilir.
 * PWM aralığı `0-255` arasındadır.
+* Telefon üzerinden SAĞ VE SOL motor pwmlerini ve servo motor açısını String bir şekilde örn:  200:200!888 şeklinde alıyoruz. Aradaki iki nokta üst üste  `:` ve ünlem işareti `!` ' e göre bölerek 3 elemanlı bir dizi oluşturuyoruz.
+*  `!` den sonraki değer, cameranın bağlı bulunduğu servo motor'un açı değerleridir. Bu çalışmada servo motor kullanılmamıştır.
+* Motor Hareket PWM geliş tipi ve arcın durumları
+* örn:
+*  0:0      //stop
+* 200:200     // ileri git. ( 2 motorda 200pwm ile çalışır )
+*  -200:-200   //geri gir. (2 motorda 200pwm ile çalışır)
+*  200:-200   // sol motor 200 pwm ileri, sag motor 200 geri döner ( araç kendi etrafında soldan sağa doğru döner)
+* -200:200   // sol motor 200 pwm geri, sag motor 200 ileri döner ( araç kendi etrafında sağdan sola doğru döner)
+* 200:100    // araç sağa dçnecek şekilde hareket eder.<br><br>
+ 
+
+
 
 [![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/youtbeT2.png)](https://youtu.be/D4ewbO-OGLY)
 
