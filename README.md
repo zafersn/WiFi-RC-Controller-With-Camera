@@ -30,6 +30,9 @@
 
 ### ARDUINO KURULUMU VE PIN BAĞLANTI ŞEMASI
 
+* Arduino 'ya gelen veri doğrudan motorlara gidecek pwm aralığı olarak gelmektedir.Sadece aracın yön tayini için ` + (ileri)` ve ya `- (geri)` değerini almaktadır.
+* Yukarıdaki durum göz önüne alınarak çeşitli modifikasyonlar yapılabilir.
+
 [![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/youtbeT2.png)](https://youtu.be/D4ewbO-OGLY)
 
 ![Screen shot WiFi Maunt](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/wificontrol.png)
