@@ -1,6 +1,12 @@
 # RASPBERRY PI- ARDUINO ANDROID-CONTROLLED RC-CAR ROVER WITH LIVE VIDEO STREAMING
 
 ## PROJE NEDİR?
+
+* Android üzerinden yön kontrolü
+* Telefona, araçtan eş zamanlı görüntü aktarımı
+* Fallow Me (Çok yakında)
+
+
 [![Screen Shot](images/yotubeT1.png)](https://youtu.be/J8r_bX_RNzU)
 
 
