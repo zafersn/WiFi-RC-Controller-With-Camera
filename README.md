@@ -30,7 +30,7 @@
 
 ### ARDUINO KURULUMU VE PIN BAĞLANTI ŞEMASI
 
-* Arduino 'ya gelen veri doğrudan motorlara gidecek pwm aralığı olarak gelmektedir.Sadece aracın yön tayini için ` + (ileri)` ve ya `- (geri)` değerini almaktadır.
+* Arduino 'ya gelen veri doğrudan motorlara gidecek pwm aralığı olarak gelmektedir.PWM değerinin yanında sadece aracın yön tayini için ` + (ileri)` ve ya `- (geri)` değerini almaktadır.
 * Yukarıdaki durum göz önüne alınarak çeşitli modifikasyonlar yapılabilir.
 * PWM aralığı `0-255` arasındadır.
 * Telefon üzerinden SAĞ VE SOL motor pwmlerini ve servo motor açısını String bir şekilde örn:  200:200!888 şeklinde alıyoruz. Aradaki iki nokta üst üste  `:` ve ünlem işareti `!` ' e göre bölerek 3 elemanlı bir dizi oluşturuyoruz.
@@ -165,8 +165,23 @@ Aracın kontrolü için gerekli uygulamanın kurulumu son derece basittir. Sadec
 
 * Örnek bir raspberry pi bilgileri girilmiş şekli<br>![Screen Shot](images/device-2016-06-30-200150.png)
 * Bu bilgileri başarı ile girildiğinde aşağıdaki kontrol arayüzünün sizi karşılaması gerekmektedir.<br>![Screen Shot](images/device-2016-06-30-195734.png)
-* Eğer raspberry pi' nize herhangi bir nedenden dolayı kontrol ekranına ulaşamazsanız ve aşağıdaki resimdeki gibi `Balantı başarısız. Lütfen tekrar deneyiniz.` hatasını alıyor iseniz.Lütfen raspberry pi bağlantı ayarlarınızı,bağlantı bilgilerinizi kontrol ediniz.Çünkü bu hatanın sebebi, telefonun raspberry pi' de oluşturduğumuz ve çalıştırdığımız `robotcontrolV1.pyc` bağlanamamasından ötürüdür.<br>![Screen Shot](images/device-2016-07-08-000537.png)
+* Eğer raspberry pi' nize herhangi bir nedenden dolayı kontrol ekranına ulaşamazsanız ve aşağıdaki resimdeki gibi `Balantı başarısız. Lütfen tekrar deneyiniz.` hatasını alıyor iseniz.Lütfen raspberry pi bağlantı ayarlarınızı,bağlantı bilgilerinizi kontrol ediniz.Çünkü bu hatanın sebebi, telefonun raspberry pi' de oluşturduğumuz ve çalıştırdığımız `robotcontrolV1.pyc` bağlanamamasından ötürüdür.<br>![Screen Shot](images/device-2016-07-08-001102.png)
 * Bu hatanın çözümü için `Raspberry Pi ANA KURULUM` bölümünde anlatılan adımların tekrar gözden geçirmeniz ve kurulumu kontrol etmeniz.
+#### UYGULAMA DETAYLARI
+* Uygulamamız 3 temel esasa dayanmaktadır. Bunlar;
+*  1. Aracın yön kontrolünün sağlanması.
+*  2. Kullanıcıya araç üzerindeki kameradan canlı görüntünün aktarılması.
+*  3. Fallow Me (Çok yakında eklenecek).(Aracın sahibini takip etmesi).
+*  Bu 3 temek esasa göre 
+*  1. Aracın yön kontrolünde kullanılan mantığın bir kısmını `Arduino` bölümde anlattık.Android tarafına bakan kısmı ile açıklayacak olursak.Android tarafında, kullanıcı için Seek bar (Hız ayarı) ve Yön tuşları mevcuttur.<br> ![Screen Shot](images/kontrol_ekrani_anlatim.png)<br>
+*  Seek bar 15 dilimden oluşmaktadır ve hız katsayısı 17'dir.Yani seek bar' ın herbir hareketi pwm'de 17'nin katları şeklinde bir oynama yapmaktadır.Seek bar 5. kademede ise üretilen pwm= 5*17 = 85 'tir vs.
+*  Yön tuşları seek bar(Hız ayarı)'dan alınan verinin yönlere ayrılmasını sağlar. Aracın gidiş yönüne göre pwm değerinin başına + ve ya - işareti getirilir. Örn;
+* * 200:200     // ileri git. ( 2 motorda 200pwm ile çalışır )
+*  -200:-200   //geri git. (2 motorda 200pwm ile çalışır)
+*  200:-200   // sol motor 200 pwm ileri, sag motor 200 geri döner ( araç kendi etrafında soldan sağa doğru döner)
+* -200:200   // sol motor 200 pwm geri, sag motor 200 ileri döner ( araç kendi etrafında sağdan sola doğru döner)
+* 200:100    // araç sağa dönecek şekilde hareket eder.<br><br> 
+
 
 ### UYGULAMA ICON 'UMUZ:
 
