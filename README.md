@@ -147,3 +147,5 @@ Aracın kontrolü için gerekli uygulamanın kurulumu son derece basittir. Sadec
 
 
 
+## TEST VİDEO:
+[![Screen Shot](images/testvd1.png)](https://youtu.be/qbkH2KFcKqw)
