@@ -159,10 +159,13 @@ Ve bu adımlar sonrasında başarı ile gstreamer paketini kurmuş olduk.
 ### ANDROID UYGULAMA KURULUMU:
 Aracın kontrolü için gerekli uygulamanın kurulumu son derece basittir. Sadece yapılması gereken **ANDROID GOOGLE PLAY** markette giriş yapıldıktan sonra arama kutucuğuna, uygulamaya doğrudan erişmek için `com.stackcuriosity.tooght` ve ya uygulama ismi `Wifi RC Controoller with Camera` yazmanız yeterlidir.
 
+### UYGULAMA KULLANIMI VE İPUCULARI
+#### Raspberry pi bağlantı bilgileri
+![Screen Shot](images/device-2016-06-30-193829.png)<br>![Screen Shot](images/device-2016-07-07-231729.png)
 
 ### UYGULAMA ICON 'UMUZ:
 
-![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/raspi_car.png)
+![Screen Shot](images/raspi_car.png)
 
 
 
