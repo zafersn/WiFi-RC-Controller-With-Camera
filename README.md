@@ -27,7 +27,7 @@ Bunu sıra ile şu  şekilde yapabilirsiniz.
 * 3. Tekrar `Tools` sekmesinden takmış olduğunuz arduino' nuzun hangi port' a takılı olduğunu gösteriniz.  `Tools` => `port`
 
 * 4. Yukarıdaki adımları gerçekleştirdikten sonra şimdi programımızı arduino' muza yükleyebiliriz.Sol üst köşede `Upload` butonuna basarak yükleme işlemini tamamlamış oluyoruz.<br>
-[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/ra2.png)]
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/ra2.png)
 
 
 
@@ -52,14 +52,14 @@ SSH ile bağlandıktan sonra terminal ekranından sıra ile ;<br>
 
 * 1.	`sudo nano /etc/apt/sources.list`
 Yazıp enter’a basınız. Açılan ekranda<br>
-[![Screen Shot](images/r1.png)]
+![Screen Shot](images/r1.png)
 
 * 2.	`deb http://vontaene.de/raspbian-updates/ . main`
 Komutunu yazınız ve **CTRL + O  ==>  Y** diyerek sayfadan ayrılınız. <br>
-[![Screen Shot](images/r2.png)]
+![Screen Shot](images/r2.png)
 
 * 3.	`sudo apt-get update`<br>
-[![Screen Shot](images/r3.png)]
+![Screen Shot](images/r3.png)
 
 Diyerek en son güncelemeyi alınız.Daha sonra aşağıdaki adımları sıra ile uygulayınız.
 
@@ -69,7 +69,7 @@ Diyerek en son güncelemeyi alınız.Daha sonra aşağıdaki adımları sıra il
 
 * 6.	`sudo apt-get install gstreamer-1.0`
 
-[![Screen Shot](images/r4.png)]
+![Screen Shot](images/r4.png)
 
 * 7.	`sudo apt-get install gstreamer1.0-tools`
 
@@ -95,7 +95,7 @@ Ve bu adımlar sonrasında başarı ile gstreamer paketini kurmuş olduk.
 
 * 4.	`robotcontrolV1.pyc` dosyamızı `sudo cp robotcontrolV1.pyc /home/pi` diyerek mutlaka dosyamızı `/home/pi` dizinine taşımamız gerekmektedir. Aksi taktirde telefon uygulamasından bağlanılamayacaktır.
 * 
-[![Screen Shot](images/r5.png)]
+![Screen Shot](images/r5.png)
 
 * 5. Bu gibi ve ya herhangi bir bağlantının android üzerinden otomatik olarak gerçekleşmediği taktirde.Uygulamayı manuel olarak başlatarak çalıştırmayı deneyiniz.Bunu şu şekilde yapabilirsiniz ; Ana terminal üzerinde `sudo python robotcontrolV1.pyc` diyerek programı çalıştırınız.Eyer programı başarılı bir şekilde kurdu iseniz ekranda `Client Baglantisi Bekleniyor...` çıktısı görmelisiniz.
 
@@ -128,7 +128,7 @@ Aracın kontrolü için gerekli uygulamanın kurulumu son derece basittir. Sadec
 
 ### UYGULAMA ICON 'UMUZ:
 
-[![Screen Shot](images/wificontrol.png)](http://georgeosddev.github.com/markdown-edit)
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/raspi_car.png)
 
 
 
