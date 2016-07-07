@@ -186,12 +186,12 @@ Aracın kontrolü için gerekli uygulamanın kurulumu son derece basittir. Sadec
 * 200:100    // araç sağa dönecek şekilde hareket eder.<br><br> 
 
 ##### 2.SAĞ'A VE SOL'A DÖNÜŞLERDE HASSASİYET
-* Aracımızın sağ çağraz ve sol çapraz hareketleri yaparken dönüş yapılacak taraftaki motorların pwm değerleri düşürülür ve böylece motorların daha yavaş dönmesi sağlanır.Bu sayede araç istenilen hassasiyetde çarpraz dönüşleri gerçekleştirebilir.Bu dönüş hareketlerinin hassasiyet ayarlaması kullanıcıya bırakılmıştır.
+* Aracımızın sağ çağraz ve sol çapraz hareketleri yaparken dönüş yapılacak taraftaki motorların pwm değerleri düşürülür ve böylece motorların daha yavaş dönmesi sağlanır.Bu sayede araç istenilen hassasiyette çarpraz dönüşleri gerçekleştirebilir.**Bu dönüş hareketlerinin hassasiyet ayarlaması kullanıcıya bırakılmıştır.**
 * Çapraz dönüşlerin hassasiyetinin hesaplanmasında kullanılan formül : **`PWM DEĞERİ - (PWM DEĞERİ / PWM ORANI)`** 'dır.
 * PWM ORANI varsayılan olarak `2` gelmektedir.
 * PWM ORANI ayarını, kontrol ekranın da sağ üst köşede ayarlar butonundan tekrar ayarlar sekmesine basarak ulaşabilirsiniz.<br>![Screen Shot](images/device-2016-07-07-230804.png)<br>![Screen Shot](images/device-2016-07-07-230848.png)<br>
-* Girebileceğinz PWM ORANI aralığı 1-4 arasında integer ve double tipinde değerlerdir.
-* 
+* Girebileceğinz PWM ORANI aralığı minimum ve maksimum olarak 1-4 arasında integer ve double tipinde değerlerdir.
+ 
 
 
 ### UYGULAMA ICON 'UMUZ:
