@@ -81,9 +81,7 @@ Diyerek en son güncelemeyi alınız.Daha sonra aşağıdaki adımları sıra il
 
 * 5.	`sudo reboot`
 
-* 6.	`sudo apt-get install gstreamer-1.0`
-
-![Screen Shot](images/r4.png)
+* 6.	`sudo apt-get install gstreamer-1.0`<br>![Screen Shot](images/r4.png)
 
 * 7.	`sudo apt-get install gstreamer1.0-tools`
 
