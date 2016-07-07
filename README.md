@@ -32,6 +32,7 @@
 
 * Arduino 'ya gelen veri doğrudan motorlara gidecek pwm aralığı olarak gelmektedir.Sadece aracın yön tayini için ` + (ileri)` ve ya `- (geri)` değerini almaktadır.
 * Yukarıdaki durum göz önüne alınarak çeşitli modifikasyonlar yapılabilir.
+* PWM aralığı `0-255` arasındadır.
 
 [![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/youtbeT2.png)](https://youtu.be/D4ewbO-OGLY)
 
