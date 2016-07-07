@@ -39,10 +39,10 @@
 * örn:
 *  0:0      //stop
 * 200:200     // ileri git. ( 2 motorda 200pwm ile çalışır )
-*  -200:-200   //geri gir. (2 motorda 200pwm ile çalışır)
+*  -200:-200   //geri git. (2 motorda 200pwm ile çalışır)
 *  200:-200   // sol motor 200 pwm ileri, sag motor 200 geri döner ( araç kendi etrafında soldan sağa doğru döner)
 * -200:200   // sol motor 200 pwm geri, sag motor 200 ileri döner ( araç kendi etrafında sağdan sola doğru döner)
-* 200:100    // araç sağa dçnecek şekilde hareket eder.<br><br>
+* 200:100    // araç sağa dönecek şekilde hareket eder.<br><br>
  
 
 
