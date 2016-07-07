@@ -1,7 +1,7 @@
 # RASPBERRY PI- ARDUINO ANDROID-CONTROLLED ROVER WITH LIVE VIDEO STREAMING
 
 ## PROJE NEDİR?
-[![Screen Shot](images/yotubeT1.png)](<a href="https://youtu.be/J8r_bX_RNzU" target="_blank">Video</a>)
+[![Screen Shot](images/yotubeT1.png)](https://youtu.be/J8r_bX_RNzU)
 
 
 ## Kullanılan Malzemeler
