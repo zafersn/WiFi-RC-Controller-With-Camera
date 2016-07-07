@@ -1,5 +1,17 @@
-# WiFi-RC-Controller-With-Camera
+# RASPBERRY PI- ARDUINO ANDROID-CONTROLLED ROVER WITH LIVE VIDEO STREAMING
 
+## PROJE NEDİR?
+[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/yotubeT1.png)](https://youtu.be/J8r_bX_RNzU)
+
+
+## Kullanılan Malzemeler
+* Arduino Nano
+* Raspberry Pi
+* Raspberry Pi Camera Modülü
+* L298N Motor Sürücü
+* DC MOTOR X  2 
+* 12V Lipo Batarya
+* Araç Şasi (Gövdesi)
 
 ## Arduino:
 ### AMAÇ VE GÖREVLER:
@@ -11,6 +23,8 @@
 
 
 ### ARDUINO KURULUMU VE PIN BAĞLANTI ŞEMASI
+
+[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/youtbeT2.png)](https://youtu.be/D4ewbO-OGLY)
 
 ![Screen shot WiFi Maunt](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/wificontrol.png)
 
