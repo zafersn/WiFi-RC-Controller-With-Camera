@@ -172,8 +172,8 @@ Aracın kontrolü için gerekli uygulamanın kurulumu son derece basittir. Sadec
 * Uygulamamız 3 temel esasa dayanmaktadır. Bunlar;
 *  1. Aracın yön kontrolünün sağlanması.
 *  2. Kullanıcıya araç üzerindeki kameradan canlı görüntünün aktarılması.
-*  3. Fallow Me (Çok yakında eklenecek).(Aracın sahibini takip etmesi).
-*  Bu 3 temek esasa göre 
+*  3. Fallow Me (Çok yakında eklenecek).(Aracın sahibini takip etmesi).<br>
+*  Bu 3 temel esasa göre 
 *  1. Aracın yön kontrolünde kullanılan mantığın bir kısmını `Arduino` bölümde anlattık.Android tarafına bakan kısmı ile açıklayacak olursak.Android tarafında, kullanıcı için Seek bar (Hız ayarı) ve Yön tuşları mevcuttur.<br> ![Screen Shot](images/kontrol_ekrani_anlatim.png)<br>
 *  Seek bar 15 dilimden oluşmaktadır ve hız katsayısı 17'dir.Yani seek bar' ın herbir hareketi pwm'de 17'nin katları şeklinde bir oynama yapmaktadır.Seek bar 5. kademede ise üretilen pwm= 5*17 = 85 'tir vs.
 *  Yön tuşları seek bar(Hız ayarı)'dan alınan verinin yönlere ayrılmasını sağlar. Aracın gidiş yönüne göre pwm değerinin başına + ve ya - işareti getirilir. Örn;
