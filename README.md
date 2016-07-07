@@ -161,9 +161,11 @@ Aracın kontrolü için gerekli uygulamanın kurulumu son derece basittir. Sadec
 
 ### UYGULAMA KULLANIMI VE İPUCULARI
 #### Raspberry pi bağlantı bilgileri
-* Uygulamamız ilk açıldığında aşağıdaki gibi bir giriş erkranı kullanıcıyı karşılamaktadır.Bu ekran' da yapmanız gereken raspberry pi' nizin bağlı bulunduğu Wi-Fi ağdaki bilgilerinin girilmesi.<br>![Screen Shot](images/device-2016-06-30-193829.png)
+* Uygulamamız ilk açıldığında aşağıdaki gibi bir giriş erkranı kullanıcıyı karşılamaktadır.Bu ekran' da yapmanız gereken raspberry pi' nizin bağlı bulunduğu Wi-Fi ağdaki bilgilerinin girilmesi.<br>![Screen Shot](images/device-2016-06-30-193829.png)<br>
 
 * Örnek bir raspberry pi bilgileri girilmiş şekli<br>![Screen Shot](images/device-2016-06-30-200150.png)
+* Bu bilgileri başarı ile girildiğinde aşağıdaki kontrol arayüzünün sizi karşılaması gerekmektedir.<br>![Screen Shot](images/device-2016-06-30-195734.png)
+* Eğer raspberry pi' nize herhangi bir nedenden dolayı kontrol ekranına ulaşamazsanız ve aşağıdaki resimdeki gibi `Balantı başarısız. Lütfen tekrar deneyiniz.` hatasını alıyor iseniz.Lütfen raspberry pi bağlantı ayarlarınızı,bağlantı bilgilerinizi kontrol ediniz.Çünkü bu hatanın sebebi, telefonun raspberry pi' de oluşturduğumuz ve çalıştırdığımız `robotcontrolV1.pyc` bağlanamamasından ötürüdür.<br>![Screen Shot](images/device-2016-06-30-200150.png)
 
 ### UYGULAMA ICON 'UMUZ:
 
