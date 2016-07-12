@@ -1,6 +1,6 @@
 # RASPBERRY PI- ARDUINO ANDROID-CONTROLLED RC-CAR ROVER WITH LIVE VIDEO STREAMING
 
-## WHAT IS THE PROJECT?
+## About this project?
 
 * Controlling directions on Android Phone
 * Real time image transfer from the vehicle to the phone
@@ -26,11 +26,12 @@
 *	In this project arduino, has been used to control the engines.
 *	Arduino with raspberry pi, provides serial communication via usb
 *	On our Android phone, calculated PWM the range is sent.(For upcoming update)
-*	raspberry pi allows communication between arduino and android phone via wifi connection.
-*	Aşağıda Raspberry pi, Raspberry pi Camera, Arduino, L298N Motor Sürücü,Motorlar ve Bataryanın devre bağlantı şeması gösterilmiştir. 
+* Raspberry pi allows communication between arduino and android phone via wifi connection.
+*	Below, Raspberry Pi, Raspberry pi, Camera, Arduino, L298N motor driver,motor and the battery shows a diagram of circuit connection.
+ 
 
 
-### ARDUINO KURULUMU VE PIN BAĞLANTI ŞEMASI
+### DIAGRAM AND ARDUINO PIN CONNECTION SETUP
 
 * Arduino 'ya gelen veri doğrudan motorlara gidecek pwm aralığı olarak gelmektedir.PWM değerinin yanında sadece aracın yön tayini için ` + (ileri)` ve ya `- (geri)` değerini almaktadır.
 * Yukarıdaki durum göz önüne alınarak çeşitli modifikasyonlar yapılabilir.
