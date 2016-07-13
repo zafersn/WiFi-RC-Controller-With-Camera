@@ -94,13 +94,13 @@ command and exit the page with **CTRL + O  ==>  Y**  <br><br>
 
 Then by turns, apply that steps:
 
-* 4.	`sudo apt-get dist-upgrade`
+* 4.	`sudo apt-get dist-upgrade`<br>
 
-* 5.	`sudo reboot`
+* 5.	`sudo reboot`<br>
 
 * 6.	`sudo apt-get install gstreamer-1.0`<br><br>![Screen Shot](images/r4.png)<br><br>
 
-* 7.	`sudo apt-get install gstreamer1.0-tools`<br>
+* 7.	`sudo apt-get install gstreamer1.0-tools`<br><br>
 
 And after this steps, we installed gstreamer package.<br><br>
 
@@ -110,21 +110,21 @@ And after this steps, we installed gstreamer package.<br><br>
 
 Now we install the main file of the application;
 
-* 1. We are downloading our GitHub file in Raspberry pi terminal screen.<br>`git clone https://github.com/zafersn/Wi-Fi-Gstreamer-Server.git`
+* 1. We are downloading our GitHub file in Raspberry pi terminal screen.<br>`git clone https://github.com/zafersn/Wi-Fi-Gstreamer-Server.git`<br>
       
-* 2.	Also with `ls` command with control that file. The file which we downloaded is shown as a `Wi-Fi-Gstreamer-Server` name.
+* 2.	Also with `ls` command with control that file. The file which we downloaded is shown as a `Wi-Fi-Gstreamer-Server` name.<br>
 
-* 3.	Write `cd Wi-Fi-Gstreamer-Server` and enter in the file. You can see with `ls` command a `robotcontrolV1.pyc` named python application.
+* 3.	Write `cd Wi-Fi-Gstreamer-Server` and enter in the file. You can see with `ls` command a `robotcontrolV1.pyc` named python application.<br>
 
 * 4. We need to move this file with `sudo cp robotcontrolV1.pyc /home/pi` command to our `/home/pi` directory. If you can't do this, application is not working correctly.<br><br><br>![Screen Shot](images/r5.png)<br><br>
 
-* 5.  In case of skip that steps successfully, we give our first start on the Raspberry Pi manually. Because, this is useful for us to see working this application.
+* 5.  In case of skip that steps successfully, we give our first start on the Raspberry Pi manually. Because, this is useful for us to see working this application.<br>
 
-* 6. Execute the application manually: execute the program with `sudo python robotcontrolV1.pyc` command in main terminal. If you are setting up until this step successfully, you must see `Client Baglantisi Bekleniyor...` print.
+* 6. Execute the application manually: execute the program with `sudo python robotcontrolV1.pyc` command in main terminal. If you are setting up until this step successfully, you must see `Client Baglantisi Bekleniyor...` print.<br>
 
-* 7. Last, you try to conncect from Android phone to Raspberry Pi via our application.
+* 7. Last, you try to conncect from Android phone to Raspberry Pi via our application.<br>
 
-* 8. If we are execute our Python code (`robotcontrolV1.pyc`) in Raspberry Pi manually, our phone's IP and port informations will appear in the screen when we connect from Android.
+* 8. If we are execute our Python code (`robotcontrolV1.pyc`) in Raspberry Pi manually, our phone's IP and port informations will appear in the screen when we connect from Android.<br>
 
  
 
@@ -143,13 +143,13 @@ Now we install the main file of the application;
 ## ANDROID:
 
 ### PURPOSE AND MISSIONS:
-* Maintaining control of RC-Car that made from Android and Raspberry Pi.
-* Simple and pure design for user.
-* Taking video stream via Raspberry Pi and show this to user.
+* Maintaining control of RC-Car that made from Android and Raspberry Pi.<br>
+* Simple and pure design for user.<br>
+* Taking video stream via Raspberry Pi and show this to user.<br>
 
 ### INSTALL ANDROID APPLICATION:
-*  There are two application for car control; that are pro and demo versions of the application. There is no difference between pro and demo version of the application in point of using features. Only in demo version using count of the application is restricted. This using count is 30 and this can be increased and decreased by administator. (Note: When calculaing of the using count, there won't be used entering to application or exiting from application, there will be used in connecting and controlling from Android to RC-Car successfully. For increasing using count in that case, system must work as a whole. Peace of mind there can be downloaded the application and there can be used the system as a freeware from your side.)
-- When above-mentioned case is considered, installing of the application is very simple. Only after enter the **ANDROID GOOGLE PLAY** market, you can type in searching box `com.stackcuriosity.tooght` or application name `Wifi RC Controoller with Camera` for directly access to application.
+*  There are two application for car control; that are pro and demo versions of the application. There is no difference between pro and demo version of the application in point of using features. Only in demo version using count of the application is restricted. This using count is 30 and this can be increased and decreased by administator. (Note: When calculaing of the using count, there won't be used entering to application or exiting from application, there will be used in connecting and controlling from Android to RC-Car successfully. For increasing using count in that case, system must work as a whole. Peace of mind there can be downloaded the application and there can be used the system as a freeware from your side.)<br>
+* When above-mentioned case is considered, installing of the application is very simple. Only after enter the **ANDROID GOOGLE PLAY** market, you can type in searching box `com.stackcuriosity.tooght` or application name `Wifi RC Controoller with Camera` for directly access to application.<br>
 
 ### USING THE APPLICATION AND HINTS
 #### Raspberry Pi Connection Informations
