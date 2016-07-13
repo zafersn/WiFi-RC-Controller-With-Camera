@@ -63,7 +63,7 @@
 ![Screen Shot RA1](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/ra1.png)
 <br><br>
 * Again from `Tools` menu, you must show which port plugged to Arduino board. `Tools => port`
-* After realize all steps, now you can upload the codes to Arduino board. You can complete the uploading process by pressing `Upload` button from left-up corner of the program.<br><br>
+* After realize all steps, now you can upload the codes to Arduino board. You can complete the uploading process by pressing `Upload` button from left-up corner of the program.<br><br><br>
 ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/ra2.png)
 <br><br>
 
@@ -82,15 +82,15 @@ After connect with SSH, we must type that in order:<br>
 
 
 * 1.	Write `sudo nano /etc/apt/sources.list`
-and press Enter. From coming screen;<br>
-![Screen Shot](images/r1.png)
+and press Enter. From coming screen;<br><br>
+![Screen Shot](images/r1.png)<br><br>
 
 * 2.	 Write `deb http://vontaene.de/raspbian-updates/ . main`
-command and exit the page with **CTRL + O  ==>  Y**  <br>
-![Screen Shot](images/r2.png)
+command and exit the page with **CTRL + O  ==>  Y**  <br><br>
+![Screen Shot](images/r2.png)<br><br>
 
-* 3. Write 	`sudo apt-get update` and get latest updates. <br>
-![Screen Shot](images/r3.png)
+* 3. Write 	`sudo apt-get update` and get latest updates. <br><br>
+![Screen Shot](images/r3.png)<br><br>
 
 Then by turns, apply that steps:
 
@@ -98,11 +98,11 @@ Then by turns, apply that steps:
 
 * 5.	`sudo reboot`
 
-* 6.	`sudo apt-get install gstreamer-1.0`<br>![Screen Shot](images/r4.png)
+* 6.	`sudo apt-get install gstreamer-1.0`<br><br>![Screen Shot](images/r4.png)<br><br>
 
-* 7.	`sudo apt-get install gstreamer1.0-tools`
+* 7.	`sudo apt-get install gstreamer1.0-tools`<br>
 
-And after this steps, we installed gstreamer package.
+And after this steps, we installed gstreamer package.<br><br>
 
 
 
@@ -116,7 +116,7 @@ Now we install the main file of the application;
 
 * 3.	Write `cd Wi-Fi-Gstreamer-Server` and enter in the file. You can see with `ls` command a `robotcontrolV1.pyc` named python application.
 
-* 4. We need to move this file with `sudo cp robotcontrolV1.pyc /home/pi` command to our `/home/pi` directory. If you can't do this, application is not working correctly.<br>![Screen Shot](images/r5.png)
+* 4. We need to move this file with `sudo cp robotcontrolV1.pyc /home/pi` command to our `/home/pi` directory. If you can't do this, application is not working correctly.<br><br><br>![Screen Shot](images/r5.png)<br><br>
 
 * 5.  In case of skip that steps successfully, we give our first start on the Raspberry Pi manually. Because, this is useful for us to see working this application.
 
@@ -153,11 +153,11 @@ Now we install the main file of the application;
 
 ### USING THE APPLICATION AND HINTS
 #### Raspberry Pi Connection Informations
-* When the application is opened as a first, user see login screen as the following picture. You need to do in this screen, only entering the Wi-Fi informations which connected of Raspberry pi.<br>![Screen Shot](images/device-2016-06-30-193829.png)<br>
+* When the application is opened as a first, user see login screen as the following picture. You need to do in this screen, only entering the Wi-Fi informations which connected of Raspberry pi.<br><br>![Screen Shot](images/device-2016-06-30-193829.png)<br><br>
 
-* Example entered informations:<br><br>![Screen Shot](images/device-2016-06-30-200150.png)<br>
-* When you enter this infos succesfully, you will see the following welcome screen.<br><br>![Screen Shot](images/device-2016-06-30-195734.png)
-*  If you don't connect to Raspberry pi for any situation and if you see the `The connection fails.Please try again.` screen, please check the Raspberry Pi connections and your connection infos. Because, the reason of the this error is your phone can't connect to `robotcontrolV1.pyc` file that your creating and executing.<br>![Screen Shot](images/device-2016-07-08-001102.png)
+* Example entered informations:<br><br><br>![Screen Shot](images/device-2016-06-30-200150.png)<br><br>
+* When you enter this infos succesfully, you will see the following welcome screen.<br><br>![Screen Shot](images/device-2016-06-30-195734.png)<br><br>
+*  If you don't connect to Raspberry pi for any situation and if you see the `The connection fails.Please try again.` screen, please check the Raspberry Pi connections and your connection infos. Because, the reason of the this error is your phone can't connect to `robotcontrolV1.pyc` file that your creating and executing.<br><br>![Screen Shot](images/device-2016-07-08-001102.png)<br><br>
 * For solve that problem, you consider the `SETUP MAIN FILE` section again and check the installation.
 
 #### APPLICATION DETAILS
@@ -168,7 +168,7 @@ Now we install the main file of the application;
 * 2. Transfer live video streaming from car to user.
 * 3. Follow Me (Vey Soon). (Following the car its owner.)
 * To that 3 basis;
-* 1. Main details using direction control of the car was told in `Arduino` section. If we explain to the Android side, there will be available `Seek bar (Velocity setting)` and `Arrow keys`.<br> ![Screen Shot](images/kontrol_ekrani_anlatim.png)<br>
+* 1. Main details using direction control of the car was told in `Arduino` section. If we explain to the Android side, there will be available `Seek bar (Velocity setting)` and `Arrow keys`.<br><br> ![Screen Shot](images/kontrol_ekrani_anlatim.png)<br><br>
 *  **Seek bar(Velocity setting)**is created from 15 slice and velocity coefficient is 17. So any move of the Seek bar, there will be changing 17 and its multiples. For instance, If Seek bar in fifth order, produced pwm = 5*17 = 85.
 * **Arrow keys** provide seperating directions of data which take from Seek bar(Velocity setting). For moving direction of the car, `+` or `-` sign come to head of the PWM value. For example:
 
@@ -182,7 +182,7 @@ Now we install the main file of the application;
 * When our car moving to right cross and left cross, motors' PWM value which will be turning side decreases, and so this provides slower motor rotating. So, the car can achieve the intended turnings. **This rotating sensitivity setting let to user.**
 * The formula for calculating cross turnings: **PWM VALUE - ((PWM VALUE) / PWM RATE)**
 * In default, PWM RATE is `2`.
-* You can reach the PWM RATE setting from right-top button in the screen and from there to `Settings` menu.<br>![Screen Shot](images/device-2016-07-07-230804.png)<br>![Screen Shot](images/device-2016-07-07-230848.png)<br>
+* You can reach the PWM RATE setting from right-top button in the screen and from there to `Settings` menu.<br><br>![Screen Shot](images/device-2016-07-07-230804.png)<br><br>![Screen Shot](images/device-2016-07-07-230848.png)<br><br>
 *  PWM interval which can be entered is a value as a **minimum and maximimum between 1-4 interval in integer and double type**.
  
 
