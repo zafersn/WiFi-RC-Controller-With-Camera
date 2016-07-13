@@ -195,6 +195,6 @@ Now we install the main file of the application;
 
 
 ## TEST VİDEO:
-[![Screen Shot](images/testvd1.png)](https://youtu.be/qbkH2KFcKqw)
+[![Screen Shot](images/testvd1.png)](https://youtu.be/qbkH2KFcKqw)<br><br><br>
 **English translator: Mustafa YEMRUL**
 **Thanks Mr. YEMRUL**
