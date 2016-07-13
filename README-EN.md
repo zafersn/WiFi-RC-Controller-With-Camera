@@ -68,31 +68,31 @@
 <br><br>
 
 ## RASPBERRY PI:
-### AMAÇ VE GÖREVLER:
+### PURPOSE AND MISSIONS:
 
-* Raspberry pi camera modülü kullanarak görüntünün alınması ve raspberry pi üzerinden telefona aktarılması.
-* Arduino ve Telefon arasında bağlantının kurulması.
+* Taking video stream with Raspberry Pi camera module and trasfer that stream to phone via Raspberry pi.
+* Connection between Arduino and Android phone.
 
-### RASPBERRY PI KURULUMU:
+### RASPBERRY PI SETUP:
 
-Uygulamamızın çalışabilmesi için raspberry pi üzerinde bazı ek paketlerin kurulması gerekmektedir. **Bunlar ;**<br>
+We need some additional packages for can work our application. **These are;**<br>
 
 **GSTREAMER1.0 :**<br>
-SSH ile bağlandıktan sonra terminal ekranından sıra ile ;<br>
+After connect with SSH, we must type that in order:<br>
 
 
-* 1.	`sudo nano /etc/apt/sources.list`
-Yazıp enter’a basınız. Açılan ekranda<br>
+* 1.	Write `sudo nano /etc/apt/sources.list`
+and press Enter. From coming screen;<br>
 ![Screen Shot](images/r1.png)
 
-* 2.	`deb http://vontaene.de/raspbian-updates/ . main`
-Komutunu yazınız ve **CTRL + O  ==>  Y** diyerek sayfadan ayrılınız. <br>
+* 2.	 Write `deb http://vontaene.de/raspbian-updates/ . main`
+command and exit the page with **CTRL + O  ==>  Y**  <br>
 ![Screen Shot](images/r2.png)
 
-* 3.	`sudo apt-get update`<br>
+* 3. Write 	`sudo apt-get update` and get latest updates. <br>
 ![Screen Shot](images/r3.png)
 
-Diyerek en son güncelemeyi alınız.Daha sonra aşağıdaki adımları sıra ile uygulayınız.
+Then by turns, apply that steps:
 
 * 4.	`sudo apt-get dist-upgrade`
 
@@ -102,35 +102,29 @@ Diyerek en son güncelemeyi alınız.Daha sonra aşağıdaki adımları sıra il
 
 * 7.	`sudo apt-get install gstreamer1.0-tools`
 
-Ve bu adımlar sonrasında başarı ile gstreamer paketini kurmuş olduk.
+And after this steps, we installed gstreamer package.
 
 
 
+**SETUP MAIN FILE:**
 
+Now we install the main file of the application;
 
-
-
-
-**ANA DOSYA KURULUMU:**
-
-Şimdi uygulamanın ana dosyasının kurulumunu yapalım;
-
-
-* 1. Raspberry pi terminal ekranında githup dosyamızı indiriyoruz.<br>`git clone https://github.com/zafersn/Wi-Fi-Gstreamer-Server.git`
+* 1. We are downloading our GitHub file in Raspberry pi terminal screen.<br>`git clone https://github.com/zafersn/Wi-Fi-Gstreamer-Server.git`
       
-* 2.	Terminal ekranın da `ls` komutu ile kontrol ediyoruz.İndirdiğimiz dosya `Wi-Fi-Gstreamer-Server ` adı ile inecektir.
+* 2.	Also with "ls" command with control that file. The file which we downloaded is shown as a "Wi-Fi-Gstreamer-Server" name.
 
-* 3.	` cd Wi-Fi-Gstreamer-Server ` diyerek bu dosyanın içine giriyoruz. Burada `ls` diyerek `robotcontrolV1.pyc` adında python uygulamamız görünecektir.
+* 3.	`Write "cd Wi-Fi-Gstreamer-Server" and enter in the file. You can see with "ls" command a "robotcontrolV1.pyc" named python application.
 
-* 4.	`robotcontrolV1.pyc` dosyamızı `sudo cp robotcontrolV1.pyc /home/pi` diyerek mutlaka dosyamızı `/home/pi` dizinine taşımamız gerekmektedir. Aksi taktirde telefon uygulamasından bağlanılamayacaktır.<br>![Screen Shot](images/r5.png)
+* 4. We need to move this file with "sudo cp robotcontrolV1.pyc /home/pi" command to our "/home/pi" directory. If you can't do this, application is not working correctly.<br>![Screen Shot](images/r5.png)
 
-* 5. Bu aşamaların başarıyla gerçekleşmesi durumunda uygulamamızın ilk startı raspberry pi üzerinde manuel olarak verelim.Çünkü buraya kadar çalıştığını görmemiz faydalı olacaktır.
+* 5.  In case of skip that steps successfully, we give our first start on the Raspberry Pi manually. Because, this is useful for us to see working this application.
 
-* 6. Uygulamayı manuel olarak  çalıştırmak için ; Ana terminal üzerinde `sudo python robotcontrolV1.pyc` diyerek programı çalıştırınız.Eyer programı başarılı bir şekilde kurdu iseniz ekranda `Client Baglantisi Bekleniyor...` çıktısı görmelisiniz.
+* 6. Execute the application manually: execute the program with "sudo python robotcontrolV1.pyc" command in main terminal. If you are setting up until this step successfully, you must see "Client Baglantisi Bekleniyor..." print.
 
-* 7. Son olarak Android telefonunuz üzerinden uygulamamız aracılığı raspberry pi 'ye bağlanmayı deneyiniz.
+* 7. Last, you try to conncect from Android phone to Raspberry Pi via our application.
 
-* 8. Eğer raspberry pi üzerinde ki python kodumuzu (`robotcontrolV1.pyc`) manuel olarak çalıştırmış isek  android üzerinden bağlantıyı gerçekleştirdiğimizde telefonumuzun ip ve port bilgileri ekran da gözükecektir.
+* 8. If we are execute our Python code (robotcontrolV1.pyc) in Raspberry Pi manually, our phone's IP and port informations will appear in the screen when we connect from Android.
 
  
 
