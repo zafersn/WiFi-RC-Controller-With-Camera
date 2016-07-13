@@ -153,11 +153,11 @@ Now we install the main file of the application;
 
 ### USING THE APPLICATION AND HINTS
 #### Raspberry Pi Connection Informations
-* When the application is opened as a first, user see login screen as the following picture. You need to do in this screen, only entering the Wi-Fi informations which connected of Raspberry pi.<br><br>![Screen Shot](images/device-2016-06-30-193829.png)<br><br>
+* When the application is opened as a first, user see login screen as the following picture. You need to do in this screen, only entering the Wi-Fi informations which connected of Raspberry pi.<br><br>![Screen Shot](images/Screenshot_20160713-204215.png)<br><br>
 
-* Example entered informations:<br><br><br>![Screen Shot](images/device-2016-06-30-200150.png)<br><br>
+* Example entered informations:<br><br><br>![Screen Shot](images/Screenshot_20160713-204201.png)<br><br>
 * When you enter this infos succesfully, you will see the following welcome screen.<br><br>![Screen Shot](images/device-2016-06-30-195734.png)<br><br>
-*  If you don't connect to Raspberry pi for any situation and if you see the `The connection fails.Please try again.` screen, please check the Raspberry Pi connections and your connection infos. Because, the reason of the this error is your phone can't connect to `robotcontrolV1.pyc` file that your creating and executing.<br><br>![Screen Shot](images/device-2016-07-08-001102.png)<br><br>
+*  If you don't connect to Raspberry pi for any situation and if you see the `The connection fails.Please try again.` screen, please check the Raspberry Pi connections and your connection infos. Because, the reason of the this error is your phone can't connect to `robotcontrolV1.pyc` file that your creating and executing.<br><br>![Screen Shot](images/Screenshot_20160713-204904.png)<br><br>
 * For solve that problem, you consider the `SETUP MAIN FILE` section again and check the installation.
 
 #### APPLICATION DETAILS
@@ -168,7 +168,7 @@ Now we install the main file of the application;
 * 2. Transfer live video streaming from car to user.<br><br>
 * 3. Follow Me (Vey Soon). (Following the car its owner.)<br><br>
 * To that 3 basis;
-* 1. Main details using direction control of the car was told in `Arduino` section. If we explain to the Android side, there will be available `Seek bar (Velocity setting)` and `Arrow keys`.<br><br> ![Screen Shot](images/kontrol_ekrani_anlatim.png)<br><br>
+* 1. Main details using direction control of the car was told in `Arduino` section. If we explain to the Android side, there will be available `Seek bar (Velocity setting)` and `Arrow keys`.<br><br> ![Screen Shot](images/device-2016-06-30-195734 english information.png)<br><br>
 *  **Seek bar(Velocity setting)**is created from 15 slice and velocity coefficient is 17. So any move of the Seek bar, there will be changing 17 and its multiples. For instance, If Seek bar in fifth order, produced pwm = 5*17 = 85.
 * **Arrow keys** provide seperating directions of data which take from Seek bar(Velocity setting). For moving direction of the car, `+` or `-` sign come to head of the PWM value. For example:
 
@@ -182,7 +182,7 @@ Now we install the main file of the application;
 * When our car moving to right cross and left cross, motors' PWM value which will be turning side decreases, and so this provides slower motor rotating. So, the car can achieve the intended turnings. **This rotating sensitivity setting let to user.**<br><br>
 * The formula for calculating cross turnings: **PWM VALUE - ((PWM VALUE) / PWM RATE)**<br><br>
 * In default, PWM RATE is `2`.<br><br>
-* You can reach the PWM RATE setting from right-top button in the screen and from there to `Settings` menu.<br><br>![Screen Shot](images/device-2016-07-07-230804.png)<br><br>![Screen Shot](images/device-2016-07-07-230848.png)<br><br>
+* You can reach the PWM RATE setting from right-top button in the screen and from there to `Settings` menu.<br><br>![Screen Shot](images/Screenshot_20160713-205757.png)<br><br>![Screen Shot](images/Screenshot_20160713-205807.png)<br><br>
 *  PWM interval which can be entered is a value as a **minimum and maximimum between 1-4 interval in integer and double type**.<br><br>
  
 
