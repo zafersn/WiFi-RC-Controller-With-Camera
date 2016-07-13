@@ -112,19 +112,19 @@ Now we install the main file of the application;
 
 * 1. We are downloading our GitHub file in Raspberry pi terminal screen.<br>`git clone https://github.com/zafersn/Wi-Fi-Gstreamer-Server.git`
       
-* 2.	Also with "ls" command with control that file. The file which we downloaded is shown as a "Wi-Fi-Gstreamer-Server" name.
+* 2.	Also with `ls` command with control that file. The file which we downloaded is shown as a `Wi-Fi-Gstreamer-Server` name.
 
-* 3.	`Write "cd Wi-Fi-Gstreamer-Server" and enter in the file. You can see with "ls" command a "robotcontrolV1.pyc" named python application.
+* 3.	Write `cd Wi-Fi-Gstreamer-Server` and enter in the file. You can see with `ls` command a `robotcontrolV1.pyc` named python application.
 
-* 4. We need to move this file with "sudo cp robotcontrolV1.pyc /home/pi" command to our "/home/pi" directory. If you can't do this, application is not working correctly.<br>![Screen Shot](images/r5.png)
+* 4. We need to move this file with `sudo cp robotcontrolV1.pyc /home/pi` command to our `/home/pi` directory. If you can't do this, application is not working correctly.<br>![Screen Shot](images/r5.png)
 
 * 5.  In case of skip that steps successfully, we give our first start on the Raspberry Pi manually. Because, this is useful for us to see working this application.
 
-* 6. Execute the application manually: execute the program with "sudo python robotcontrolV1.pyc" command in main terminal. If you are setting up until this step successfully, you must see "Client Baglantisi Bekleniyor..." print.
+* 6. Execute the application manually: execute the program with `sudo python robotcontrolV1.pyc` command in main terminal. If you are setting up until this step successfully, you must see `Client Baglantisi Bekleniyor...` print.
 
 * 7. Last, you try to conncect from Android phone to Raspberry Pi via our application.
 
-* 8. If we are execute our Python code (robotcontrolV1.pyc) in Raspberry Pi manually, our phone's IP and port informations will appear in the screen when we connect from Android.
+* 8. If we are execute our Python code (`robotcontrolV1.pyc`) in Raspberry Pi manually, our phone's IP and port informations will appear in the screen when we connect from Android.
 
  
 
