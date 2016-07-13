@@ -62,9 +62,8 @@
 
 ![Screen Shot RA1](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/ra1.png)
 <br><br>
-* 3. Tekrar `Tools` sekmesinden takmış olduğunuz arduino' nuzun hangi port' a takılı olduğunu gösteriniz.  `Tools` => `port`
-
-* 4. Yukarıdaki adımları gerçekleştirdikten sonra şimdi programımızı arduino' muza yükleyebiliriz.Sol üst köşede `Upload` butonuna basarak yükleme işlemini tamamlamış oluyoruz.<br><br>
+* Again from "Tools" menu, you must show which port plugged to Arduino board. Tools => port
+* After realize all steps, now you can upload the codes to Arduino board. You can complete the uploading process by pressing "Upload" button from left-up corner of the program.<br><br>
 ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/ra2.png)
 <br><br>
 
