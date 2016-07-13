@@ -2,10 +2,9 @@
 
 ## About this project?
 
-* Controlling directions on Android Phone
-* Real time image transfer from the vehicle to the phone
-* Fallow Me (Coming soon)
-
+* Direction control via Android
+* Video streaming from RC-Car to mobile phone simultaneously
+* Follow Me (Very Soon)
 
 [![Screen Shot](images/yotubeT1.png)](https://youtu.be/J8r_bX_RNzU)
 
@@ -17,35 +16,35 @@
 * L298N Motor Drive
 * DC MOTOR X  2 
 * 12V Lipo Battery
-* Vehicle  chassis
+* Car Frame (Body)
 
 
 ## Arduino:
 ### PURPOSE AND TASKS:
 
-*	In this project arduino, has been used to control the engines.
-*	Arduino with raspberry pi, provides serial communication via usb
-*	On our Android phone, calculated PWM the range is sent.(For upcoming update)
-* Raspberry pi allows communication between arduino and android phone via wifi connection.
-*	Below, Raspberry Pi, Raspberry pi, Camera, Arduino, L298N motor driver,motor and the battery shows a diagram of circuit connection.
+*	Arduino was used for motor control.
+* Arduino and Raspberry Pi were connected by serial communication.
+* Before PWM signal interval which will be sent from Android phone to Arduino don't transfer, this signal was calculated. (Because of the next updates and easily interfere to PWM variable by users.)
+* The Raspberry Pi provides the Wi-Fi communication with Arduino and the user (Android phone).
+* In the following section, we show the circuit schematic for Raspberry Pi, Raspberry Pi Camera, Arduino, L298N Motor Driver, motors and batteries.
  
 
 
-### DIAGRAM AND ARDUINO PIN CONNECTION SETUP
+### SETTING UP ARDUINO AND PIN CONNECTION SCHEMATIC
 
-* Arduino 'ya gelen veri doğrudan motorlara gidecek pwm aralığı olarak gelmektedir.PWM değerinin yanında sadece aracın yön tayini için ` + (ileri)` ve ya `- (geri)` değerini almaktadır.
-* Yukarıdaki durum göz önüne alınarak çeşitli modifikasyonlar yapılabilir.
-* PWM aralığı `0-255` arasındadır.
-* Telefon üzerinden SAĞ VE SOL motor pwmlerini ve servo motor açısını String bir şekilde örn:  200:200!888 şeklinde alıyoruz. Aradaki iki nokta üst üste  `:` ve ünlem işareti `!` ' e göre bölerek 3 elemanlı bir dizi oluşturuyoruz.
-*  `!` den sonraki değer, cameranın bağlı bulunduğu servo motor'un açı değerleridir. Bu çalışmada servo motor kullanılmamıştır.
-* Motor Hareket PWM geliş tipi ve arcın durumları
-* örn:
-*  0:0      //stop
-* 200:200     // ileri git. ( 2 motorda 200pwm ile çalışır )
-*  -200:-200   //geri git. (2 motorda 200pwm ile çalışır)
-*  200:-200   // sol motor 200 pwm ileri, sag motor 200 geri döner ( araç kendi etrafında soldan sağa doğru döner)
-* -200:200   // sol motor 200 pwm geri, sag motor 200 ileri döner ( araç kendi etrafında sağdan sola doğru döner)
-* 200:100    // araç sağa dönecek şekilde hareket eder.<br><br>
+* Data which come to Arduino is sent as a PWM interval that go to the motors directly. There are two values "+ (forward)" or "- (backward)" for decide direction with PWM value.
+* Above-mentioned situations is considered by us, there can be made various modifications.
+* PWM interval is between 0-255.
+* RIGHT AND LEFT motor PWMs' and servo motor angle is taken as a String(e.g. 200:200!888) from phone. This String value is splitted with ":" and "!" characters and created the array that has 3 elements.
+* The value after the "!" character is the servo motor's angle value which connected with camera. Servo motor is not used in this project.
+* Motor Moving, PWM data and situations of the car
+* Example:
+* 0:0 //stop
+* 200:200 // move forward. (2 motors work with 200pwm)
+* 200:-200 //move backward. (2 motors work with 200pwm)
+* 200:-200 // left motor turns 200 pwm to forward, right motor turns 200 pwm to backward (The car turns its around from left to right.)
+* 200:-200 // left motor turns 200 pwm to backward, right motor turns 200 pwm to forward (The car turns its around from right to left.)
+* 200:100 // The car moves as turning to the right.<br><br>
  
 
 
@@ -54,15 +53,11 @@
 
 ![Screen shot WiFi Maunt](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/wificontrol.png)
 <br><br>
-* Arduino, Raspberry pi,Raspberry pi camera modülü, L298N motor sürücü, Motorlar, Güç kaynağının bağlantılarını  yukarıdaki resimdeki gibi gerçekleştiriniz.
-* Yukarıdaki şekildeki gibi arduino pin bağlantılarını ve raspberry pi bağlantısını  gerçekleştirdikten sonra yapmamız gereken arduino kodlarımızı yüklemek olacaktır.
-Bunu sıra ile şu  şekilde yapabilirsiniz.
-
-* 0. Arduino kodlarının açıklamaları ve ne işe yaradığı ile ilgili detaylı bilgi kodların içinde mevcuttur.
-
-* 1. `androidToRaspberry.ino` adlı arduino kodumuzu indiriniz ve çift tıklayarak açınız.
-
-* 2. Açılan proje dosyasını arduino' ya yüklemek için sıra ile  sekmelerden `Tools` => `Board`  ve buradan kullandığınız arduino modelinizi seçiniz.<br><br>
+*Connections among Arduino, Raspberry pi,Raspberry pi camera module, L298N motor driver, Motors and Power Supply are set up as above picture.
+* After connected Arduino pins and Raspberry pi as above picture, we can load our codes to Arduino. That do by this sequence:
+* Detail information about Arduino codes is placed in that codes.
+* Download "androidToRaspberry.ino" file and open this file with double click.
+* For uploading that project file to Arduino, first you must select the Arduino model from "Tools => Board" menu.<br><br>
 
 
 ![Screen Shot RA1](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/ra1.png)
