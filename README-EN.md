@@ -53,7 +53,7 @@
 
 ![Screen shot WiFi Maunt](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/wificontrol.png)
 <br><br>
-*Connections among Arduino, Raspberry pi,Raspberry pi camera module, L298N motor driver, Motors and Power Supply are set up as above picture.
+* Connections among Arduino, Raspberry pi,Raspberry pi camera module, L298N motor driver, Motors and Power Supply are set up as above picture.
 * After connected Arduino pins and Raspberry pi as above picture, we can load our codes to Arduino. That do by this sequence:
 * Detail information about Arduino codes is placed in that codes.
 * Download "androidToRaspberry.ino" file and open this file with double click.
