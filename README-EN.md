@@ -163,27 +163,27 @@ Now we install the main file of the application;
 #### APPLICATION DETAILS
 
 ##### 1. EXPLAINING OF THE VISUAL DESIGN AND PROGRAMMING LOGIC
-* Our application rely on 3 basis. These are;
-* 1. Provide direction control of the car.
-* 2. Transfer live video streaming from car to user.
-* 3. Follow Me (Vey Soon). (Following the car its owner.)
+* Our application rely on 3 basis. These are;<br><br>
+* 1. Provide direction control of the car.<br><br>
+* 2. Transfer live video streaming from car to user.<br><br>
+* 3. Follow Me (Vey Soon). (Following the car its owner.)<br><br>
 * To that 3 basis;
 * 1. Main details using direction control of the car was told in `Arduino` section. If we explain to the Android side, there will be available `Seek bar (Velocity setting)` and `Arrow keys`.<br><br> ![Screen Shot](images/kontrol_ekrani_anlatim.png)<br><br>
 *  **Seek bar(Velocity setting)**is created from 15 slice and velocity coefficient is 17. So any move of the Seek bar, there will be changing 17 and its multiples. For instance, If Seek bar in fifth order, produced pwm = 5*17 = 85.
 * **Arrow keys** provide seperating directions of data which take from Seek bar(Velocity setting). For moving direction of the car, `+` or `-` sign come to head of the PWM value. For example:
 
-* 200:200 // move forward. (2 motors work with 200pwm)
-* 200:-200 //move backward. (2 motors work with 200pwm)
-* 200:-200 // left motor turns 200 pwm to forward, right motor turns 200 pwm to backward (The car turns its around from left to right.)
-* 200:-200 // left motor turns 200 pwm to backward, right motor turns 200 pwm to forward (The car turns its around from right to left.)
+* 200:200 // move forward. (2 motors work with 200pwm)<br><br>
+* 200:-200 //move backward. (2 motors work with 200pwm)<br><br>
+* 200:-200 // left motor turns 200 pwm to forward, right motor turns 200 pwm to backward (The car turns its around from left to right.)<br><br>
+* 200:-200 // left motor turns 200 pwm to backward, right motor turns 200 pwm to forward (The car turns its around from right to left.)<br><br>
 * 200:100 // The car moves as turning to the right.<br><br> 
 
 ##### 2.SENSITIVITY IN TURNING LEFT AND RIGHT
-* When our car moving to right cross and left cross, motors' PWM value which will be turning side decreases, and so this provides slower motor rotating. So, the car can achieve the intended turnings. **This rotating sensitivity setting let to user.**
-* The formula for calculating cross turnings: **PWM VALUE - ((PWM VALUE) / PWM RATE)**
-* In default, PWM RATE is `2`.
+* When our car moving to right cross and left cross, motors' PWM value which will be turning side decreases, and so this provides slower motor rotating. So, the car can achieve the intended turnings. **This rotating sensitivity setting let to user.**<br><br>
+* The formula for calculating cross turnings: **PWM VALUE - ((PWM VALUE) / PWM RATE)**<br><br>
+* In default, PWM RATE is `2`.<br><br>
 * You can reach the PWM RATE setting from right-top button in the screen and from there to `Settings` menu.<br><br>![Screen Shot](images/device-2016-07-07-230804.png)<br><br>![Screen Shot](images/device-2016-07-07-230848.png)<br><br>
-*  PWM interval which can be entered is a value as a **minimum and maximimum between 1-4 interval in integer and double type**.
+*  PWM interval which can be entered is a value as a **minimum and maximimum between 1-4 interval in integer and double type**.<br><br>
  
 
 
