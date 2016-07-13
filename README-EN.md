@@ -32,11 +32,11 @@
 
 ### SETTING UP ARDUINO AND PIN CONNECTION SCHEMATIC
 
-* Data which come to Arduino is sent as a PWM interval that go to the motors directly. There are two values "+ (forward)" or "- (backward)" for decide direction with PWM value.
+* Data which come to Arduino is sent as a PWM interval that go to the motors directly. There are two values `+ (forward)` or `- (backward)` for decide direction with PWM value.
 * Above-mentioned situations is considered by us, there can be made various modifications.
-* PWM interval is between 0-255.
-* RIGHT AND LEFT motor PWMs' and servo motor angle is taken as a String(e.g. 200:200!888) from phone. This String value is splitted with ":" and "!" characters and created the array that has 3 elements.
-* The value after the "!" character is the servo motor's angle value which connected with camera. Servo motor is not used in this project.
+* PWM interval is between` 0-255.`
+* RIGHT AND LEFT motor PWMs' and servo motor angle is taken as a String(e.g. `200:200!888`) from phone. This String value is splitted with `:` and `!` characters and created the array that has 3 elements.
+* The value after the `!` character is the servo motor's angle value which connected with camera. Servo motor is not used in this project.
 * Motor Moving, PWM data and situations of the car
 * Example:
 * 0:0 //stop
@@ -56,14 +56,14 @@
 * Connections among Arduino, Raspberry pi,Raspberry pi camera module, L298N motor driver, Motors and Power Supply are set up as above picture.
 * After connected Arduino pins and Raspberry pi as above picture, we can load our codes to Arduino. That do by this sequence:
 * Detail information about Arduino codes is placed in that codes.
-* Download "androidToRaspberry.ino" file and open this file with double click.
-* For uploading that project file to Arduino, first you must select the Arduino model from "Tools => Board" menu.<br><br>
+* Download `androidToRaspberry.ino` file and open this file with double click.
+* For uploading that project file to Arduino, first you must select the Arduino model from `Tools => Board` menu.<br><br>
 
 
 ![Screen Shot RA1](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/ra1.png)
 <br><br>
-* Again from "Tools" menu, you must show which port plugged to Arduino board. Tools => port
-* After realize all steps, now you can upload the codes to Arduino board. You can complete the uploading process by pressing "Upload" button from left-up corner of the program.<br><br>
+* Again from `Tools` menu, you must show which port plugged to Arduino board. `Tools => port`
+* After realize all steps, now you can upload the codes to Arduino board. You can complete the uploading process by pressing `Upload` button from left-up corner of the program.<br><br>
 ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/ra2.png)
 <br><br>
 
