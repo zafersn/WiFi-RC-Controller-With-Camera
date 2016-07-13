@@ -149,7 +149,7 @@ Now we install the main file of the application;
 
 ### INSTALL ANDROID APPLICATION:
 *  There are two application for car control; that are pro and demo versions of the application. There is no difference between pro and demo version of the application in point of using features. Only in demo version using count of the application is restricted. This using count is 30 and this can be increased and decreased by administator. (Note: When calculaing of the using count, there won't be used entering to application or exiting from application, there will be used in connecting and controlling from Android to RC-Car successfully. For increasing using count in that case, system must work as a whole. Peace of mind there can be downloaded the application and there can be used the system as a freeware from your side.)
-- When above-mentioned case is considered, installing of the application is very simple. Only after enter the ANDROID GOOGLE PLAY market, you can type in searching box `com.stackcuriosity.tooght` or application name `Wifi RC Controoller with Camera` for directly access to application.
+- When above-mentioned case is considered, installing of the application is very simple. Only after enter the **ANDROID GOOGLE PLAY** market, you can type in searching box `com.stackcuriosity.tooght` or application name `Wifi RC Controoller with Camera` for directly access to application.
 
 ### USING THE APPLICATION AND HINTS
 #### Raspberry Pi Connection Informations
@@ -157,13 +157,13 @@ Now we install the main file of the application;
 
 * Example entered informations:<br><br>![Screen Shot](images/device-2016-06-30-200150.png)<br>
 * When you enter this infos succesfully, you will see the following welcome screen.<br><br>![Screen Shot](images/device-2016-06-30-195734.png)
-*  If you don't connect to Raspberry pi for any situation and if you see the `Balantı başarısız. Lütfen tekrar deneyiniz.` screen, please check the Raspberry Pi connections and your connection infos. Because, the reason of the this error is your phone can't connect to `robotcontrolV1.pyc` file that your creating and executing.<br>![Screen Shot](images/device-2016-07-08-001102.png)
+*  If you don't connect to Raspberry pi for any situation and if you see the `The connection fails.Please try again.` screen, please check the Raspberry Pi connections and your connection infos. Because, the reason of the this error is your phone can't connect to `robotcontrolV1.pyc` file that your creating and executing.<br>![Screen Shot](images/device-2016-07-08-001102.png)
 * For solve that problem, you consider the `SETUP MAIN FILE` section again and check the installation.
 
 #### APPLICATION DETAILS
 
 ##### 1. EXPLAINING OF THE VISUAL DESIGN AND PROGRAMMING LOGIC
-* UOur application rely on 3 basis. These are;
+* Our application rely on 3 basis. These are;
 * 1. Provide direction control of the car.
 * 2. Transfer live video streaming from car to user.
 * 3. Follow Me (Vey Soon). (Following the car its owner.)
@@ -171,7 +171,7 @@ Now we install the main file of the application;
 * 1. Main details using direction control of the car was told in `Arduino` section. If we explain to the Android side, there will be available `Seek bar (Velocity setting)` and `Arrow keys`.<br> ![Screen Shot](images/kontrol_ekrani_anlatim.png)<br>
 *  **Seek bar(Velocity setting)**is created from 15 slice and velocity coefficient is 17. So any move of the Seek bar, there will be changing 17 and its multiples. For instance, If Seek bar in fifth order, produced pwm = 5*17 = 85.
 * **Arrow keys** provide seperating directions of data which take from Seek bar(Velocity setting). For moving direction of the car, `+` or `-` sign come to head of the PWM value. For example:
-*  sign come to head of the PWM value. For example:
+
 * 200:200 // move forward. (2 motors work with 200pwm)
 * 200:-200 //move backward. (2 motors work with 200pwm)
 * 200:-200 // left motor turns 200 pwm to forward, right motor turns 200 pwm to backward (The car turns its around from left to right.)
@@ -179,11 +179,11 @@ Now we install the main file of the application;
 * 200:100 // The car moves as turning to the right.<br><br> 
 
 ##### 2.SENSITIVITY IN TURNING LEFT AND RIGHT
-* When our car moving to right cross and left cross, motors' PWM value which will be turning side decreases, and so this provides slower motor rotating. So, the car can achieve the intended turnings. This rotating sensitivity setting let to user.
-* The formula for calculating cross turnings: PWM VALUE -( (PWM VALUE) / PWM RATE)
-* In default, PWM RATE is 2.
-* You can reach the PWM RATE setting from right-top button in the screen and from there to "Settings" menu.<br>![Screen Shot](images/device-2016-07-07-230804.png)<br>![Screen Shot](images/device-2016-07-07-230848.png)<br>
-*  PWM interval which can be entered is a value as a minimum and maximimum between 1-4 interval in integer and double type.
+* When our car moving to right cross and left cross, motors' PWM value which will be turning side decreases, and so this provides slower motor rotating. So, the car can achieve the intended turnings. **This rotating sensitivity setting let to user.**
+* The formula for calculating cross turnings: **PWM VALUE - ((PWM VALUE) / PWM RATE)**
+* In default, PWM RATE is `2`.
+* You can reach the PWM RATE setting from right-top button in the screen and from there to `Settings` menu.<br>![Screen Shot](images/device-2016-07-07-230804.png)<br>![Screen Shot](images/device-2016-07-07-230848.png)<br>
+*  PWM interval which can be entered is a value as a **minimum and maximimum between 1-4 interval in integer and double type**.
  
 
 
