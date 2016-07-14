@@ -84,26 +84,26 @@ Uygulamamızın çalışabilmesi için raspberry pi üzerinde bazı ek paketleri
 SSH ile bağlandıktan sonra terminal ekranından sıra ile ;<br>
 
 
-* 1.	`sudo nano /etc/apt/sources.list`
-Yazıp enter’a basınız. Açılan ekranda<br>
+**I.**	`sudo nano /etc/apt/sources.list`<br><br>
+Yazıp enter’a basınız. Açılan ekranda<br><br>
 ![Screen Shot](images/r1.png)
 
-* 2.	`deb http://vontaene.de/raspbian-updates/ . main`
-Komutunu yazınız ve **CTRL + O  ==>  Y** diyerek sayfadan ayrılınız. <br>
+** II.**	`deb http://vontaene.de/raspbian-updates/ . main`<br>
+Komutunu yazınız ve **CTRL + O  ==>  Y** diyerek sayfadan ayrılınız. <br><br>
 ![Screen Shot](images/r2.png)
 
-* 3.	`sudo apt-get update`<br>
-![Screen Shot](images/r3.png)
+** III.**	`sudo apt-get update`<br><br>
+![Screen Shot](images/r3.png)<br><br>
 
-Diyerek en son güncelemeyi alınız.Daha sonra aşağıdaki adımları sıra ile uygulayınız.
+Diyerek en son güncelemeyi alınız.Daha sonra aşağıdaki adımları sıra ile uygulayınız.<br><br>
 
-* 4.	`sudo apt-get dist-upgrade`
+** IV.**	`sudo apt-get dist-upgrade`<br><br>
 
-* 5.	`sudo reboot`
+** V.**	`sudo reboot`<br><br>
 
-* 6.	`sudo apt-get install gstreamer-1.0`<br>![Screen Shot](images/r4.png)
+** VI.**	`sudo apt-get install gstreamer-1.0`<br><br>![Screen Shot](images/r4.png)<br><br>
 
-* 7.	`sudo apt-get install gstreamer1.0-tools`
+** VII.**	`sudo apt-get install gstreamer1.0-tools`<br><br>
 
 Ve bu adımlar sonrasında başarı ile gstreamer paketini kurmuş olduk.
 
@@ -119,21 +119,21 @@ Ve bu adımlar sonrasında başarı ile gstreamer paketini kurmuş olduk.
 Şimdi uygulamanın ana dosyasının kurulumunu yapalım;
 
 
-* 1. Raspberry pi terminal ekranında githup dosyamızı indiriyoruz.<br>`git clone https://github.com/zafersn/Wi-Fi-Gstreamer-Server.git`
+*  Raspberry pi terminal ekranında githup dosyamızı indiriyoruz.<br>`git clone https://github.com/zafersn/Wi-Fi-Gstreamer-Server.git`
       
-* 2.	Terminal ekranın da `ls` komutu ile kontrol ediyoruz.İndirdiğimiz dosya `Wi-Fi-Gstreamer-Server ` adı ile inecektir.
+* 	Terminal ekranın da `ls` komutu ile kontrol ediyoruz.İndirdiğimiz dosya `Wi-Fi-Gstreamer-Server ` adı ile inecektir.
 
-* 3.	` cd Wi-Fi-Gstreamer-Server ` diyerek bu dosyanın içine giriyoruz. Burada `ls` diyerek `robotcontrolV1.pyc` adında python uygulamamız görünecektir.
+* 	` cd Wi-Fi-Gstreamer-Server ` diyerek bu dosyanın içine giriyoruz. Burada `ls` diyerek `robotcontrolV1.pyc` adında python uygulamamız görünecektir.
 
-* 4.	`robotcontrolV1.pyc` dosyamızı `sudo cp robotcontrolV1.pyc /home/pi` diyerek mutlaka dosyamızı `/home/pi` dizinine taşımamız gerekmektedir. Aksi taktirde telefon uygulamasından bağlanılamayacaktır.<br>![Screen Shot](images/r5.png)
+* 	`robotcontrolV1.pyc` dosyamızı `sudo cp robotcontrolV1.pyc /home/pi` diyerek mutlaka dosyamızı `/home/pi` dizinine taşımamız gerekmektedir. Aksi taktirde telefon uygulamasından bağlanılamayacaktır.<br>![Screen Shot](images/r5.png)
 
-* 5. Bu aşamaların başarıyla gerçekleşmesi durumunda uygulamamızın ilk startı raspberry pi üzerinde manuel olarak verelim.Çünkü buraya kadar çalıştığını görmemiz faydalı olacaktır.
+*  Bu aşamaların başarıyla gerçekleşmesi durumunda uygulamamızın ilk startı raspberry pi üzerinde manuel olarak verelim.Çünkü buraya kadar çalıştığını görmemiz faydalı olacaktır.
 
-* 6. Uygulamayı manuel olarak  çalıştırmak için ; Ana terminal üzerinde `sudo python robotcontrolV1.pyc` diyerek programı çalıştırınız.Eyer programı başarılı bir şekilde kurdu iseniz ekranda `Client Baglantisi Bekleniyor...` çıktısı görmelisiniz.
+*  Uygulamayı manuel olarak  çalıştırmak için ; Ana terminal üzerinde `sudo python robotcontrolV1.pyc` diyerek programı çalıştırınız.Eyer programı başarılı bir şekilde kurdu iseniz ekranda `Client Baglantisi Bekleniyor...` çıktısı görmelisiniz.
 
-* 7. Son olarak Android telefonunuz üzerinden uygulamamız aracılığı raspberry pi 'ye bağlanmayı deneyiniz.
+*  Son olarak Android telefonunuz üzerinden uygulamamız aracılığı raspberry pi 'ye bağlanmayı deneyiniz.
 
-* 8. Eğer raspberry pi üzerinde ki python kodumuzu (`robotcontrolV1.pyc`) manuel olarak çalıştırmış isek  android üzerinden bağlantıyı gerçekleştirdiğimizde telefonumuzun ip ve port bilgileri ekran da gözükecektir.
+*  Eğer raspberry pi üzerinde ki python kodumuzu (`robotcontrolV1.pyc`) manuel olarak çalıştırmış isek  android üzerinden bağlantıyı gerçekleştirdiğimizde telefonumuzun ip ve port bilgileri ekran da gözükecektir.
 
  
 
