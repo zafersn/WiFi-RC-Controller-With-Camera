@@ -172,12 +172,12 @@ Ve bu adımlar sonrasında başarı ile gstreamer paketini kurmuş olduk.
 #### UYGULAMA DETAYLARI
 
 ##### 1. GÖRSEL ARAYÜZÜN AÇIKLANMASI VE PROGRAMLAMA MANTIĞI
-* Uygulamamız 3 temel esasa dayanmaktadır. Bunlar;
-*  1. Aracın yön kontrolünün sağlanması.
-*  2. Kullanıcıya araç üzerindeki kameradan canlı görüntünün aktarılması.
-*  3. Fallow Me (Çok yakında).(Aracın sahibini takip etmesi).<br>
-*  Bu üç temel esasa göre 
-*  1. Aracın yön kontrolünde kullanılan mantığın ana detaylarını `Arduino` bölümde anlattık.Android tarafına bakan kısmı ile açıklayacak olursak.Android tarafında, kullanıcı için `Seek bar (Hız ayarı)` ve `Yön tuşları` mevcuttur.<br> ![Screen Shot](images/kontrol_ekrani_anlatim.png)<br>
+* **Uygulamamız 3 temel esasa dayanmaktadır.** Bunlar;
+  1. Aracın yön kontrolünün sağlanması.<br>
+  2. Kullanıcıya araç üzerindeki kameradan canlı görüntünün aktarılması.<br>
+  3. Fallow Me (Çok yakında).(Aracın sahibini takip etmesi).<br>
+* Bu üç temel esasa göre 
+*  Aracın yön kontrolünde kullanılan mantığın ana detaylarını `Arduino` bölümde anlattık.Android tarafına bakan kısmı ile açıklayacak olursak.Android tarafında, kullanıcı için `Seek bar (Hız ayarı)` ve `Yön tuşları` mevcuttur.<br> ![Screen Shot](images/kontrol_ekrani_anlatim.png)<br>
 *  **Seek bar(Hız ayarı)** 15 dilimden oluşmaktadır ve hız katsayısı 17'dir.Yani seek bar' ın herbir hareketi pwm'de 17'nin katları şeklinde bir oynama yapmaktadır.Seek bar 5. kademede ise üretilen pwm= 5*17 = 85 'tir.
 *  **Yön tuşları** seek bar(Hız ayarı)'dan alınan verinin yönlere ayrılmasını sağlar. Aracın gidiş yönüne göre pwm değerinin başına + ve ya - işareti getirilir. Örn;
 * * 200:200     // ileri git. ( 2 motorda 200pwm ile çalışır )
