@@ -34,8 +34,8 @@
 * Yukarıdaki durum göz önüne alınarak çeşitli modifikasyonlar yapılabilir.
 * PWM aralığı `0-255` arasındadır.
 * Telefon üzerinden SAĞ VE SOL motor pwmlerini ve servo motor açısını String bir şekilde örn:  200:200!888 şeklinde alıyoruz. Aradaki iki nokta üst üste  `:` ve ünlem işareti `!` ' e göre bölerek 3 elemanlı bir dizi oluşturuyoruz.
-*  `!` den sonraki değer, cameranın bağlı bulunduğu servo motor'un açı değerleridir. Bu çalışmada servo motor kullanılmamıştır.
-**Motor Hareket PWM geliş tipi ve arcın durumları**<br>
+*  `!` den sonraki değer, cameranın bağlı bulunduğu servo motor'un açı değerleridir. Bu çalışmada servo motor kullanılmamıştır.<br>
+**Motor Hareket PWM Geliş Tipi ve Aracın Durumları**<br>
 örn:
 *  0:0      //stop
 * 200:200     // ileri git. ( 2 motorda 200pwm ile çalışır )
