@@ -52,8 +52,8 @@
 ![Screen shot WiFi Maunt](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/wificontrol.png)
 <br><br>
 * Arduino, Raspberry pi,Raspberry pi camera modülü, L298N motor sürücü, Motorlar, Güç kaynağının bağlantılarını  yukarıdaki resimdeki gibi gerçekleştiriniz.
-* Yukarıdaki şekildeki gibi arduino pin bağlantılarını ve raspberry pi bağlantısını  gerçekleştirdikten sonra yapmamız gereken arduino kodlarımızı yüklemek olacaktır.
-Bunu sıra ile şu  şekilde yapabilirsiniz.<br>
+* Yukarıdaki şekildeki gibi arduino pin bağlantılarını ve raspberry pi bağlantısını  gerçekleştirdikten sonra yapmamız gereken arduino kodlarımızı yüklemek olacaktır.<br>
+**Bunu sıra ile şu  şekilde yapabilirsiniz.<br>**
 
 **I.** Arduino kodlarının açıklamaları ve ne işe yaradığı ile ilgili detaylı bilgi kodların içinde mevcuttur.<br>
 
@@ -88,22 +88,22 @@ SSH ile bağlandıktan sonra terminal ekranından sıra ile ;<br>
 Yazıp enter’a basınız. Açılan ekranda<br><br>
 ![Screen Shot](images/r1.png)
 
-** II.**	`deb http://vontaene.de/raspbian-updates/ . main`<br>
+**II.**	`deb http://vontaene.de/raspbian-updates/ . main`<br><br>
 Komutunu yazınız ve **CTRL + O  ==>  Y** diyerek sayfadan ayrılınız. <br><br>
 ![Screen Shot](images/r2.png)
 
-** III.**	`sudo apt-get update`<br><br>
+**III.**	`sudo apt-get update`<br><br>
 ![Screen Shot](images/r3.png)<br><br>
 
 Diyerek en son güncelemeyi alınız.Daha sonra aşağıdaki adımları sıra ile uygulayınız.<br><br>
 
-** IV.**	`sudo apt-get dist-upgrade`<br><br>
+**IV.**	`sudo apt-get dist-upgrade`<br><br>
 
-** V.**	`sudo reboot`<br><br>
+**V.**	`sudo reboot`<br><br>
 
-** VI.**	`sudo apt-get install gstreamer-1.0`<br><br>![Screen Shot](images/r4.png)<br><br>
+**VI.**	`sudo apt-get install gstreamer-1.0`<br><br>![Screen Shot](images/r4.png)<br><br>
 
-** VII.**	`sudo apt-get install gstreamer1.0-tools`<br><br>
+**VII.**	`sudo apt-get install gstreamer1.0-tools`<br><br>
 
 Ve bu adımlar sonrasında başarı ile gstreamer paketini kurmuş olduk.
 
