@@ -148,7 +148,7 @@ Now we install the main file of the application;
 
 ### INSTALL ANDROID APPLICATION:
 *  There are two application for car control; that are pro and demo versions of the application. There is no difference between pro and demo version of the application in point of using features. Only in demo version using count of the application is restricted. This using count is 30 and this can be increased and decreased by administator. (Note: When calculaing of the using count, there won't be used entering to application or exiting from application, there will be used in connecting and controlling from Android to RC-Car successfully. For increasing using count in that case, system must work as a whole. Peace of mind there can be downloaded the application and there can be used the system as a freeware from your side.)<br><br>
-* When above-mentioned case is considered, installing of the application is very simple. Only after enter the **ANDROID GOOGLE PLAY** market, you can type in searching box `com.stackcuriosity.tooght` or application name `Wifi RC Controoller with Camera` for directly access to application.<br><br>
+* When above-mentioned case is considered, installing of the application is very simple. Only after enter the **ANDROID GOOGLE PLAY** market, you can type in searching box `com.stackcuriosity.tooght` or application name `RC CONTROLLER WITH CAMERA` for directly access to application.<br><br>
 
 ### USING THE APPLICATION AND HINTS
 #### Raspberry Pi Connection Informations
