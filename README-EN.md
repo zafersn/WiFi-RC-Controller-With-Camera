@@ -29,7 +29,6 @@
 * In the following section, we show the circuit schematic for Raspberry Pi, Raspberry Pi Camera, Arduino, L298N Motor Driver, motors and batteries.
  
 
-
 ### SETTING UP ARDUINO AND PIN CONNECTION SCHEMATIC
 
 * Data which come to Arduino is sent as a PWM interval that go to the motors directly. There are two values `+ (forward)` or `- (backward)` for decide direction with PWM value.
