@@ -2,11 +2,11 @@
 
  Pi_CAR| V2 | V1
 ------------ | -------------|-------
-HABERLEŞME: |UDP |TCP
-MESAFE: | (WiFi Dongle göre değişir) 10m -- HAREKETLİ| (WiFi Dongle göre değişir ) 10m --SABİT
-KONTROL|ANDROID|ANDROID
-KAMERA|VAR|VAR
-KURULUM|.img dosyası üzerinden |Elle kurulum
+**HABERLESME** |UDP |TCP
+**MESAFE** | (WiFi Dongle göre değişir) 10m -- HAREKETLİ| (WiFi Dongle göre değişir ) 10m --SABİT
+**KONTROL**|ANDROID|ANDROID
+**KAMERA**|VAR|VAR
+**KURULUM**|.img dosyası üzerinden |Elle kurulum
 # V2 ILE BIRLIKTE GELEN YENILIKLER
 * Doğrudan araca bağlanabilme,sabit bir Wi-Fi modeme bağlı kalmadan araç üstünde oluşturulan hotspot'a bağlanabilme ve kullanabilme (Raspberry pi üzerinde hotspot oluşturuldu).
 * Araç ile telefon haberleşme yazılımında iyileştirme
