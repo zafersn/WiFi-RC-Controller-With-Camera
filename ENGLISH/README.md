@@ -23,6 +23,6 @@
 #--------------------------------V1--------------------------------
 ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/wifi_rasp%20to%20android2.png)
 
-# For English description and setup information, [Click here!](README-EN.md)  <br><br>
+# For English description and setup information, [Click here!](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/ENGLISH/V1)  <br><br>
 
  
