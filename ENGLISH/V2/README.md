@@ -48,6 +48,7 @@ Example:<br>
 
 
 
+
 [![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/youtbeT2.png)](https://youtu.be/D4ewbO-OGLY)
 <p align="center"> <b>L298 - Dual Full Bridge Driver</b>
 <img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/wificontrol.png"  />
@@ -82,7 +83,7 @@ Raspberry pi setup is quite simple. First, <br>
 Win32DiskImager is the program that is required to print the operating system to the SD card.  [**Click**](http://www.gezginler.net/indir/win32-disk-imager.html) to download
 
 ## 1. Raspbian Operating System Downloads;
-We will need to write the  the   operating system contains vehicle control software.The point to be noted here is that when selecting the operating systems listed below, download it according to the Wi-Fi module in your hand and print it to the sd card.Modems supported by Operating Systems and Operating Systems are given below.
+We will need to write the  the   operating system containing vehicle control software.The point to be noted here is that when selecting the operating systems listed below, download it according to the Wi-Fi module in your hand and print it to the sd card.Modems supported by Operating Systems and Operating Systems are given below.
 <br>
 ### Downloadable operating system for Raspberry Pi 3
 We have 2 alternative methods for Raspberry pi 3;<br>
@@ -100,7 +101,7 @@ We have 2 alternative methods for Raspberry pi 3;<br>
 
 
 Wi-Fi devices and chipsets we have available and tested for this option  
-<br> Hangisini kullanayým sülo <br>
+<br> Hangisini kullanayım sülo <br>
 For this option, we have avaible and tested wifi devces and chipsets.
 <br>
 
@@ -161,11 +162,11 @@ Let's briefly explain the working principle and the introduction of the applicat
  IV. Follow Me (Vey Soon). (Following the car its owner.)<br>
  
  * To that 4 basis;
-* Main details using direction control of the car was told in `Arduino` section. If we explain to the Android side, there will be available `Seek bar (Velocity setting)`, `Camera On / Off`,`Wi-Fi status indicator` and `Arrow keys`.<br><br> ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/Screenshot_description_en.png)<br><br>
+* Main details using direction control of the car was told in `Arduino` section. If we explain to the Android side, there will be available `Seek bar (Velocity setting)`, `Camera On / Off`,`Wi-Fi status indicator` and `Arrow keys`.<br><br> ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/Screenshot_description_en.png)<br><br>
 
 * **Seek bar(Velocity setting)**is created from 15 slice and velocity coefficient is 17. So any move of the Seek bar, there will be changing 17 and its multiples. For instance, If Seek bar in fifth order, produced pwm = 5*17 = 85.
 
-* **Menu keys (Camera On/Off and WiFi Indicator)** Other vehicle control functions beside Seekbar 'ýn;<br> Camera on / off button for taking the camera image through the vehicle " ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/ic_eye.png) `Open` ", " ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/ic_eye_off.png) `CLOSE` ", In the same way, an indication of whether our application is connected to the Wi-Fi network we created on Raspberry Pi."<br> ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/ic_wifi_on.png) `NOT CONNECTED` ", " ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/ic_wifi_off.png) `CONNECTED` "
+* **Menu keys (Camera On/Off and WiFi Indicator)** Other vehicle control functions beside Seekbar 'ın;<br> Camera on / off button for taking the camera image through the vehicle " ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/ic_eye.png) `Open` ", " ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/ic_eye_off.png) `CLOSE` ", In the same way, an indication of whether our application is connected to the Wi-Fi network we created on Raspberry Pi."<br> ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/ic_wifi_on.png) `NOT CONNECTED` ", "![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/ic_wifi_off.png) `CONNECTED` "
 
 * **Arrow keys** provide seperating directions of data which take from Seek bar(Velocity setting). For moving direction of the car, `+` or `-` sign come to head of the PWM value.<br>
 **For example:**
@@ -194,10 +195,10 @@ Let's briefly explain the working principle and the introduction of the applicat
 
 
 
-## TEST VÝDEO:
+## TEST VIDEO:
 [![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/testvd1.png)](https://youtu.be/qbkH2KFcKqw)
-[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/play_video2.png)](https://youtu.be/CT-hgXIPRIk)
-<br><br>
+[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/play_video2.png)](https://youtu.be/CT-hgXIPRIk)<br><br>
+
 
 
 
