@@ -1,6 +1,6 @@
 # RASPBERRY PI- ARDUINO ANDROID-CONTROLLED RC-CAR ROVER WITH LIVE VIDEO STREAMING
 # ----------------------------- Pi_CAR -----------------------------
-[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/yotubeT1.png)](https://youtu.be/J8r_bX_RNzU)
+[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/yotubeT1.png)](https://youtu.be/J8r_bX_RNzU)
 
 ## Materials
 <br>
@@ -48,12 +48,12 @@ Example:<br>
 
 
 
-[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/youtbeT2.png)](https://youtu.be/D4ewbO-OGLY)
+[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/youtbeT2.png)](https://youtu.be/D4ewbO-OGLY)
 <p align="center"> <b>L298 - Dual Full Bridge Driver</b>
-<img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/wificontrol.png"  />
+<img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/wificontrol.png"  />
 </p>
 <p align="center"> <b>BTS7960 - 43A MOTOR DRIVE</b>
-<img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/BTS7960%20fritzing2.png"  />
+<img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images//images/BTS7960%20fritzing2.png"  />
 </p>
 
 
@@ -69,7 +69,7 @@ Example:<br>
 <br><br>
 * Again from `Tools` menu, you must show which port plugged to Arduino board. `Tools => port`
 * After realize all steps, now you can upload the codes to Arduino board. You can complete the uploading process by pressing `Upload` button from left-up corner of the program.<br><br><br>
-![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/ra2.png)
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/ra2.png)
 <br><br>
 ## RASPBERRY PI:
 ### PURPOSE AND MISSIONS:
@@ -100,7 +100,7 @@ We have 2 alternative methods for Raspberry pi 3;<br>
 
 
 Wi-Fi devices and chipsets we have available and tested for this option  
-<br> Hangisini kullanay˝m s¸lo <br>
+<br> Hangisini kullanay√Ωm s√ºlo <br>
 For this option, we have avaible and tested wifi devces and chipsets.
 <br>
 
@@ -116,7 +116,7 @@ Detailed information for other supported chipsets and devices:http://elinux.org/
 ## 2. Printing Operating System to Micro-SD Card
 We extract the downloaded image file from within the zip.Then we open the Win32DiskImager program we downloaded earlier. We choose our img file from the specified location.
 
-![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/win32diskimager.jpg)
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/win32diskimager.jpg)
 
 Once you are sure your Sd card is connected to the computer, you can see it in the Devices section. Then click on the write button and start burning. The writing process takes about 5-7 minutes. The completion of the writing process is indicated by the newly opened window "Write Successfull." Wait until you see the article.
 
@@ -129,7 +129,7 @@ All you need to do now is mount the Arduino to Raspberry via USB and mount it af
 <br>
 Video description:
 <br>
-[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/youtube%20play2.png)](https://youtu.be/yNLug0DhQlc)
+[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/youtube%20play2.png)](https://youtu.be/yNLug0DhQlc)
 
 ## ANDROID:
 
@@ -148,7 +148,7 @@ Video description:
 #### Raspberry Pi Connection Informations
 
 Once you've downloaded your Android app, you will see the following welcome : Now all you need to do is check the tool. screen.<br>
-![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/Screenshot_20161208-155537.png)
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/Screenshot_20161208-155537.png)
 <br>
 Let's briefly explain the working principle and the introduction of the application.
 #### APPLICATION DETAILS
@@ -165,7 +165,7 @@ Let's briefly explain the working principle and the introduction of the applicat
 
 * **Seek bar(Velocity setting)**is created from 15 slice and velocity coefficient is 17. So any move of the Seek bar, there will be changing 17 and its multiples. For instance, If Seek bar in fifth order, produced pwm = 5*17 = 85.
 
-* **Menu keys (Camera On/Off and WiFi Indicator)** Other vehicle control functions beside Seekbar '˝n;<br> Camera on / off button for taking the camera image through the vehicle " ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/ic_eye.png) `Open` ", " ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/ic_eye_off.png) `CLOSE` ", In the same way, an indication of whether our application is connected to the Wi-Fi network we created on Raspberry Pi."<br> ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/ic_wifi_on.png) `NOT CONNECTED` ", " ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/ic_wifi_off.png) `CONNECTED` "
+* **Menu keys (Camera On/Off and WiFi Indicator)** Other vehicle control functions beside Seekbar '√Ωn;<br> Camera on / off button for taking the camera image through the vehicle " ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/ic_eye.png) `Open` ", " ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/ic_eye_off.png) `CLOSE` ", In the same way, an indication of whether our application is connected to the Wi-Fi network we created on Raspberry Pi."<br> ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/ic_wifi_on.png) `NOT CONNECTED` ", " ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/ic_wifi_off.png) `CONNECTED` "
 
 * **Arrow keys** provide seperating directions of data which take from Seek bar(Velocity setting). For moving direction of the car, `+` or `-` sign come to head of the PWM value.<br>
 **For example:**
@@ -189,14 +189,14 @@ Let's briefly explain the working principle and the introduction of the applicat
 
 ### ICON OF OUR APPLICATION:
 
-![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/raspi_car.png)
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/raspi_car.png)
 
 
 
 
-## TEST V›DEO:
-[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/testvd1.png)](https://youtu.be/qbkH2KFcKqw)
-[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/play_video2.png)](https://youtu.be/CT-hgXIPRIk)
+## TEST V√ùDEO:
+[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/testvd1.png)](https://youtu.be/qbkH2KFcKqw)
+[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/play_video2.png)](https://youtu.be/CT-hgXIPRIk)
 <br><br>
 
 
@@ -206,7 +206,7 @@ Let's briefly explain the working principle and the introduction of the applicat
 #<p align="center"> <b>BRIEF AND ABSTRACT INSTALLATION</b></p>
 <br><br>
 <p align="center"> <b>FOR DETAIL INFORMATION AND INISTALLATION DETAILS, PLEASE START AT THE TOP OF THE PAGE.!!</b>
-<img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/raw.gif" alt="DETAYLI ANLATIM VE KURULUM" align="middle" />
+<img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images//images/raw.gif" alt="DETAYLI ANLATIM VE KURULUM" align="middle" />
 </p>
 
 ## **STEP 1:**
@@ -226,6 +226,6 @@ Download the Android control software from this  [**link**](https://play.google.
 **And the operation is complete. If you have correctly connected the Arduino motor drivers, you can now start checking the vehicle.**
 
 <p align="center">
- <a href="https://play.google.com/store/apps/details?id=com.stackcuriosity.tooght"><img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/Google.png"/></a>
+ <a href="https://play.google.com/store/apps/details?id=com.stackcuriosity.tooght"><img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images//images/Google.png"/></a>
 </p>
 
