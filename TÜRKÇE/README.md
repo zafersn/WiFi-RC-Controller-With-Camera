@@ -16,7 +16,7 @@
 
 #--------------------------------V2--------------------------------
 ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/rasp%20to%20android2.png)
-# Pi_CAR Version 2  Türkçe açıklama ve kurulum bilgileri için, [Buraya tıklayın!](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/TÜRKÇE/V2) 
+# Pi_CAR Version 2  Türkçe açıklama ve kurulum bilgileri için, [Buraya tıklayın!](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/TÜRKÇE/V2) **(TAVSİYE EDİLEN)**
 <br><br><br>
 
 #--------------------------------V1--------------------------------
