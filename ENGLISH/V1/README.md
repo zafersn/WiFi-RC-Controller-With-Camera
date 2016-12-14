@@ -6,8 +6,7 @@
 * Video streaming from RC-Car to mobile phone simultaneously
 * Follow Me (Very Soon)
 
-[![Screen Shot](images/yotubeT1.png)](https://youtu.be/J8r_bX_RNzU)
-
+[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/yotubeT1.png)](https://youtu.be/J8r_bX_RNzU)
 
 ## Materials
 * Arduino Nano
@@ -48,9 +47,9 @@ Example:<br>
 
 
 
-[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/youtbeT2.png)](https://youtu.be/D4ewbO-OGLY)
+[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/youtbeT2.png)](https://youtu.be/D4ewbO-OGLY)
 
-![Screen shot WiFi Maunt](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/wificontrol.png)
+![Screen shot WiFi Maunt](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/wificontrol.png)
 <br><br>
 * Connections among Arduino, Raspberry pi,Raspberry pi camera module, L298N motor driver, Motors and Power Supply are set up as above picture.
 * After connected Arduino pins and Raspberry pi as above picture, we can load our codes to Arduino. That do by this sequence:
@@ -59,11 +58,11 @@ Example:<br>
 * For uploading that project file to Arduino, first you must select the Arduino model from `Tools => Board` menu.<br><br>
 
 
-![Screen Shot RA1](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/ra1.png)
+![Screen Shot RA1](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/ra1.png)
 <br><br>
 * Again from `Tools` menu, you must show which port plugged to Arduino board. `Tools => port`
 * After realize all steps, now you can upload the codes to Arduino board. You can complete the uploading process by pressing `Upload` button from left-up corner of the program.<br><br><br>
-![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/ra2.png)
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/ra2.png)
 <br><br>
 
 ## RASPBERRY PI:
@@ -82,14 +81,14 @@ After connect with SSH, we must type that in order:<br>
 
 **I**	Write `sudo nano /etc/apt/sources.list`
 and press Enter. From coming screen;<br><br>
-![Screen Shot](images/r1.png)<br><br>
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/r1.png)
 
 **II.**	 Write `deb http://vontaene.de/raspbian-updates/ . main`
 command and exit the page with **CTRL + O  ==>  Y**  <br><br>
-![Screen Shot](images/r2.png)<br><br>
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/r2.png)
 
 **III.** Write 	`sudo apt-get update` and get latest updates. <br><br>
-![Screen Shot](images/r3.png)<br><br>
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/r3.png)<br><br>
 
 Then by turns, apply that steps:<br><br>
 
@@ -97,7 +96,7 @@ Then by turns, apply that steps:<br><br>
 
 **V.**	`sudo reboot`<br><br>
 
-**VI.**	`sudo apt-get install gstreamer-1.0`<br><br>![Screen Shot](images/r4.png)<br><br>
+**VI.**	`sudo apt-get install gstreamer-1.0`<br><br>![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/r4.png)<br><br>
 
 **VII.**	`sudo apt-get install gstreamer1.0-tools`<br><br>
 
@@ -115,7 +114,7 @@ Now we install the main file of the application;
 
 * 	Write `cd Wi-Fi-Gstreamer-Server` and enter in the file. You can see with `ls` command a `robotcontrolV1.pyc` named python application.<br><br>
 
-*  We need to move this file with `sudo cp robotcontrolV1.pyc /home/pi` command to our `/home/pi` directory. If you can't do this, application is not working correctly.<br><br><br>![Screen Shot](images/r5.png)<br><br>
+*  We need to move this file with `sudo cp robotcontrolV1.pyc /home/pi` command to our `/home/pi` directory. If you can't do this, application is not working correctly.<br><br><br>![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/r5.png)<br><br>
 
 *  In case of skip that steps successfully, we give our first start on the Raspberry Pi manually. Because, this is useful for us to see working this application.<br><br>
 
@@ -151,11 +150,11 @@ Now we install the main file of the application;
 
 ### USING THE APPLICATION AND HINTS
 #### Raspberry Pi Connection Informations
-* When the application is opened as a first, user see login screen as the following picture. You need to do in this screen, only entering the Wi-Fi informations which connected of Raspberry pi.<br><br>![Screen Shot](images/Screenshot_20160713-204215.png)<br><br>
+* When the application is opened as a first, user see login screen as the following picture. You need to do in this screen, only entering the Wi-Fi informations which connected of Raspberry pi.<br><br>![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/Screenshot_20160713-204215.png)<br><br>
 
-* Example entered informations:<br><br><br>![Screen Shot](images/Screenshot_20160713-204201.png)<br><br>
-* When you enter this infos succesfully, you will see the following welcome screen.<br><br>![Screen Shot](images/device-2016-06-30-195734.png)<br><br>
-*  If you don't connect to Raspberry pi for any situation and if you see the `The connection fails.Please try again.` screen, please check the Raspberry Pi connections and your connection infos. Because, the reason of the this error is your phone can't connect to `robotcontrolV1.pyc` file that your creating and executing.<br><br>![Screen Shot](images/Screenshot_20160713-204904.png)<br><br>
+* Example entered informations:<br><br><br>![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/Screenshot_20160713-204201.png)<br><br>
+* When you enter this infos succesfully, you will see the following welcome screen.<br><br>![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/device-2016-06-30-195734.png)<br><br>
+*  If you don't connect to Raspberry pi for any situation and if you see the `The connection fails.Please try again.` screen, please check the Raspberry Pi connections and your connection infos. Because, the reason of the this error is your phone can't connect to `robotcontrolV1.pyc` file that your creating and executing.<br><br>![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/Screenshot_20160713-204904.png)<br><br>
 * For solve that problem, you consider the `SETUP MAIN FILE` section again and check the installation.
 
 #### APPLICATION DETAILS
@@ -166,7 +165,7 @@ Now we install the main file of the application;
  II. Transfer live video streaming from car to user.<br><br>
  III. Follow Me (Vey Soon). (Following the car its owner.)<br><br>
 * To that 3 basis;
-* Main details using direction control of the car was told in `Arduino` section. If we explain to the Android side, there will be available `Seek bar (Velocity setting)` and `Arrow keys`.<br><br> ![Screen Shot](images/device-2016-06-30-195734 english information.png)<br><br>
+* Main details using direction control of the car was told in `Arduino` section. If we explain to the Android side, there will be available `Seek bar (Velocity setting)` and `Arrow keys`.<br><br> ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/device-2016-06-30-195734 english information.png)<br><br>
 *  **Seek bar(Velocity setting)**is created from 15 slice and velocity coefficient is 17. So any move of the Seek bar, there will be changing 17 and its multiples. For instance, If Seek bar in fifth order, produced pwm = 5*17 = 85.
 * **Arrow keys** provide seperating directions of data which take from Seek bar(Velocity setting). For moving direction of the car, `+` or `-` sign come to head of the PWM value.<br>
 **For example:**
@@ -181,19 +180,19 @@ Now we install the main file of the application;
 * When our car moving to right cross and left cross, motors' PWM value which will be turning side decreases, and so this provides slower motor rotating. So, the car can achieve the intended turnings. **This rotating sensitivity setting let to user.**<br><br>
 * The formula for calculating cross turnings: **PWM VALUE - ((PWM VALUE) / PWM RATE)**<br><br>
 * In default, PWM RATE is `2`.<br><br>
-* You can reach the PWM RATE setting from right-top button in the screen and from there to `Settings` menu.<br><br>![Screen Shot](images/Screenshot_20160713-205757.png)<br><br>![Screen Shot](images/Screenshot_20160713-205807.png)<br><br>
+* You can reach the PWM RATE setting from right-top button in the screen and from there to `Settings` menu.<br><br>![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/Screenshot_20160713-205757.png)<br><br>![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/Screenshot_20160713-205807.png)<br><br>
 *  PWM interval which can be entered is a value as a **minimum and maximimum between 1-4 interval in integer and double type**.<br><br>
  
 
 
 ### ICON OF OUR APPLICATION:
 
-![Screen Shot](images/raspi_car.png)
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/raspi_car.png)
 
 
 
 
 ## TEST VİDEO:
-[![Screen Shot](images/testvd1.png)](https://youtu.be/qbkH2KFcKqw)<br><br><br>
+[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/testvd1.png)](https://youtu.be/qbkH2KFcKqw)<br><br><br>
 **English translator: Mustafa YEMURAL**<br>
 **Thanks Mr. YEMURAL**
