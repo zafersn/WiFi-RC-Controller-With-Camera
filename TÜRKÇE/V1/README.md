@@ -7,7 +7,7 @@
 * Fallow Me (Çok yakında)
 
 
-[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/yotubeT1.png)](https://youtu.be/J8r_bX_RNzU)
+[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/yotubeT1.png)](https://youtu.be/J8r_bX_RNzU)
 
 
 ## Kullanılan Malzemeler
