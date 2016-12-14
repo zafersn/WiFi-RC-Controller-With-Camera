@@ -7,7 +7,7 @@
 
 Product Name| Piece
 ----| ---- 
-Arduino Nano| 1
+Arduino Nano / UNO / Mega| 1
 Raspberry Pi| 1
 Raspberry Pi Camera Module| 1
 Wi-Fi Dongle| 1
