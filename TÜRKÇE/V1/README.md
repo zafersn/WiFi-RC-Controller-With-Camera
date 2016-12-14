@@ -7,7 +7,7 @@
 * Fallow Me (Çok yakında)
 
 
-[![Screen Shot](images/yotubeT1.png)](https://youtu.be/J8r_bX_RNzU)
+[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/yotubeT1.png)](https://youtu.be/J8r_bX_RNzU)
 
 
 ## Kullanılan Malzemeler
@@ -47,9 +47,9 @@
 
 
 
-[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/youtbeT2.png)](https://youtu.be/D4ewbO-OGLY)
+[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/youtbeT2.png)](https://youtu.be/D4ewbO-OGLY)
 
-![Screen shot WiFi Maunt](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/wificontrol.png)
+![Screen shot WiFi Maunt](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/wificontrol.png)
 <br><br>
 * Arduino, Raspberry pi,Raspberry pi camera modülü, L298N motor sürücü, Motorlar, Güç kaynağının bağlantılarını  yukarıdaki resimdeki gibi gerçekleştiriniz.
 * Yukarıdaki şekildeki gibi arduino pin bağlantılarını ve raspberry pi bağlantısını  gerçekleştirdikten sonra yapmamız gereken arduino kodlarımızı yüklemek olacaktır.<br>
@@ -62,12 +62,12 @@
 **III.** Açılan proje dosyasını arduino' ya yüklemek için sıra ile  sekmelerden `Tools` => `Board`  ve buradan kullandığınız arduino modelinizi seçiniz.<br><br>
 
 
-![Screen Shot RA1](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/ra1.png)
+![Screen Shot RA1](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/images/ra1.png)
 <br><br>
 **IV.** Tekrar `Tools` sekmesinden takmış olduğunuz arduino' nuzun hangi port' a takılı olduğunu gösteriniz.  `Tools` => `port`<br>
 
 **V.** Yukarıdaki adımları gerçekleştirdikten sonra şimdi programımızı arduino' muza yükleyebiliriz.Sol üst köşede `Upload` butonuna basarak yükleme işlemini tamamlamış oluyoruz.<br><br>
-![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/ra2.png)
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/ra2.png)
 <br><br>
 
 ## RASPBERRY PI:
@@ -86,14 +86,14 @@ SSH ile bağlandıktan sonra terminal ekranından sıra ile ;<br>
 
 **I.**	`sudo nano /etc/apt/sources.list`<br><br>
 Yazıp enter’a basınız. Açılan ekranda<br><br>
-![Screen Shot](images/r1.png)
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/r1.png)
 
 **II.**	`deb http://vontaene.de/raspbian-updates/ . main`<br><br>
 Komutunu yazınız ve **CTRL + O  ==>  Y** diyerek sayfadan ayrılınız. <br><br>
-![Screen Shot](images/r2.png)
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/r2.png)
 
 **III.**	`sudo apt-get update`<br><br>
-![Screen Shot](images/r3.png)<br><br>
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/r3.png)<br><br>
 
 Diyerek en son güncelemeyi alınız.Daha sonra aşağıdaki adımları sıra ile uygulayınız.<br><br>
 
@@ -101,7 +101,7 @@ Diyerek en son güncelemeyi alınız.Daha sonra aşağıdaki adımları sıra il
 
 **V.**	`sudo reboot`<br><br>
 
-**VI.**	`sudo apt-get install gstreamer-1.0`<br><br>![Screen Shot](images/r4.png)<br><br>
+**VI.**	`sudo apt-get install gstreamer-1.0`<br><br>![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/r4.png)<br><br>
 
 **VII.**	`sudo apt-get install gstreamer1.0-tools`<br><br>
 
@@ -125,7 +125,7 @@ Ve bu adımlar sonrasında başarı ile gstreamer paketini kurmuş olduk.
 
 * 	` cd Wi-Fi-Gstreamer-Server ` diyerek bu dosyanın içine giriyoruz. Burada `ls` diyerek `robotcontrolV1.pyc` adında python uygulamamız görünecektir.
 
-* 	`robotcontrolV1.pyc` dosyamızı `sudo cp robotcontrolV1.pyc /home/pi` diyerek mutlaka dosyamızı `/home/pi` dizinine taşımamız gerekmektedir. Aksi taktirde telefon uygulamasından bağlanılamayacaktır.<br>![Screen Shot](images/r5.png)
+* 	`robotcontrolV1.pyc` dosyamızı `sudo cp robotcontrolV1.pyc /home/pi` diyerek mutlaka dosyamızı `/home/pi` dizinine taşımamız gerekmektedir. Aksi taktirde telefon uygulamasından bağlanılamayacaktır.<br>![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/r5.png)
 
 *  Bu aşamaların başarıyla gerçekleşmesi durumunda uygulamamızın ilk startı raspberry pi üzerinde manuel olarak verelim.Çünkü buraya kadar çalıştığını görmemiz faydalı olacaktır.
 
@@ -161,11 +161,11 @@ Ve bu adımlar sonrasında başarı ile gstreamer paketini kurmuş olduk.
 
 ### UYGULAMA KULLANIMI VE İPUCULARI
 #### Raspberry pi bağlantı bilgileri
-* Uygulamamız ilk açıldığında aşağıdaki gibi bir giriş erkranı kullanıcıyı karşılamaktadır.Bu ekran' da yapmanız gereken raspberry pi' nizin bağlı bulunduğu Wi-Fi ağdaki bilgilerinin girilmesi.<br>![Screen Shot](images/device-2016-06-30-193829.png)<br>
+* Uygulamamız ilk açıldığında aşağıdaki gibi bir giriş erkranı kullanıcıyı karşılamaktadır.Bu ekran' da yapmanız gereken raspberry pi' nizin bağlı bulunduğu Wi-Fi ağdaki bilgilerinin girilmesi.<br>![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/device-2016-06-30-193829.png)<br>
 
-* Örnek bir raspberry pi bilgileri girilmiş şekli<br><br>![Screen Shot](images/device-2016-06-30-200150.png)<br>
-* Bu bilgileri başarı ile girildiğinde aşağıdaki kontrol arayüzünün sizi karşılaması gerekmektedir.<br><br>![Screen Shot](images/device-2016-06-30-195734.png)
-* Eğer raspberry pi' nize herhangi bir nedenden dolayı kontrol ekranına ulaşamazsanız ve aşağıdaki resimdeki gibi `Balantı başarısız. Lütfen tekrar deneyiniz.` hatasını alıyor iseniz.Lütfen raspberry pi bağlantı ayarlarınızı,bağlantı bilgilerinizi kontrol ediniz.Çünkü bu hatanın sebebi, telefonun raspberry pi' de oluşturduğumuz ve çalıştırdığımız `robotcontrolV1.pyc` bağlanamamasından ötürüdür.<br>![Screen Shot](images/device-2016-07-08-001102.png)
+* Örnek bir raspberry pi bilgileri girilmiş şekli<br><br>![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/device-2016-06-30-200150.png)<br>
+* Bu bilgileri başarı ile girildiğinde aşağıdaki kontrol arayüzünün sizi karşılaması gerekmektedir.<br><br>![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/device-2016-06-30-195734.png)
+* Eğer raspberry pi' nize herhangi bir nedenden dolayı kontrol ekranına ulaşamazsanız ve aşağıdaki resimdeki gibi `Balantı başarısız. Lütfen tekrar deneyiniz.` hatasını alıyor iseniz.Lütfen raspberry pi bağlantı ayarlarınızı,bağlantı bilgilerinizi kontrol ediniz.Çünkü bu hatanın sebebi, telefonun raspberry pi' de oluşturduğumuz ve çalıştırdığımız `robotcontrolV1.pyc` bağlanamamasından ötürüdür.<br>![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/device-2016-07-08-001102.png)
 * Bu hatanın çözümü için `Raspberry Pi ANA KURULUM` bölümünde anlatılan adımların tekrar gözden geçirmeniz ve kurulumu kontrol etmeniz gerekmektedir.
 
 #### UYGULAMA DETAYLARI
@@ -176,7 +176,7 @@ Ve bu adımlar sonrasında başarı ile gstreamer paketini kurmuş olduk.
   2. Kullanıcıya araç üzerindeki kameradan canlı görüntünün aktarılması.<br>
   3. Fallow Me (Çok yakında).(Aracın sahibini takip etmesi).<br>
 * Bu üç temel esasa göre 
-*  Aracın yön kontrolünde kullanılan mantığın ana detaylarını `Arduino` bölümde anlattık.Android tarafına bakan kısmı ile açıklayacak olursak.Android tarafında, kullanıcı için `Seek bar (Hız ayarı)` ve `Yön tuşları` mevcuttur.<br> ![Screen Shot](images/kontrol_ekrani_anlatim.png)<br>
+*  Aracın yön kontrolünde kullanılan mantığın ana detaylarını `Arduino` bölümde anlattık.Android tarafına bakan kısmı ile açıklayacak olursak.Android tarafında, kullanıcı için `Seek bar (Hız ayarı)` ve `Yön tuşları` mevcuttur.<br> ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/kontrol_ekrani_anlatim.png)<br>
 *  **Seek bar(Hız ayarı)** 15 dilimden oluşmaktadır ve hız katsayısı 17'dir.Yani seek bar' ın herbir hareketi pwm'de 17'nin katları şeklinde bir oynama yapmaktadır.Seek bar 5. kademede ise üretilen pwm= 5*17 = 85 'tir.
 *  **Yön tuşları** seek bar(Hız ayarı)'dan alınan verinin yönlere ayrılmasını sağlar. Aracın gidiş yönüne göre pwm değerinin başına `+` ve ya `-` işareti getirilir. **Örn;**<br><br>
  200:200     // ileri git. ( 2 motorda 200pwm ile çalışır )<br>
@@ -189,17 +189,17 @@ Ve bu adımlar sonrasında başarı ile gstreamer paketini kurmuş olduk.
 * Aracımızın sağ çağraz ve sol çapraz hareketleri yaparken dönüş yapılacak taraftaki motorların pwm değerleri düşürülür ve böylece motorların daha yavaş dönmesi sağlanır.Bu sayede araç istenilen hassasiyette çarpraz dönüşleri gerçekleştirebilir.**Bu dönüş hareketlerinin hassasiyet ayarlaması kullanıcıya bırakılmıştır.**
 * Çapraz dönüşlerin hassasiyetinin hesaplanmasında kullanılan formül : **`PWM DEĞERİ - (PWM DEĞERİ / PWM ORANI)`** 'dır.
 * PWM ORANI varsayılan olarak `2` gelmektedir.
-* PWM ORANI ayarını, kontrol ekranın da sağ üst köşede `Ayarlar` butonundan tekrar `Ayarlar` sekmesine basarak ulaşabilirsiniz.<br>![Screen Shot](images/device-2016-07-07-230804.png)<br>![Screen Shot](images/device-2016-07-07-230848.png)<br><br>
+* PWM ORANI ayarını, kontrol ekranın da sağ üst köşede `Ayarlar` butonundan tekrar `Ayarlar` sekmesine basarak ulaşabilirsiniz.<br>![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/device-2016-07-07-230804.png)<br>![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/device-2016-07-07-230848.png)<br><br>
 * Girebileceğinz PWM ORANI aralığı **minimum ve maksimum olarak 1-4 arasında integer ve double tipinde** değerlerdir.
  
 
 
 ### UYGULAMA ICON 'UMUZ:
 
-![Screen Shot](images/raspi_car.png)
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/raspi_car.png)
 
 
 
 
 ## TEST VİDEO:
-[![Screen Shot](images/testvd1.png)](https://youtu.be/qbkH2KFcKqw)
+[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/testvd1.png)](https://youtu.be/qbkH2KFcKqw)
