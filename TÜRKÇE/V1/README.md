@@ -90,7 +90,7 @@ Yazıp enter’a basınız. Açılan ekranda<br><br>
 
 **II.**	`deb http://vontaene.de/raspbian-updates/ . main`<br><br>
 Komutunu yazınız ve **CTRL + O  ==>  Y** diyerek sayfadan ayrılınız. <br><br>
-![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/r2.png)
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/r2.png)
 
 **III.**	`sudo apt-get update`<br><br>
 ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/r3.png)<br><br>
