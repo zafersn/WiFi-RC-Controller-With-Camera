@@ -1,112 +1,112 @@
 # RASPBERRY PI- ARDUINO ANDROID-CONTROLLED RC-CAR ROVER WITH LIVE VIDEO STREAMING
 # ----------------------------- Pi_CAR -----------------------------
 
-[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/yotubeT1.png)](https://youtu.be/J8r_bX_RNzU)
+[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/yotubeT1.png)](https://youtu.be/J8r_bX_RNzU)
 
 
-## Kullanılan Malzemeler
+## KullanÄ±lan Malzemeler
 <br>
 
-Malzeme Adı| Adet
+Malzeme AdÄ±| Adet
 ----| ---- 
 Arduino Nano| 1
 Raspberry Pi| 1
-Raspberry Pi Camera Modülü| 1
-Wi-Fi Adaptör| 1
-L298N,BTS7960,L293 Motor Sürücü| 1 yada 2 
+Raspberry Pi Camera ModÃ¼lÃ¼| 1
+Wi-Fi AdaptÃ¶r| 1
+L298N,BTS7960,L293 Motor SÃ¼rÃ¼cÃ¼| 1 yada 2 
 DC MOTOR|  2  yada   4
 12V Lipo Batarya| 1
 Jumper Kablo | ~
-Araç Şasi (Gövdesi)| 1
+AraÃ§ Åasi (GÃ¶vdesi)| 1
 <br>
 
 ## Arduino:
-### AMAÇ VE GÖREVLER:
-*	Arduino motorları kontrol etmek amacı ile kullanılmıştır.
-*	Arduino ile raspberry pi usb üzerinden seri haberleşme yapmaktadır.
-*	Android telefonumuz üzerinde arduino’ya gidecek olan pwm aralığı hesaplanıp gönderilmektedir.(Gelecek güncellemeler ve kullanıcının pwm değişkenine daha kolay müdahale edilmesi için)
-*	Aşağıda Raspberry pi, Raspberry pi Camera, Arduino, L298N Motor Sürücü,Motorlar ve Bataryanın devre bağlantı şeması gösterilmiştir. 
+### AMAÃ‡ VE GÃ–REVLER:
+*	Arduino motorlarÄ± kontrol etmek amacÄ± ile kullanÄ±lmÄ±ÅŸtÄ±r.
+*	Arduino ile raspberry pi usb Ã¼zerinden seri haberleÅŸme yapmaktadÄ±r.
+*	Android telefonumuz Ã¼zerinde arduinoâ€™ya gidecek olan pwm aralÄ±ÄŸÄ± hesaplanÄ±p gÃ¶nderilmektedir.(Gelecek gÃ¼ncellemeler ve kullanÄ±cÄ±nÄ±n pwm deÄŸiÅŸkenine daha kolay mÃ¼dahale edilmesi iÃ§in)
+*	AÅŸaÄŸÄ±da Raspberry pi, Raspberry pi Camera, Arduino, L298N Motor SÃ¼rÃ¼cÃ¼,Motorlar ve BataryanÄ±n devre baÄŸlantÄ± ÅŸemasÄ± gÃ¶sterilmiÅŸtir. 
 
  
-### ARDUINO KURULUMU VE PIN BAĞLANTI ŞEMASI
+### ARDUINO KURULUMU VE PIN BAÄLANTI ÅEMASI
 
-* Arduino 'ya gelen veri doğrudan motorlara gidecek pwm aralığı olarak gelmektedir.PWM değerinin yanında sadece aracın yön tayini için ` + (ileri)` ve ya `- (geri)` değerini almaktadır.
-* Yukarıdaki durum göz önüne alınarak çeşitli modifikasyonlar yapılabilir.
-* PWM aralığı `0-255` arasındadır.
-* Telefon üzerinden SAĞ VE SOL motor pwmlerini ve servo motor açısını String bir şekilde örn:  200:200!888 şeklinde alıyoruz. Aradaki iki nokta üst üste  `:` ve ünlem işareti `!` ' e göre bölerek 3 elemanlı bir dizi oluşturuyoruz.
-*  `!` den sonraki değer, cameranın bağlı bulunduğu servo motor'un açı değerleridir. Bu çalışmada servo motor kullanılmamıştır.<br><br>
-**Motor Hareket PWM Geliş Tipi ve Aracın Durumları**<br>
-örn:
+* Arduino 'ya gelen veri doÄŸrudan motorlara gidecek pwm aralÄ±ÄŸÄ± olarak gelmektedir.PWM deÄŸerinin yanÄ±nda sadece aracÄ±n yÃ¶n tayini iÃ§in ` + (ileri)` ve ya `- (geri)` deÄŸerini almaktadÄ±r.
+* YukarÄ±daki durum gÃ¶z Ã¶nÃ¼ne alÄ±narak Ã§eÅŸitli modifikasyonlar yapÄ±labilir.
+* PWM aralÄ±ÄŸÄ± `0-255` arasÄ±ndadÄ±r.
+* Telefon Ã¼zerinden SAÄ VE SOL motor pwmlerini ve servo motor aÃ§Ä±sÄ±nÄ± String bir ÅŸekilde Ã¶rn:  200:200!888 ÅŸeklinde alÄ±yoruz. Aradaki iki nokta Ã¼st Ã¼ste  `:` ve Ã¼nlem iÅŸareti `!` ' e gÃ¶re bÃ¶lerek 3 elemanlÄ± bir dizi oluÅŸturuyoruz.
+*  `!` den sonraki deÄŸer, cameranÄ±n baÄŸlÄ± bulunduÄŸu servo motor'un aÃ§Ä± deÄŸerleridir. Bu Ã§alÄ±ÅŸmada servo motor kullanÄ±lmamÄ±ÅŸtÄ±r.<br><br>
+**Motor Hareket PWM GeliÅŸ Tipi ve AracÄ±n DurumlarÄ±**<br>
+Ã¶rn:
 *  0:0      //stop
-* 200:200     // ileri git. ( 2 motorda 200pwm ile çalışır )
-*  -200:-200   //geri git. (2 motorda 200pwm ile çalışır)
-*  200:-200   // sol motor 200 pwm ileri, sag motor 200 geri döner ( araç kendi etrafında soldan sağa doğru döner)
-* -200:200   // sol motor 200 pwm geri, sag motor 200 ileri döner ( araç kendi etrafında sağdan sola doğru döner)
-* 200:100    // araç sağa dönecek şekilde hareket eder.<br><br>
+* 200:200     // ileri git. ( 2 motorda 200pwm ile Ã§alÄ±ÅŸÄ±r )
+*  -200:-200   //geri git. (2 motorda 200pwm ile Ã§alÄ±ÅŸÄ±r)
+*  200:-200   // sol motor 200 pwm ileri, sag motor 200 geri dÃ¶ner ( araÃ§ kendi etrafÄ±nda soldan saÄŸa doÄŸru dÃ¶ner)
+* -200:200   // sol motor 200 pwm geri, sag motor 200 ileri dÃ¶ner ( araÃ§ kendi etrafÄ±nda saÄŸdan sola doÄŸru dÃ¶ner)
+* 200:100    // araÃ§ saÄŸa dÃ¶necek ÅŸekilde hareket eder.<br><br>
  
 
 
 
-[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/youtbeT2.png)](https://youtu.be/D4ewbO-OGLY)
+[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/youtbeT2.png)](https://youtu.be/D4ewbO-OGLY)
 
-<p align="center"> <b>L298 - Dual Full Bridge Driver</b>
-<img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/wificontrol.png"  />
+<p align="center"> <b>L298 - Motor SÃ¼rÃ¼cÃ¼</b>
+<img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/wificontrol.png"  />
 </p>
-<p align="center"> <b>BTS7960 - 43A MOTOR DRIVE</b>
-<img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/BTS7960%20fritzing2.png"  />
+<p align="center"> <b>BTS7960 - 43A MOTOR SÃ¼rÃ¼cÃ¼</b>
+<img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images//images/BTS7960%20fritzing2.png"  />
 </p>
 <br><br>
-* Arduino, Raspberry pi,Raspberry pi camera modülü, L298N motor sürücü, Motorlar, Güç kaynağının bağlantılarını  yukarıdaki resimdeki gibi gerçekleştiriniz.
-* Yukarıdaki şekildeki gibi arduino pin bağlantılarını ve raspberry pi bağlantısını  gerçekleştirdikten sonra yapmamız gereken arduino kodlarımızı yüklemek olacaktır.<br>
-**Bunu sıra ile şu  şekilde yapabilirsiniz.<br>**
+* Arduino, Raspberry pi,Raspberry pi camera modÃ¼lÃ¼, L298N motor sÃ¼rÃ¼cÃ¼, Motorlar, GÃ¼Ã§ kaynaÄŸÄ±nÄ±n baÄŸlantÄ±larÄ±nÄ±  yukarÄ±daki resimdeki gibi gerÃ§ekleÅŸtiriniz.
+* YukarÄ±daki ÅŸekildeki gibi arduino pin baÄŸlantÄ±larÄ±nÄ± ve raspberry pi baÄŸlantÄ±sÄ±nÄ±  gerÃ§ekleÅŸtirdikten sonra yapmamÄ±z gereken arduino kodlarÄ±mÄ±zÄ± yÃ¼klemek olacaktÄ±r.<br>
+**Bunu sÄ±ra ile ÅŸu  ÅŸekilde yapabilirsiniz.<br>**
 
-**I.** Arduino kodlarının açıklamaları ve ne işe yaradığı ile ilgili detaylı bilgi kodların içinde mevcuttur.<br>
+**I.** Arduino kodlarÄ±nÄ±n aÃ§Ä±klamalarÄ± ve ne iÅŸe yaradÄ±ÄŸÄ± ile ilgili detaylÄ± bilgi kodlarÄ±n iÃ§inde mevcuttur.<br>
 
-**II.** `androidToRaspberry.ino` adlı arduino kodumuzu bu [**linteken**](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/androidToRaspberryTurkce) indirerek ve çift tıklayarak açınız.<br>
+**II.** `androidToRaspberry.ino` adlÄ± arduino kodumuzu bu [**linteken**](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/androidToRaspberryTurkce) indirerek ve Ã§ift tÄ±klayarak aÃ§Ä±nÄ±z.<br>
 
-**III.** Açılan proje dosyasını arduino' ya yüklemek için sıra ile  sekmelerden `Tools` => `Board`  ve buradan kullandığınız arduino modelinizi seçiniz.<br><br>
+**III.** AÃ§Ä±lan proje dosyasÄ±nÄ± arduino' ya yÃ¼klemek iÃ§in sÄ±ra ile  sekmelerden `Tools` => `Board`  ve buradan kullandÄ±ÄŸÄ±nÄ±z arduino modelinizi seÃ§iniz.<br><br>
 
 
-![Screen Shot RA1](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/ra1.png)
+![Screen Shot RA1](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/ra1.png)
 <br><br>
-**IV.** Tekrar `Tools` sekmesinden takmış olduğunuz arduino' nuzun hangi port' a takılı olduğunu gösteriniz.  `Tools` => `port`<br>
+**IV.** Tekrar `Tools` sekmesinden takmÄ±ÅŸ olduÄŸunuz arduino' nuzun hangi port' a takÄ±lÄ± olduÄŸunu gÃ¶steriniz.  `Tools` => `port`<br>
 
-**V.** Yukarıdaki adımları gerçekleştirdikten sonra şimdi programımızı arduino' muza yükleyebiliriz.Sol üst köşede `Upload` butonuna basarak yükleme işlemini tamamlamış oluyoruz.<br><br>
-![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/ra2.png)
+**V.** YukarÄ±daki adÄ±mlarÄ± gerÃ§ekleÅŸtirdikten sonra ÅŸimdi programÄ±mÄ±zÄ± arduino' muza yÃ¼kleyebiliriz.Sol Ã¼st kÃ¶ÅŸede `Upload` butonuna basarak yÃ¼kleme iÅŸlemini tamamlamÄ±ÅŸ oluyoruz.<br><br>
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/ra2.png)
 <br><br>
 
 ## RASPBERRY PI:
-### AMAÇ VE GÖREVLER:
+### AMAÃ‡ VE GÃ–REVLER:
 
-* Raspberry pi camera modülü kullanarak görüntünün alınması ve raspberry pi üzerinden telefona aktarılması.
-* Arduino ve Telefon arasında bağlantının kurulması.
+* Raspberry pi camera modÃ¼lÃ¼ kullanarak gÃ¶rÃ¼ntÃ¼nÃ¼n alÄ±nmasÄ± ve raspberry pi Ã¼zerinden telefona aktarÄ±lmasÄ±.
+* Arduino ve Telefon arasÄ±nda baÄŸlantÄ±nÄ±n kurulmasÄ±.
 
 ### RASPBERRY PI KURULUMU:
-Raspberry pi kurulumu oldukça basittir.Öncelikle,
+Raspberry pi kurulumu oldukÃ§a basittir.Ã–ncelikle,
 
-Win32DiskImager SD karta işletim sistemi yazdırmamız için gerekli olan programdır.
-İndirmek için [**Tıklayınız**](http://www.gezginler.net/indir/win32-disk-imager.html)
+Win32DiskImager SD karta iÅŸletim sistemi yazdÄ±rmamÄ±z iÃ§in gerekli olan programdÄ±r.
+Ä°ndirmek iÃ§in [**TÄ±klayÄ±nÄ±z**](http://www.gezginler.net/indir/win32-disk-imager.html)
 
-## 1. Raspbian İşletim Sistemi İndirme;
-Raspberry pi mize kuracağımız araç kontrol yazılımlarınıda içinde bulunduran işletim sistemini SD karta yazdımamız gerekmektedir.Burada DİKKAT edilmesi gereken nokta, aşağıda linkleri verilen işletim sistemlerini seçerken elinizde bulunan Wi-Fi adaptörlere göre 
-işletim sistemini indirmeniz ve sd karta yazdırmanızdır.İşletim sistemleri ve destekledikleri modemler aşağıda verilmektedir.
+## 1. Raspbian Ä°ÅŸletim Sistemi Ä°ndirme;
+Raspberry pi mize kuracaÄŸÄ±mÄ±z araÃ§ kontrol yazÄ±lÄ±mlarÄ±nÄ±da iÃ§inde bulunduran iÅŸletim sistemini SD karta yazdÄ±mamÄ±z gerekmektedir.Burada DÄ°KKAT edilmesi gereken nokta, aÅŸaÄŸÄ±da linkleri verilen iÅŸletim sistemlerini seÃ§erken elinizde bulunan Wi-Fi adaptÃ¶rlere gÃ¶re 
+iÅŸletim sistemini indirmeniz ve sd karta yazdÄ±rmanÄ±zdÄ±r.Ä°ÅŸletim sistemleri ve destekledikleri modemler aÅŸaÄŸÄ±da verilmektedir.
 
-### Raspberry Pi 3  İçin indirilebilir işletim sistemi
-Raspberry pi 3 için 2 alternatif yöntemimiz vardır;<br>
+### Raspberry Pi 3  Ä°Ã§in indirilebilir iÅŸletim sistemi
+Raspberry pi 3 iÃ§in 2 alternatif yÃ¶ntemimiz vardÄ±r;<br>
 
-1. si doğrudan raspberry pi üzerindeki dahili Wi-Fi kullanmak. <br>
-2. Harici olarak USB Wi-Fi adaptör kullanmak(Mesafe ve veri hızı bakımından tavsiye edilen yöntemdir. Tabi bu kullanacağınız Wi-Fi adaptöre göre değişebilir.)
+1. si doÄŸrudan raspberry pi Ã¼zerindeki dahili Wi-Fi kullanmak. <br>
+2. Harici olarak USB Wi-Fi adaptÃ¶r kullanmak(Mesafe ve veri hÄ±zÄ± bakÄ±mÄ±ndan tavsiye edilen yÃ¶ntemdir. Tabi bu kullanacaÄŸÄ±nÄ±z Wi-Fi adaptÃ¶re gÃ¶re deÄŸiÅŸebilir.)
 <br>
 
-### 1.Pi_CAR'I Raspberry pi 2 için ya da  raspberry pi 3'ün Üzerindeki dahili Wi-Fi modülü kullanarak yönetmek istiyorsanız.Bu [**linteki**](https://drive.google.com/file/d/0B6yjwSAqPTgfX1dsaVVJZThEN2c/view?usp=sharing) işletim sistemini indirerek SD karta yazdırınız.
+### 1.Pi_CAR'I Raspberry pi 2 iÃ§in ya da  raspberry pi 3'Ã¼n Ãœzerindeki dahili Wi-Fi modÃ¼lÃ¼ kullanarak yÃ¶netmek istiyorsanÄ±z.Bu [**linteki**](https://drive.google.com/file/d/0B6yjwSAqPTgfX1dsaVVJZThEN2c/view?usp=sharing) iÅŸletim sistemini indirerek SD karta yazdÄ±rÄ±nÄ±z.
 
 
 
-### 2.Pi_CAR'I Raspberry pi 3 'ün  Üzerinden harici olarak taktığınız Wi-Fi modüşü kullarak yönetmek istiyorsanız.Bu [**linteki**](https://drive.google.com/file/d/0B6yjwSAqPTgfYkhxWEN2dXBIQlU/view?usp=sharing) işletim sistemini indiriniz.
+### 2.Pi_CAR'I Raspberry pi 3 'Ã¼n  Ãœzerinden harici olarak taktÄ±ÄŸÄ±nÄ±z Wi-Fi modÃ¼ÅŸÃ¼ kullarak yÃ¶netmek istiyorsanÄ±z.Bu [**linteki**](https://drive.google.com/file/d/0B6yjwSAqPTgfYkhxWEN2dXBIQlU/view?usp=sharing) iÅŸletim sistemini indiriniz.
 
 
 
-Bu seçenek için elimizde bulunan ve test ettiğimiz Wi-Fi cihazları ve çipsetleri
+Bu seÃ§enek iÃ§in elimizde bulunan ve test ettiÄŸimiz Wi-Fi cihazlarÄ± ve Ã§ipsetleri
 <br>
 
 Test Edilen cihazlar|CHIPSET
@@ -116,84 +116,87 @@ Tenda UH150 | RT2870/RT3070
 AWUS036NH | RT2870/RT3070
 <br>
 
-Desteklenen diğer çipsetler ve cihazlar için detaylı bilgi:http://elinux.org/RPi_USB_Wi-Fi_Adapters
+Desteklenen diÄŸer Ã§ipsetler ve cihazlar iÃ§in detaylÄ± bilgi:http://elinux.org/RPi_USB_Wi-Fi_Adapters
 
-## 2. İşletim Sistemini Micro-SD Kart’a Yazdırma
-İndirdiğimiz imaj dosyasını zip içerisinden çıkarıyoruz. Ardından daha önce indirdiğimiz win32diskImager programını açıyoruz. İmaj dosyamızı belirtilen yerden seçiyoruz.
+## 2. Ä°ÅŸletim Sistemini Micro-SD Kartâ€™a YazdÄ±rma
+Ä°ndirdiÄŸimiz imaj dosyasÄ±nÄ± zip iÃ§erisinden Ã§Ä±karÄ±yoruz. ArdÄ±ndan daha Ã¶nce indirdiÄŸimiz win32diskImager programÄ±nÄ± aÃ§Ä±yoruz. Ä°maj dosyamÄ±zÄ± belirtilen yerden seÃ§iyoruz.
 
-![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/win32diskimager.jpg)
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/win32diskimager.jpg)
 
-Sd kartınızın bilgisayara takılı olduğundan emin olduktan sonra Device kısmında görebilirsiniz. Ardından Write butonuna tıklayıp yazma işlemini başlatıyoruz. Yazma işlemi yaklaşık 2-3 dk sürmektedir. Yazma işleminin bitmesini yeni açılan pencerede "Write Succesful." yazısını görene kadar bekleyiniz.
+Sd kartÄ±nÄ±zÄ±n bilgisayara takÄ±lÄ± olduÄŸundan emin olduktan sonra Device kÄ±smÄ±nda gÃ¶rebilirsiniz. ArdÄ±ndan Write butonuna tÄ±klayÄ±p yazma iÅŸlemini baÅŸlatÄ±yoruz. Yazma iÅŸlemi yaklaÅŸÄ±k 2-3 dk sÃ¼rmektedir. Yazma iÅŸleminin bitmesini yeni aÃ§Ä±lan pencerede "Write Succesful." yazÄ±sÄ±nÄ± gÃ¶rene kadar bekleyiniz.
 
 
-![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/Write%20Succesful.png)
-## 3.Bağlantılar ve Çalıştırma
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/Write%20Succesful.png)
+## 3.BaÄŸlantÄ±lar ve Ã‡alÄ±ÅŸtÄ±rma
 
-Yazma işlemi tamamlandıktan sonra SD kartınızı bilgisayardan çıkartıp Raspberry pi'nize takabilirsiniz.
-Artık yapmanız gereken SADECE Raspberry' nize USB üzerinde bir Arduino takıp  gerekli güç ve motor sürücüleri bağlantılarını yaptıktan sonra araca monte etmenizdir.
+Yazma iÅŸlemi tamamlandÄ±ktan sonra SD kartÄ±nÄ±zÄ± bilgisayardan Ã§Ä±kartÄ±p Raspberry pi'nize takabilirsiniz.
+ArtÄ±k yapmanÄ±z gereken SADECE Raspberry' nize USB Ã¼zerinde bir Arduino takÄ±p  gerekli gÃ¼Ã§ ve motor sÃ¼rÃ¼cÃ¼leri baÄŸlantÄ±larÄ±nÄ± yaptÄ±ktan sonra araca monte etmenizdir.
 <br>
-Video'lu anlatım: 
+Video'lu anlatÄ±m: 
 <br>
-[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/youtube%20play2.png)](https://youtu.be/yNLug0DhQlc)
+[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/youtube%20play2.png)](https://youtu.be/yNLug0DhQlc)
 
 ## ANDROID:
 
-### AMAÇ VE GÖREVLERİ:
-* Raspberry pi ve arduino ile yapılmış olan rc-arabanın kontrolünü sağlamak.
-* Kullanıcı için sade ve kolay görsel arayüz.
-* Raspberry pi üzerinden kamera görüntüsünü alarak kullanıcıya göstermek.
+### AMAÃ‡ VE GÃ–REVLERÄ°:
+* Raspberry pi ve arduino ile yapÄ±lmÄ±ÅŸ olan rc-arabanÄ±n kontrolÃ¼nÃ¼ saÄŸlamak.
+* KullanÄ±cÄ± iÃ§in sade ve kolay gÃ¶rsel arayÃ¼z.
+* Raspberry pi Ã¼zerinden kamera gÃ¶rÃ¼ntÃ¼sÃ¼nÃ¼ alarak kullanÄ±cÄ±ya gÃ¶stermek.
 
 ### ANDROID UYGULAMA KURULUMU:
-* Uygulamanın kurulumu son derece basittir. Sadece yapılması gereken **ANDROID GOOGLE PLAY** markette giriş yapıldıktan sonra arama kutucuğuna, uygulamaya doğrudan erişmek için `com.stackcuriosity.tooght` ve ya uygulama ismi `RC CONTROLLER WITH CAMERA` yazmanız yeterlidir.<br>
+* UygulamanÄ±n kurulumu son derece basittir. Sadece yapÄ±lmasÄ± gereken **ANDROID GOOGLE PLAY** markette giriÅŸ yapÄ±ldÄ±ktan sonra arama kutucuÄŸuna, uygulamaya doÄŸrudan eriÅŸmek iÃ§in `com.stackcuriosity.tooght` ve ya uygulama ismi `RC CONTROLLER WITH CAMERA` yazmanÄ±z yeterlidir.<br>
+<p align="center">
+ <a href="https://play.google.com/store/apps/details?id=com.stackcuriosity.tooght"><img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/Google.png"/></a>
+</p>
 
-### UYGULAMA KULLANIMI VE İPUCULARI  <br>
+### UYGULAMA KULLANIMI VE Ä°PUCULARI  <br>
 
-#### Raspberry pi bağlantı bilgileri
-* Android uygulamanızı indirdikten sonra sizi aşağıdaki gibi bir ekran karşılayacaktır.Artık yapmanız gereken şey sadece aracı kontrol etmek olacaktır.
+#### Raspberry pi baÄŸlantÄ± bilgileri
+* Android uygulamanÄ±zÄ± indirdikten sonra sizi aÅŸaÄŸÄ±daki gibi bir ekran karÅŸÄ±layacaktÄ±r.ArtÄ±k yapmanÄ±z gereken ÅŸey sadece aracÄ± kontrol etmek olacaktÄ±r.
 <br>
-![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/Screenshot_20161208-155537.png)
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/Screenshot_20161208-155537.png)
 
-Uygulamanın çalışma prensibini ve tanıtımını kısaca açıklayalım.
+UygulamanÄ±n Ã§alÄ±ÅŸma prensibini ve tanÄ±tÄ±mÄ±nÄ± kÄ±saca aÃ§Ä±klayalÄ±m.
 
 #### UYGULAMA DETAYLARI
 
-##### 1. GÖRSEL ARAYÜZÜN AÇIKLANMASI VE PROGRAMLAMA MANTIĞI
-* **Uygulamamız 4 temel esasa dayanmaktadır.** Bunlar;
-  1. Aracın yön kontrolünün sağlanması.<br>
-  2. Kullanıcıya araç üzerindeki kameradan canlı görüntünün aktarılması.<br>
-  3. Aracın bağlantı sinyal seviyesi göstergesi.
-  4. Fallow Me (Çok yakında).(Aracın sahibini takip etmesi).<br>
-* Bu dört temel esasa göre 
-*  Aracın yön kontrolünde kullanılan mantığın ana detaylarını `Arduino` bölümde anlattık.Android tarafına bakan kısmı ile açıklayacak olursak.Android tarafında, kullanıcı için `Seek bar (Hız ayarı)` , `Kamera Açma / Kapama` ,`Wi-Fi durum göstergesi`  ve `Yön tuşları` mevcuttur.<br> ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/Screenshot_description_githup.png)<br>
-*  **Seek bar(Hız ayarı)** 15 dilimden oluşmaktadır ve hız katsayısı 17'dir.Yani seek bar' ın herbir hareketi pwm'de 17'nin katları şeklinde bir oynama yapmaktadır.Seek bar 5. kademede ise üretilen pwm= 5*17 = 85 'tir.
-*  **Menü tuşları (Kamera Aç/Kapa ve WiFi Göstergesi)** Seekbar 'ın yanında yer alan diğer araç kontrol fonksiyonları;<br> Kamera görüntüsünü araç üzerinden almamıza yarayan Kamera açma ve kapatma butonu " ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/ic_eye.png) AÇ ", " ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/ic_eye_off.png) KAPAT ", Aynı şekilde uygulamamızın Raspberry Pi üzerinde oluşturduğumuz Wi-Fi ağa bağlanıp bağlanılmadığını gösteren bir gösterge." ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/ic_wifi_on.png) BAĞLI DEĞİL", " ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/ic_wifi_off.png) BAĞLI "
-*  **Yön tuşları** seek bar(Hız ayarı)'dan alınan verinin yönlere ayrılmasını sağlar. Aracın gidiş yönüne göre pwm değerinin başına `+` ve ya `-` işareti getirilir. **Örn;**<br><br>
- 200:200     // ileri git. ( 2 motorda 200pwm ile çalışır )<br>
- -200:-200   //geri git. (2 motorda 200pwm ile çalışır)<br>
- 200:-200   // sol motor 200 pwm ileri, sag motor 200 geri döner ( araç kendi etrafında soldan sağa doğru döner)<br>
- -200:200   // sol motor 200 pwm geri, sag motor 200 ileri döner ( araç kendi etrafında sağdan sola doğru döner)<br>
- 200:100    // araç sağa dönecek şekilde hareket eder.<br><br> 
- * **Sinyal Seviye Göstergesi** Bu gösterge telefon ile araç arasındaki  bağlantının sinyal kalitesini ve uzaklığa göre değişen sinyal çekim seviyesinin kullanıcıya gösterilmesini sağlar.
+##### 1. GÃ–RSEL ARAYÃœZÃœN AÃ‡IKLANMASI VE PROGRAMLAMA MANTIÄI
+* **UygulamamÄ±z 4 temel esasa dayanmaktadÄ±r.** Bunlar;
+  1. AracÄ±n yÃ¶n kontrolÃ¼nÃ¼n saÄŸlanmasÄ±.<br>
+  2. KullanÄ±cÄ±ya araÃ§ Ã¼zerindeki kameradan canlÄ± gÃ¶rÃ¼ntÃ¼nÃ¼n aktarÄ±lmasÄ±.<br>
+  3. AracÄ±n baÄŸlantÄ± sinyal seviyesi gÃ¶stergesi.
+  4. Fallow Me (Ã‡ok yakÄ±nda).(AracÄ±n sahibini takip etmesi).<br>
+* Bu dÃ¶rt temel esasa gÃ¶re 
+*  AracÄ±n yÃ¶n kontrolÃ¼nde kullanÄ±lan mantÄ±ÄŸÄ±n ana detaylarÄ±nÄ± `Arduino` bÃ¶lÃ¼mde anlattÄ±k.Android tarafÄ±na bakan kÄ±smÄ± ile aÃ§Ä±klayacak olursak.Android tarafÄ±nda, kullanÄ±cÄ± iÃ§in `Seek bar (HÄ±z ayarÄ±)` , `Kamera AÃ§ma / Kapama` ,`Wi-Fi durum gÃ¶stergesi`  ve `YÃ¶n tuÅŸlarÄ±` mevcuttur.<br> ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/Screenshot_description.png)<br>
+*  **Seek bar(HÄ±z ayarÄ±)** 15 dilimden oluÅŸmaktadÄ±r ve hÄ±z katsayÄ±sÄ± 17'dir.Yani seek bar' Ä±n herbir hareketi pwm'de 17'nin katlarÄ± ÅŸeklinde bir oynama yapmaktadÄ±r.Seek bar 5. kademede ise Ã¼retilen pwm= 5*17 = 85 'tir.
+*  **MenÃ¼ tuÅŸlarÄ± (Kamera AÃ§/Kapa ve WiFi GÃ¶stergesi)** Seekbar 'Ä±n yanÄ±nda yer alan diÄŸer araÃ§ kontrol fonksiyonlarÄ±;<br> Kamera gÃ¶rÃ¼ntÃ¼sÃ¼nÃ¼ araÃ§ Ã¼zerinden almamÄ±za yarayan Kamera aÃ§ma ve kapatma butonu "  ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/ic_eye.png) AÃ‡ ", " ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/ic_eye_off.png) KAPAT ", AynÄ± ÅŸekilde uygulamamÄ±zÄ±n Raspberry Pi Ã¼zerinde oluÅŸturduÄŸumuz Wi-Fi aÄŸa baÄŸlanÄ±p baÄŸlanÄ±lmadÄ±ÄŸÄ±nÄ± gÃ¶steren bir gÃ¶sterge."[Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/ic_wifi_on.png) BAÄLI DEÄÄ°L", " ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/ic_wifi_off.png) BAÄLI "
+*  **YÃ¶n tuÅŸlarÄ±** seek bar(HÄ±z ayarÄ±)'dan alÄ±nan verinin yÃ¶nlere ayrÄ±lmasÄ±nÄ± saÄŸlar. AracÄ±n gidiÅŸ yÃ¶nÃ¼ne gÃ¶re pwm deÄŸerinin baÅŸÄ±na `+` ve ya `-` iÅŸareti getirilir. **Ã–rn;**<br><br>
+ 200:200     // ileri git. ( 2 motorda 200pwm ile Ã§alÄ±ÅŸÄ±r )<br>
+ -200:-200   //geri git. (2 motorda 200pwm ile Ã§alÄ±ÅŸÄ±r)<br>
+ 200:-200   // sol motor 200 pwm ileri, sag motor 200 geri dÃ¶ner ( araÃ§ kendi etrafÄ±nda soldan saÄŸa doÄŸru dÃ¶ner)<br>
+ -200:200   // sol motor 200 pwm geri, sag motor 200 ileri dÃ¶ner ( araÃ§ kendi etrafÄ±nda saÄŸdan sola doÄŸru dÃ¶ner)<br>
+ 200:100    // araÃ§ saÄŸa dÃ¶necek ÅŸekilde hareket eder.<br><br> 
+ * **Sinyal Seviye GÃ¶stergesi** Bu gÃ¶sterge telefon ile araÃ§ arasÄ±ndaki  baÄŸlantÄ±nÄ±n sinyal kalitesini ve uzaklÄ±ÄŸa gÃ¶re deÄŸiÅŸen sinyal Ã§ekim seviyesinin kullanÄ±cÄ±ya gÃ¶sterilmesini saÄŸlar.
 
-##### 2.SAĞ'A VE SOL'A DÖNÜŞLERDE HASSASİYET
-* Aracımızın sağ çağraz ve sol çapraz hareketleri yaparken dönüş yapılacak taraftaki motorların pwm değerleri düşürülür ve böylece motorların daha yavaş dönmesi sağlanır.Bu sayede araç istenilen hassasiyette çarpraz dönüşleri gerçekleştirebilir.**Bu dönüş hareketlerinin hassasiyet ayarlaması kullanıcıya bırakılmıştır.**
-* Çapraz dönüşlerin hassasiyetinin hesaplanmasında kullanılan formül : **`PWM DEĞERİ - (PWM DEĞERİ / PWM ORANI)`** 'dır.
-* PWM ORANI varsayılan olarak `2` gelmektedir.
-* PWM ORANI ayarını, kontrol ekranın da sağ üst köşede `Ayarlar` butonundan tekrar `Ayarlar` sekmesine basarak ulaşabilirsiniz.<br>![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/device-2016-07-07-230804.png)<br>![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/device-2016-07-07-230848.png)<br><br>
-* Girebileceğinz PWM ORANI aralığı **minimum ve maksimum olarak 1-4 arasında integer ve double tipinde** değerlerdir.
+##### 2.SAÄ'A VE SOL'A DÃ–NÃœÅLERDE HASSASÄ°YET
+* AracÄ±mÄ±zÄ±n saÄŸ Ã§aÄŸraz ve sol Ã§apraz hareketleri yaparken dÃ¶nÃ¼ÅŸ yapÄ±lacak taraftaki motorlarÄ±n pwm deÄŸerleri dÃ¼ÅŸÃ¼rÃ¼lÃ¼r ve bÃ¶ylece motorlarÄ±n daha yavaÅŸ dÃ¶nmesi saÄŸlanÄ±r.Bu sayede araÃ§ istenilen hassasiyette Ã§arpraz dÃ¶nÃ¼ÅŸleri gerÃ§ekleÅŸtirebilir.**Bu dÃ¶nÃ¼ÅŸ hareketlerinin hassasiyet ayarlamasÄ± kullanÄ±cÄ±ya bÄ±rakÄ±lmÄ±ÅŸtÄ±r.**
+* Ã‡apraz dÃ¶nÃ¼ÅŸlerin hassasiyetinin hesaplanmasÄ±nda kullanÄ±lan formÃ¼l : **`PWM DEÄERÄ° - (PWM DEÄERÄ° / PWM ORANI)`** 'dÄ±r.
+* PWM ORANI varsayÄ±lan olarak `2` gelmektedir.
+* PWM ORANI ayarÄ±nÄ±, kontrol ekranÄ±n da saÄŸ Ã¼st kÃ¶ÅŸede `Ayarlar` butonundan tekrar `Ayarlar` sekmesine basarak ulaÅŸabilirsiniz.<br>!![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/Screenshot_20160713-205757.png)<br>![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/Screenshot_20160713-205807.png)<br><br>
+* GirebileceÄŸinz PWM ORANI aralÄ±ÄŸÄ± **minimum ve maksimum olarak 1-4 arasÄ±nda integer ve double tipinde** deÄŸerlerdir.
  
 
 
 ### UYGULAMA ICON 'UMUZ:
 
-![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/raspi_car.png)
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/raspi_car.png)
 
 
 
 
-## TEST VİDEO:
-[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/testvd1.png)](https://youtu.be/qbkH2KFcKqw)
-[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/play_video2.png)](https://youtu.be/CT-hgXIPRIk)
+## TEST VÄ°DEO:
+[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/testvd1.png)](https://youtu.be/qbkH2KFcKqw)
+[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/play_video2.png)](https://youtu.be/CT-hgXIPRIk)<br><br>
 <br><br>
 
 
@@ -201,31 +204,31 @@ Uygulamanın çalışma prensibini ve tanıtımını kısaca açıklayalım.
 -------------------------------------------------------------------------------------
 <br><br>
 
-#KISA VE ÖZET KURULUM<br><br>
-<p align="center"> <b>DETAYLI BİLGİ VE  VE KURULUM AYRINTILARI İÇİN LÜTFEN SAYFA BAŞINDAN BAŞLAYINIZ !!</b>
-<img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/raw.gif" alt="DETAYLI ANLATIM VE KURULUM" align="middle" />
+#KISA VE Ã–ZET KURULUM<br><br>
+<p align="center"> <b>DETAYLI BÄ°LGÄ° VE  VE KURULUM AYRINTILARI Ä°Ã‡Ä°N LÃœTFEN SAYFA BAÅINDAN BAÅLAYINIZ !!</b>
+<img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images//images/raw.gif" alt="DETAYLI ANLATIM VE KURULUM" align="middle" />
 </p>
 
 ## **ADIM 1:**
 <br>
- 1.Pi_CAR'I Raspberry pi 2 için ya da  raspberry pi 3'ün Üzerindeki dahili Wi-Fi modülü kullanarak yönetmek istiyorsanız.Bu [**linteki**](https://drive.google.com/file/d/0B6yjwSAqPTgfX1dsaVVJZThEN2c/view?usp=sharing) işletim sistemini indirerek SD karta yazdırınız.
+ 1.Pi_CAR'I Raspberry pi 2 iÃ§in ya da  raspberry pi 3'Ã¼n Ãœzerindeki dahili Wi-Fi modÃ¼lÃ¼ kullanarak yÃ¶netmek istiyorsanÄ±z.Bu [**linteki**](https://drive.google.com/file/d/0B6yjwSAqPTgfX1dsaVVJZThEN2c/view?usp=sharing) iÅŸletim sistemini indirerek SD karta yazdÄ±rÄ±nÄ±z.
 <br>
 
 
- 2.Pi_CAR'I Raspberry pi 3 'ün  Üzerinden harici olarak taktığınız Wi-Fi modüşü kullarak yönetmek istiyorsanız.Bu [**linteki**](https://drive.google.com/file/d/0B6yjwSAqPTgfYkhxWEN2dXBIQlU/view?usp=sharing) işletim sistemini indiriniz.
+ 2.Pi_CAR'I Raspberry pi 3 'Ã¼n  Ãœzerinden harici olarak taktÄ±ÄŸÄ±nÄ±z Wi-Fi modÃ¼ÅŸÃ¼ kullarak yÃ¶netmek istiyorsanÄ±z.Bu [**linteki**](https://drive.google.com/file/d/0B6yjwSAqPTgfYkhxWEN2dXBIQlU/view?usp=sharing) iÅŸletim sistemini indiriniz.
 <br>
 
 ## **ADIM 2**
-Arduino kontrol yazılımını Bu [**linteken**](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/androidToRaspberryTurkce) indirerek
-Arduino' ya yükleyiniz.
+Arduino kontrol yazÄ±lÄ±mÄ±nÄ± Bu [**linteken**](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/androidToRaspberryTurkce) indirerek
+Arduino' ya yÃ¼kleyiniz.
 
 ## **ADIM 3**
-Android kontrol yazılımıda  Bu [**linteken**](https://play.google.com/store/apps/details?id=com.stackcuriosity.tooght) indirerek
-telefonunuza  yükleyiniz.
+Android kontrol yazÄ±lÄ±mÄ±da  Bu [**linteken**](https://play.google.com/store/apps/details?id=com.stackcuriosity.tooght) indirerek
+telefonunuza  yÃ¼kleyiniz.
 <br><br><br>
-**ve  işlem tamam arduino motor sürücüleri arasındaki bağlantıları doğru yaptıysanız artık aracı kontrol etmeye başlayabilirsiniz.**
+**ve  iÅŸlem tamam arduino motor sÃ¼rÃ¼cÃ¼leri arasÄ±ndaki baÄŸlantÄ±larÄ± doÄŸru yaptÄ±ysanÄ±z artÄ±k aracÄ± kontrol etmeye baÅŸlayabilirsiniz.**
 
 <p align="center">
- <a href="https://play.google.com/store/apps/details?id=com.stackcuriosity.tooght"><img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/Google.png"/></a>
+ <a href="https://play.google.com/store/apps/details?id=com.stackcuriosity.tooght"><img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images//images/Google.png"/></a>
 </p>
 
