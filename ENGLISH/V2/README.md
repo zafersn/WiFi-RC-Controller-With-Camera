@@ -62,7 +62,7 @@ Example:<br>
 * Connections among Arduino, Raspberry pi,Raspberry pi camera module, L298N motor driver, Motors and Power Supply are set up as above picture.
 * After connected Arduino pins and Raspberry pi as above picture, we can load our codes to Arduino. That do by this sequence:
 * Detail information about Arduino codes is placed in that codes.
-*  [**Download**](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/androidToRaspberryEnglishInformation)  `androidToRaspberry.ino` file and open the this file with double click.
+*  [**Download**](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/ENGLISH/V2/androidToRaspberryEnglishInformation)  `androidToRaspberry.ino` file and open the this file with double click.
 * For uploading that project file to Arduino, first you must select the Arduino model from `Tools => Board` menu.<br><br>
 
 
@@ -219,7 +219,7 @@ Let's briefly explain the working principle and the introduction of the applicat
 <br>
 
 ## **STEP 2**
-Download the Arduino control software from this  [**link**](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/androidToRaspberryTurkce) and upload to Arduino. 
+Download the Arduino control software from this  [**link**](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/ENGLISH/V2/androidToRaspberryEnglishInformation) and upload to Arduino. 
 
 ## **STEP 3**
 Download the Android control software from this  [**link**](https://play.google.com/store/apps/details?id=com.stackcuriosity.tooght) and upload to Android Phone. 
