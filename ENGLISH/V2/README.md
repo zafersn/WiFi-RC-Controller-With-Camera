@@ -65,7 +65,7 @@ Example:<br>
 * For uploading that project file to Arduino, first you must select the Arduino model from `Tools => Board` menu.<br><br>
 
 
-![Screen Shot RA1](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/images/ra1.png)
+![Screen Shot RA1](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V1Images/images/ra1.png)
 <br><br>
 * Again from `Tools` menu, you must show which port plugged to Arduino board. `Tools => port`
 * After realize all steps, now you can upload the codes to Arduino board. You can complete the uploading process by pressing `Upload` button from left-up corner of the program.<br><br><br>
