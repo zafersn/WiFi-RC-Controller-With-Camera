@@ -7,14 +7,14 @@
 * Fallow Me (Çok yakında)
 
 
-[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/yotubeT1.png)](https://youtu.be/J8r_bX_RNzU)
+[![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/yotubeT1.png)](https://youtu.be/J8r_bX_RNzU)
 
 
 ## Kullanılan Malzemeler
 * Arduino Nano
 * Raspberry Pi
 * Raspberry Pi Camera Modülü
-* L298N Motor Sürücü
+* L298N Motor Sürücü/
 * DC MOTOR X  2 
 * 12V Lipo Batarya
 * Araç Şasi (Gövdesi)
