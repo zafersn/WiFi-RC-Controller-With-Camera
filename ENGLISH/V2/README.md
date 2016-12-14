@@ -162,7 +162,7 @@ Let's briefly explain the working principle and the introduction of the applicat
  IV. Follow Me (Vey Soon). (Following the car its owner.)<br>
  
  * To that 4 basis;
-* Main details using direction control of the car was told in `Arduino` section. If we explain to the Android side, there will be available `Seek bar (Velocity setting)`, `Camera On / Off`,`Wi-Fi status indicator` and `Arrow keys`.<br><br> ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/Screenshot_description_en.png)<br><br>
+* Main details using direction control of the car was told in `Arduino` section. If we explain to the Android side, there will be available `Seek bar (Velocity setting)`, `Camera On / Off`,`Wi-Fi status indicator` and `Arrow keys`.<br><br> ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/Screenshot_description_en.png)<br><br>
 
 * **Seek bar(Velocity setting)**is created from 15 slice and velocity coefficient is 17. So any move of the Seek bar, there will be changing 17 and its multiples. For instance, If Seek bar in fifth order, produced pwm = 5*17 = 85.
 
