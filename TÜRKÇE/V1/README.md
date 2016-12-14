@@ -62,7 +62,7 @@
 **III.** Açılan proje dosyasını arduino' ya yüklemek için sıra ile  sekmelerden `Tools` => `Board`  ve buradan kullandığınız arduino modelinizi seçiniz.<br><br>
 
 
-![Screen Shot RA1](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/images/ra1.png)
+![Screen Shot RA1](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/V1Images/images/ra1.png)
 <br><br>
 **IV.** Tekrar `Tools` sekmesinden takmış olduğunuz arduino' nuzun hangi port' a takılı olduğunu gösteriniz.  `Tools` => `port`<br>
 
