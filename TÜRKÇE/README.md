@@ -1,26 +1,23 @@
-# seraotomasyon
 # V2 ve V1 ARASINDAKI FARKLAR
 
  Pi_CAR| V2 | V1
 ------------ | -------------|-------
 **HABERLESME** |UDP |TCP
-**MENZIL** | (WiFi Dongle göre değişir) 10m -- HAREKETLİ| (WiFi Dongle göre değişir ) 10m --SABİT
+**MENZIL** | (WiFi Dongle gÃ¶re deÄŸiÅŸir) 10m -- HAREKETLÄ°| (WiFi Dongle gÃ¶re deÄŸiÅŸir ) 10m --SABÄ°T
 **KONTROL**|ANDROID|ANDROID
 **KAMERA**|VAR|VAR
-**KURULUM**|.img dosyası üzerinden |Elle kurulum
-**Yayın Tarihi**||30 Tem. 2016
+**KURULUM**|.img dosyasÄ± Ã¼zerinden |Elle kurulum
+**YayÄ±n Tarihi**||30 Tem. 2016
 # V2 ILE BIRLIKTE GELEN YENILIKLER
-* Doğrudan araca bağlanabilme,sabit bir Wi-Fi modeme bağlı kalmadan araç üstünde oluşturulan hotspot'a bağlanabilme ve kullanabilme (Raspberry pi üzerinde hotspot oluşturuldu).
-* Araç ile telefon haberleşme yazılımında iyileştirme
-* Android Uygulamada, bağlantı sinyal seviyesi göstergesi eklendi ve yazılımda iyileştirme yapıldı
-* Kurulum kolaylığı sağlandı.(Doğrudan .img dosyasını sd karta yazarak çalıştırabilirsiniz.)<br>
+* DoÄŸrudan araca baÄŸlanabilme,sabit bir Wi-Fi modeme baÄŸlÄ± kalmadan araÃ§ Ã¼stÃ¼nde oluÅŸturulan hotspot'a baÄŸlanabilme ve kullanabilme (Raspberry pi Ã¼zerinde hotspot oluÅŸturuldu).
+* AraÃ§ ile telefon haberleÅŸme yazÄ±lÄ±mÄ±nda iyileÅŸtirme
+* Android Uygulamada, baÄŸlantÄ± sinyal seviyesi gÃ¶stergesi eklendi ve yazÄ±lÄ±mda iyileÅŸtirme yapÄ±ldÄ±
+* Kurulum kolaylÄ±ÄŸÄ± saÄŸlandÄ±.(DoÄŸrudan .img dosyasÄ±nÄ± sd karta yazarak Ã§alÄ±ÅŸtÄ±rabilirsiniz.)<br>
 
 #--------------------------------V2--------------------------------
-![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/rasp%20to%20android2.png)
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/rasp%20to%20android2.png)
 <br><br><br>
 
 #--------------------------------V1--------------------------------
-![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/wifi_rasp%20to%20android2.png)
-# Türkçe açıklama ve kurulum bilgileri için, [Buraya tıklayın!](README-TR.md) 
-
-<br><br><br><br><br><br>
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/wifi_rasp%20to%20android2.png)
+# TÃ¼rkÃ§e aÃ§Ä±klama ve kurulum bilgileri iÃ§in, [Buraya tÄ±klayÄ±n!](README-TR.md) 
