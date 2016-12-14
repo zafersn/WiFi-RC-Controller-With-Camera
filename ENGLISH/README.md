@@ -17,11 +17,11 @@
 * Installation is facilitated (You can run the ".img" file directly by typing in the sd card.)<br>
 
 #--------------------------------V2--------------------------------
-![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/rasp%20to%20android2.png)
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/rasp%20to%20android2.png)
 <br><br><br>
 
 #--------------------------------V1--------------------------------
-![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2.0/images/wifi_rasp%20to%20android2.png)
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/wifi_rasp%20to%20android2.png)
 
 # For English description and setup information, [Click here!](README-EN.md)  <br><br>
 
