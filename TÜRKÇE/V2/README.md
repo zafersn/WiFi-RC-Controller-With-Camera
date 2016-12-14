@@ -62,7 +62,7 @@ Araç Şasi (Gövdesi)| 1
 
 **I.** Arduino kodlarının açıklamaları ve ne işe yaradığı ile ilgili detaylı bilgi kodların içinde mevcuttur.<br>
 
-**II.** `androidToRaspberry.ino` adlı arduino kodumuzu bu [**linteken**](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/androidToRaspberryTurkce) indirerek ve çift tıklayarak açınız.<br>
+**II.** `androidToRaspberry.ino` adlı arduino kodumuzu bu [**linteken**](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/T%C3%9CRK%C3%87E/V2/androidToRaspberryTurkce) indirerek ve çift tıklayarak açınız.<br>
 
 **III.** Açılan proje dosyasını arduino' ya yüklemek için sıra ile  sekmelerden `Tools` => `Board`  ve buradan kullandığınız arduino modelinizi seçiniz.<br><br>
 
@@ -167,9 +167,9 @@ Uygulamanın çalışma prensibini ve tanıtımını kısaca açıklayalım.
   3. Aracın bağlantı sinyal seviyesi göstergesi.
   4. Fallow Me (Çok yakında).(Aracın sahibini takip etmesi).<br>
 * Bu dört temel esasa göre 
-*  Aracın yön kontrolünde kullanılan mantığın ana detaylarını `Arduino` bölümde anlattık.Android tarafına bakan kısmı ile açıklayacak olursak.Android tarafında, kullanıcı için `Seek bar (Hız ayarı)` , `Kamera Açma / Kapama` ,`Wi-Fi durum göstergesi`  ve `Yön tuşları` mevcuttur.<br> ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/Screenshot_description.png)<br>
+*  Aracın yön kontrolünde kullanılan mantığın ana detaylarını `Arduino` bölümde anlattık.Android tarafına bakan kısmı ile açıklayacak olursak.Android tarafında, kullanıcı için `Seek bar (Hız ayarı)` , `Kamera Açma / Kapama` ,`Wi-Fi durum göstergesi`  ve `Yön tuşları` mevcuttur.<br> ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/Screenshot_description_githup.png)<br>
 *  **Seek bar(Hız ayarı)** 15 dilimden oluşmaktadır ve hız katsayısı 17'dir.Yani seek bar' ın herbir hareketi pwm'de 17'nin katları şeklinde bir oynama yapmaktadır.Seek bar 5. kademede ise üretilen pwm= 5*17 = 85 'tir.
-*  **Menü tuşları (Kamera Aç/Kapa ve WiFi Göstergesi)** Seekbar 'ın yanında yer alan diğer araç kontrol fonksiyonları;<br> Kamera görüntüsünü araç üzerinden almamıza yarayan Kamera açma ve kapatma butonu "  ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/ic_eye.png) AÇ ", " ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/ic_eye_off.png) KAPAT ", Aynı şekilde uygulamamızın Raspberry Pi üzerinde oluşturduğumuz Wi-Fi ağa bağlanıp bağlanılmadığını gösteren bir gösterge."[Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/ic_wifi_on.png) BAĞLI DEĞİL", " ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/ic_wifi_off.png) BAĞLI "
+*  **Menü tuşları (Kamera Aç/Kapa ve WiFi Göstergesi)** Seekbar 'ın yanında yer alan diğer araç kontrol fonksiyonları;<br> Kamera görüntüsünü araç üzerinden almamıza yarayan Kamera açma ve kapatma butonu "  ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/ic_eye.png) AÇ ", " ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/ic_eye_off.png) KAPAT ", Aynı şekilde uygulamamızın Raspberry Pi üzerinde oluşturduğumuz Wi-Fi ağa bağlanıp bağlanılmadığını gösteren bir gösterge."![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/ic_wifi_on.png) BAĞLI DEĞİL", " ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/ic_wifi_off.png) BAĞLI "
 *  **Yön tuşları** seek bar(Hız ayarı)'dan alınan verinin yönlere ayrılmasını sağlar. Aracın gidiş yönüne göre pwm değerinin başına `+` ve ya `-` işareti getirilir. **Örn;**<br><br>
  200:200     // ileri git. ( 2 motorda 200pwm ile çalışır )<br>
  -200:-200   //geri git. (2 motorda 200pwm ile çalışır)<br>
@@ -219,7 +219,7 @@ Uygulamanın çalışma prensibini ve tanıtımını kısaca açıklayalım.
 <br>
 
 ## **ADIM 2**
-Arduino kontrol yazılımını Bu [**linteken**](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/androidToRaspberryTurkce) indirerek
+Arduino kontrol yazılımını Bu [**linteken**](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/T%C3%9CRK%C3%87E/V2/androidToRaspberryTurkce) indirerek
 Arduino' ya yükleyiniz.
 
 ## **ADIM 3**
@@ -229,6 +229,6 @@ telefonunuza  yükleyiniz.
 **ve  işlem tamam arduino motor sürücüleri arasındaki bağlantıları doğru yaptıysanız artık aracı kontrol etmeye başlayabilirsiniz.**
 
 <p align="center">
- <a href="https://play.google.com/store/apps/details?id=com.stackcuriosity.tooght"><img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images//images/Google.png"/></a>
+ <a href="https://play.google.com/store/apps/details?id=com.stackcuriosity.tooght"><img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/Google.png"/></a>
 </p>
 
