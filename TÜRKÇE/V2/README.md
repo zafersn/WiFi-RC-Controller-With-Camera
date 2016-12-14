@@ -9,7 +9,7 @@
 
 Malzeme Adı| Adet
 ----| ---- 
-Arduino Nano| 1
+Arduino Nano / UNO / Mega| 1
 Raspberry Pi| 1
 Raspberry Pi Camera Modülü| 1
 Wi-Fi Adaptör| 1
