@@ -163,10 +163,10 @@ Android uygulamamızı yükledikten sonra normal şartlar altında araç üzerin
       * Ayarlar ==> Geliştirici Seçenekleri ==> Açık konumuna getiriniz.
       * Ayarlar ==> Geliştirici Seçenekleri ==> USB hata ayıklamasını aktif hale getiriniz
   
-  Şimdi telefonunuzu bilgisayara bağlı olduğuna ve telefonun bilgisayar tarafından tanındığına emin oldukdan sonra (Tanınmadıysa driverleri yükleyiniz) Android studio ortamında görüldüğünü kontrol etmelisiniz.En basit kontrol Shift +F10 tuşuna basarak açılan ekranda sizin telefon modeliniz gözükmesi lazım.<br><br>
+  Şimdi telefonunuzu bilgisayara bağlı olduğuna ve telefonun bilgisayar tarafından tanındığına emin oldukdan sonra (Tanınmadıysa driverleri yükleyiniz) Android studio ortamında görüldüğünü kontrol etmelisiniz.En basit kontrol `Shift +F10` tuşuna basarak açılan ekranda sizin telefon modeliniz gözükmesi lazım.<br><br>
   ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/telefon%20algilama.PNG)
   
-  Şimdi yapmamız gereken sol altta Terminal sekmesi tıklamamız yada Alt + F12 basmanız.
+  Şimdi yapmamız gereken sol altta Terminal sekmesi tıklamamız yada `Alt + F12` basmanız.
   Açılan terminal ekranın da sırayla ;
   * `adb shell`
   * `settings put global captive_portal_detection_enabled 0`<br><br>
