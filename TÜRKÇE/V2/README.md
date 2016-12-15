@@ -151,6 +151,47 @@ Video'lu anlatım:
 
 ### UYGULAMA KULLANIMI VE İPUCULARI  <br>
 
+# ÖNEMLİ NOT:
+Android uygulamamızı yükledikten sonra normal şartlar altında araç üzerinde oluşturduğumuz Wi-Fi alan ağına otomatik olarak bağlanması gerekmektedir.Ancak Android yeni sürümlerinde (5 ve üzeri sürümler) kullanıcı deneyimini arttırmak ve tutsak ağlara bağlanmasını engellemek amacıyla Android Google servislere bağlanmaya çalışmaktadır.Bu bağlantı durumuna göre Wi-Fi ağında veri iletişimini sağlamaktadır.ya da engellemektedir. Bu durumda bizim araç üzerinde oluşturduğumuz Wi-Fi alan ağına izin vermemektedir.Detaylı bilgi için tıklaynız. Bu sorunun çözümü için 2 Alternatif yöntemimiz vardır. 
+* 1.YÖNTEM (Tavsiye Edilen) 
+   * Android Studio' yu kullarak
+  Bu yöntem sizin bir android geliştirici olduğunuzu varsayarak antılmaktadır. 
+  Buradan android Studio'yu indiriniz. https://developer.android.com/studio/index.html
+  İndirdikten ve gerekli ayarlamaları yaptıktan sonra Telefonunuzun geliştirici seçeneklerini aktif etmeniz gerekmektedir.Bunun için 
+  Ayarlar ==> Telefon Hakkında ==> Derleme Numarasına 5 defa ard arda tıklayınız
+  yine aynı şekilde 
+  Ayarlar ==> Geliştirici Seçenekleri ==> Açık konumuna getiriiniz.
+  Ayarlar ==> Geliştirici Seçenekleri ==> USB hata ayıklamasını aktif hale getiriniz
+  
+  Şimdi telefonunuzu bilgisayara bağlı olduğuna ve telefonun bilgisayar tarafından tanındığına emin oldukdan sonra (Tanınmadıysa driverleri yükleyiniz) Android studio ortamında görüldüğünü kontrol etmelisiniz.En basit kontrol Shift +F10 tuşuna basarak açılan ekranda sizin telefon modeliniz gözükmesi lazım.
+  
+  Şimdi yapmamız gereken sol altta Terminal sekmesi tıklamamız yada Alt + F12 basmanız.
+  Açılan terminal ekranın da sırayla 
+  adb shell
+  settings put global captive_portal_detection_enabled 0
+  
+  demelisiniz.Eğer herşey yolunda gittiyse bu komutu "settings get global captive_portal_detection_enabled" yazdığınız da terminal de "0" yazmalıdır.
+  
+  Eğer 0 gördüyseniz artık araca sorunsuz bir şekilde bağlanabilir ve kullanabilirsiniz.
+  
+  2.YÖNTEM
+   Ayarlar ==> Kablosuz ==> Pi_CAR ==> Gelişmiş Seçenekler
+   
+   şifreyi yazınız: TRaspberry
+   IP ayarları = Statik
+   Ip adresi = 192.168.57.57
+   Ağ geçidi = 192.168.57.1
+   Ağ önek uzunluğu = 24
+   DNS 1 = 8.8.8.8
+   DNS 2 = 8.8.4.4
+   
+   Yukarıdaki gerekli bilgileri girdikten sonra bağlan seçeneğine tıklayınız. Ve ip adresi alıp bağlanacaktır. Sonra size Kablosuz bağlantıda internet erişimi yok diye bir uyarı gelirse  Bu ağ için bir daha sorma seçeneğini seçtikten sonra EVET basınız. 
+   
+   Ve herşey tamam artık uygulamayı kullanabilirsiniz.
+   
+   
+   
+  
 #### Raspberry pi bağlantı bilgileri
 * Android uygulamanızı indirdikten sonra sizi aşağıdaki gibi bir ekran karşılayacaktır.Artık yapmanız gereken şey sadece aracı kontrol etmek olacaktır.
 <br>
