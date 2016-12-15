@@ -146,6 +146,51 @@ Video description:
  <a href="https://play.google.com/store/apps/details?id=com.stackcuriosity.tooght"><img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/Google.png"/></a>
 </p>
 ### USING THE APPLICATION AND HINTS
+
+# IMPORTANT NOTE:
+After installing our Android app, it is normally necessary to automatically connect to the Wi-Fi network we created on the car.However, in newer versions of Android (5 and up), Android tries to connect to Google's services to increase user experience and prevent them from connecting to captive networks. According to this connection status, it allows or blocks data communication on the Android Wi-Fi network. Due to this situation, the new versions of Android (5 and above) do not allow connection to the Wi-Fi network we created on our car.For detailed information [click here!](http://android.stackexchange.com/questions/100657/how-to-disable-captive-portal-detection-how-to-remove-exclamation-mark-on-wi-fi).We have 2 Alternative methods for solving this problem.
+* **1st METHOD (RECOMMENDED)** 
+   * Using Android Studio<br>
+ This method assumes that you are an android developer.<br>
+    * Download android Studio from [here!]( https://developer.android.com/studio/index.html).
+    * After downloading and making the necessary adjustments, you need to activate your phone's developer options;
+      * Settings ==> About Your Phone ==> Compile Number 5 times in a row. The Phone will now say that you are a developer.<br>
+      yine aynı şekilde 
+      * Settings ==> Developer Options ==> Turn on.
+      * Settings ==> Developer Options ==> Enable USB debugging
+  
+ Now, after you make sure that your phone is connected to the computer and that the phone is recognized by the computer (install the drivers if the phone is not recognized by the computer), In the Android studio environment, you should check that your phone is recognized. The simplest control is to display your phone model on the screen that opens by pressing Shift + F10.<br><br>
+  ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/telefon%20algilama.PNG)
+  
+  Now, all we have to do is click on the Terminal tab on the bottom left or press Alt + F12.
+ On the opened terminal screen;
+  * `adb shell`
+  * `settings put global captive_portal_detection_enabled 0`<br><br>
+  
+   ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/terminal%20detection%20enable%200.PNG)
+   
+ you should write.Eğer herşey yolunda gittiyse bu komutu `settings get global captive_portal_detection_enabled` yazdığınız da terminal de `0 (sıfır)` yazmalıdır.<br>
+  
+  Eğer `0 (sıfır)` gördüyseniz artık araca sorunsuz bir şekilde bağlanabilir ve kullanabilirsiniz.<br>
+  
+* **2nd METHOD**
+   * Settings ==> Wireless ==> Pi_CAR ==> Advanced Options
+   <br>
+   Password: TRaspberry<br>
+   IP settings = Statik<br>
+   Ip address = 192.168.57.57<br>
+   Gateway = 192.168.57.1<br>
+   Network prefix length = 24<br>
+   DNS 1 = 8.8.8.8<br>
+   DNS 2 = 8.8.4.4<br>
+   <br>
+   Once you have entered the required information above, click Connect. And get ip address and connect. Then if you get a warning that you do not have internet access on your wireless connection, press yes again after you select the Ask again for this network option. <br><br><br>
+   **VİDEOLU ANLATIM**<br>
+    
+   [![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/youtube%20play2.png)](https://youtu.be/qp3TYz8y5Tc)
+<br>
+   Ve herşey tamam artık uygulamayı kullanabilirsiniz.
+
 #### Raspberry Pi Connection Informations
 
 Once you've downloaded your Android app, you will see the following welcome : Now all you need to do is check the tool. screen.<br>
