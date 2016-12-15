@@ -96,7 +96,7 @@ We have 2 alternative methods for Raspberry pi 3;<br>
 
 
 
-### 2.If you want to manage Pi_CAR by using Wi-Fi module externally mounted on raspberry pi 3. Download the operating system on [**this link**](https://drive.google.com/file/d/0B6yjwSAqPTgfYkhxWEN2dXBIQlU/view?usp=sharing)  and print to the SD card.
+### 2.If you want to manage Pi_CAR by using Wi-Fi module externally mounted on raspberry pi 3. Download the operating system on [**this link**](https://drive.google.com/open?id=0B6yjwSAqPTgfR3lKQVl5SXRpbFE)  and print to the SD card.
 
 
 
