@@ -155,12 +155,12 @@ Video'lu anlatım:
 Android uygulamamızı yükledikten sonra normal şartlar altında araç üzerinde oluşturduğumuz Wi-Fi alan ağına otomatik olarak bağlanması gerekmektedir.Ancak Android yeni sürümlerinde (5 ve üzeri sürümler) kullanıcı deneyimini arttırmak ve tutsak ağlara bağlanmasını engellemek amacıyla Android Google servislere bağlanmaya çalışmaktadır.Bu bağlantı durumuna göre Wi-Fi ağında veri iletişimini sağlamaktadır ya da engellemektedir. Bu durumdan dolayı Android yeni sürümlerinde (5 Ve üzeri) bizim araç üzerinde oluşturduğumuz Wi-Fi alan ağına bağlantıya izin vermemektedir.Detaylı bilgi için [Buraya tıklayın!](http://android.stackexchange.com/questions/100657/how-to-disable-captive-portal-detection-how-to-remove-exclamation-mark-on-wi-fi). Bu sorunun çözümü için 2 Alternatif yöntemimiz vardır. 
 * 1.**YÖNTEM (Tavsiye Edilen)** 
    * Android Studio' yu kullanarak<br>
-  Bu yöntem sizin bir android geliştirici olduğunuzu varsayarak antılmaktadır.<br>
+  Bu yöntem sizin bir android geliştirici olduğunuzu varsayarak anlatılmaktadır.<br>
     * [Buradan!]( https://developer.android.com/studio/index.html) android Studio'yu indiriniz.
     * İndirdikten ve gerekli ayarlamaları yaptıktan sonra Telefonunuzun geliştirici seçeneklerini aktif etmeniz gerekmektedir.Bunun için;
       * Ayarlar ==> Telefon Hakkında ==> Derleme Numarasına 5 defa ard arda tıklayınız.Sizin artık bir geliştiric olduğunuzu söylecektir.<br>
       yine aynı şekilde 
-      * Ayarlar ==> Geliştirici Seçenekleri ==> Açık konumuna getiriiniz.
+      * Ayarlar ==> Geliştirici Seçenekleri ==> Açık konumuna getiriniz.
       * Ayarlar ==> Geliştirici Seçenekleri ==> USB hata ayıklamasını aktif hale getiriniz
   
   Şimdi telefonunuzu bilgisayara bağlı olduğuna ve telefonun bilgisayar tarafından tanındığına emin oldukdan sonra (Tanınmadıysa driverleri yükleyiniz) Android studio ortamında görüldüğünü kontrol etmelisiniz.En basit kontrol Shift +F10 tuşuna basarak açılan ekranda sizin telefon modeliniz gözükmesi lazım.<br><br>
@@ -173,7 +173,7 @@ Android uygulamamızı yükledikten sonra normal şartlar altında araç üzerin
   
    ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/terminal%20detection%20enable%200.PNG)
    
-  demelisiniz.Eğer herşey yolunda gittiyse bu komutu `settings get global captive_portal_detection_enabled` yazdığınız da terminal de `0 (sıfır)` yazmalıdır.<br>
+  yazmalısınız. Eğer herşey yolunda gittiyse bu komutu `settings get global captive_portal_detection_enabled` yazdığınız da terminal de `0 (sıfır)` yazmalıdır.<br>
   
   Eğer `0 (sıfır)` gördüyseniz artık araca sorunsuz bir şekilde bağlanabilir ve kullanabilirsiniz.<br>
   
