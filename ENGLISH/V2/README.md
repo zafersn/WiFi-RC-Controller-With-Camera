@@ -148,7 +148,8 @@ Video description:
 ### USING THE APPLICATION AND HINTS
 
 # IMPORTANT NOTE:
-After installing our Android app, it is normally necessary to automatically connect to the Wi-Fi network we created on the car.However, in newer versions of Android (5 and up), Android tries to connect to Google's services to increase user experience and prevent them from connecting to captive networks. According to this connection status, it allows or blocks data communication on the Android Wi-Fi network. Due to this situation, the new versions of Android (5 and above) do not allow connection to the Wi-Fi network we created on our car.For detailed information [click here!](http://android.stackexchange.com/questions/100657/how-to-disable-captive-portal-detection-how-to-remove-exclamation-mark-on-wi-fi).We have 2 Alternative methods for solving this problem.
+After installing our Android app, it is normally necessary to automatically connect to the Wi-Fi network we created on the car.However, in newer versions of Android (5 and up), Android tries to connect to Google's services to increase user experience and prevent them from connecting to captive networks. According to this connection status, it allows or blocks data communication on the Android Wi-Fi network. Due to this situation, the new versions of Android (5 and above) do not allow connection to the Wi-Fi network we created on our car.For detailed information [click here!](http://android.stackexchange.com/questions/100657/how-to-disable-captive-portal-detection-how-to-remove-exclamation-mark-on-wi-fi).<br>
+We have 2 Alternative methods for solving this problem.
 * **1st METHOD (RECOMMENDED)** 
    * Using Android Studio<br>
  This method assumes that you are an android developer.<br>
@@ -159,10 +160,10 @@ After installing our Android app, it is normally necessary to automatically conn
       * Settings ==> Developer Options ==> Turn on.
       * Settings ==> Developer Options ==> Enable USB debugging
   
- Now, after you make sure that your phone is connected to the computer and that the phone is recognized by the computer (install the drivers if the phone is not recognized by the computer), In the Android studio environment, you should check that your phone is recognized. The simplest control is to display your phone model on the screen that opens by pressing Shift + F10.<br><br>
+ Now, after you make sure that your phone is connected to the computer and that the phone is recognized by the computer (install the drivers if the phone is not recognized by the computer), In the Android studio environment, you should check that your phone is recognized. The simplest control is to display your phone model on the screen that opens by pressing `Shift + F10`.<br><br>
   ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/telefon%20algilama.PNG)
   
-  Now, all we have to do is click on the Terminal tab on the bottom left or press Alt + F12.
+  Now, all we have to do is click on the Terminal tab on the bottom left or press `Alt + F12`.
  On the opened terminal screen;
   * `adb shell`
   * `settings put global captive_portal_detection_enabled 0`<br><br>
@@ -184,7 +185,7 @@ After installing our Android app, it is normally necessary to automatically conn
    DNS 2 = 8.8.4.4<br>
    <br>
    Once you have entered the required information above, click Connect. And get ip address and connect. Then if you get a warning that you do not have internet access on your wireless connection, press yes again after you select the Ask again for this network option. <br><br><br>
-   **VİDEOLU ANLATIM**<br>
+   **VIDEO EXPRESSION**<br>
     
    [![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/youtube%20play2.png)](https://youtu.be/qp3TYz8y5Tc)
 <br>
