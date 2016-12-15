@@ -154,7 +154,7 @@ Video'lu anlatım:
 # ÖNEMLİ NOT:
 Android uygulamamızı yükledikten sonra normal şartlar altında araç üzerinde oluşturduğumuz Wi-Fi alan ağına otomatik olarak bağlanması gerekmektedir.Ancak Android yeni sürümlerinde (5 ve üzeri sürümler) kullanıcı deneyimini arttırmak ve tutsak ağlara bağlanmasını engellemek amacıyla Android Google servislere bağlanmaya çalışmaktadır.Bu bağlantı durumuna göre Wi-Fi ağında veri iletişimini sağlamaktadır ya da engellemektedir. Bu durumdan dolayı Android yeni sürümlerinde (5 Ve üzeri) bizim araç üzerinde oluşturduğumuz Wi-Fi alan ağına bağlantıya izin vermemektedir.Detaylı bilgi için [Buraya tıklayın!](http://android.stackexchange.com/questions/100657/how-to-disable-captive-portal-detection-how-to-remove-exclamation-mark-on-wi-fi). Bu sorunun çözümü için 2 Alternatif yöntemimiz vardır. 
 * 1.**YÖNTEM (Tavsiye Edilen)** 
-   * Android Studio' yu kullarak<br>
+   * Android Studio' yu kullanarak<br>
   Bu yöntem sizin bir android geliştirici olduğunuzu varsayarak antılmaktadır.<br>
     * [Buradan!]( https://developer.android.com/studio/index.html) android Studio'yu indiriniz.
     * İndirdikten ve gerekli ayarlamaları yaptıktan sonra Telefonunuzun geliştirici seçeneklerini aktif etmeniz gerekmektedir.Bunun için;
