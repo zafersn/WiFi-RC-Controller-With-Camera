@@ -155,7 +155,7 @@ After installing our Android app, it is normally necessary to automatically conn
     * Download android Studio from [here!]( https://developer.android.com/studio/index.html).
     * After downloading and making the necessary adjustments, you need to activate your phone's developer options;
       * Settings ==> About Your Phone ==> Compile Number 5 times in a row. The Phone will now say that you are a developer.<br>
-      yine aynı şekilde 
+      In the same way
       * Settings ==> Developer Options ==> Turn on.
       * Settings ==> Developer Options ==> Enable USB debugging
   
@@ -169,9 +169,8 @@ After installing our Android app, it is normally necessary to automatically conn
   
    ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/terminal%20detection%20enable%200.PNG)
    
- you should write.Eğer herşey yolunda gittiyse bu komutu `settings get global captive_portal_detection_enabled` yazdığınız da terminal de `0 (sıfır)` yazmalıdır.<br>
-  
-  Eğer `0 (sıfır)` gördüyseniz artık araca sorunsuz bir şekilde bağlanabilir ve kullanabilirsiniz.<br>
+  If everything goes well, you should type `settings get global captive_portal_detection_enabled` in this command and the terminal should also type `0 (zero)`.<br>
+  If you see `0 (zero)`, you can now connect and use the car smoothly <br>
   
 * **2nd METHOD**
    * Settings ==> Wireless ==> Pi_CAR ==> Advanced Options
@@ -189,7 +188,7 @@ After installing our Android app, it is normally necessary to automatically conn
     
    [![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/youtube%20play2.png)](https://youtu.be/qp3TYz8y5Tc)
 <br>
-   Ve herşey tamam artık uygulamayı kullanabilirsiniz.
+   And everything is okay. You can now use the application.
 
 #### Raspberry Pi Connection Informations
 
