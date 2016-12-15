@@ -152,41 +152,47 @@ Video'lu anlatım:
 ### UYGULAMA KULLANIMI VE İPUCULARI  <br>
 
 # ÖNEMLİ NOT:
-Android uygulamamızı yükledikten sonra normal şartlar altında araç üzerinde oluşturduğumuz Wi-Fi alan ağına otomatik olarak bağlanması gerekmektedir.Ancak Android yeni sürümlerinde (5 ve üzeri sürümler) kullanıcı deneyimini arttırmak ve tutsak ağlara bağlanmasını engellemek amacıyla Android Google servislere bağlanmaya çalışmaktadır.Bu bağlantı durumuna göre Wi-Fi ağında veri iletişimini sağlamaktadır.ya da engellemektedir. Bu durumda bizim araç üzerinde oluşturduğumuz Wi-Fi alan ağına izin vermemektedir.Detaylı bilgi için tıklaynız. Bu sorunun çözümü için 2 Alternatif yöntemimiz vardır. 
-* 1.YÖNTEM (Tavsiye Edilen) 
+Android uygulamamızı yükledikten sonra normal şartlar altında araç üzerinde oluşturduğumuz Wi-Fi alan ağına otomatik olarak bağlanması gerekmektedir.Ancak Android yeni sürümlerinde (5 ve üzeri sürümler) kullanıcı deneyimini arttırmak ve tutsak ağlara bağlanmasını engellemek amacıyla Android Google servislere bağlanmaya çalışmaktadır.Bu bağlantı durumuna göre Wi-Fi ağında veri iletişimini sağlamaktadır ya da engellemektedir. Bu durumdan dolayı Android yeni sürümlerinde (5 Ve üzeri) bizim araç üzerinde oluşturduğumuz Wi-Fi alan ağına bağlantıya izin vermemektedir.Detaylı bilgi için [Buraya tıklayın!](http://android.stackexchange.com/questions/100657/how-to-disable-captive-portal-detection-how-to-remove-exclamation-mark-on-wi-fi). Bu sorunun çözümü için 2 Alternatif yöntemimiz vardır. 
+* 1.**YÖNTEM (Tavsiye Edilen)** 
    * Android Studio' yu kullarak
-  Bu yöntem sizin bir android geliştirici olduğunuzu varsayarak antılmaktadır. 
-  Buradan android Studio'yu indiriniz. https://developer.android.com/studio/index.html
-  İndirdikten ve gerekli ayarlamaları yaptıktan sonra Telefonunuzun geliştirici seçeneklerini aktif etmeniz gerekmektedir.Bunun için 
-  Ayarlar ==> Telefon Hakkında ==> Derleme Numarasına 5 defa ard arda tıklayınız
-  yine aynı şekilde 
-  Ayarlar ==> Geliştirici Seçenekleri ==> Açık konumuna getiriiniz.
-  Ayarlar ==> Geliştirici Seçenekleri ==> USB hata ayıklamasını aktif hale getiriniz
+  Bu yöntem sizin bir android geliştirici olduğunuzu varsayarak antılmaktadır.<br>
+    * [Buradan!]( https://developer.android.com/studio/index.html) android Studio'yu indiriniz.
+    * İndirdikten ve gerekli ayarlamaları yaptıktan sonra Telefonunuzun geliştirici seçeneklerini aktif etmeniz gerekmektedir.Bunun için;
+      * Ayarlar ==> Telefon Hakkında ==> Derleme Numarasına 5 defa ard arda tıklayınız
+      yine aynı şekilde 
+      * Ayarlar ==> Geliştirici Seçenekleri ==> Açık konumuna getiriiniz.
+      * Ayarlar ==> Geliştirici Seçenekleri ==> USB hata ayıklamasını aktif hale getiriniz
   
   Şimdi telefonunuzu bilgisayara bağlı olduğuna ve telefonun bilgisayar tarafından tanındığına emin oldukdan sonra (Tanınmadıysa driverleri yükleyiniz) Android studio ortamında görüldüğünü kontrol etmelisiniz.En basit kontrol Shift +F10 tuşuna basarak açılan ekranda sizin telefon modeliniz gözükmesi lazım.
+  ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/telefon%20algilama.PNG)
   
   Şimdi yapmamız gereken sol altta Terminal sekmesi tıklamamız yada Alt + F12 basmanız.
-  Açılan terminal ekranın da sırayla 
-  adb shell
-  settings put global captive_portal_detection_enabled 0
+  Açılan terminal ekranın da sırayla ;
+  * `adb shell`
+  * `settings put global captive_portal_detection_enabled 0`<br>
   
-  demelisiniz.Eğer herşey yolunda gittiyse bu komutu "settings get global captive_portal_detection_enabled" yazdığınız da terminal de "0" yazmalıdır.
+   ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/terminal%20detection%20enable%200.PNG)
+   
+  demelisiniz.Eğer herşey yolunda gittiyse bu komutu `settings get global captive_portal_detection_enabled` yazdığınız da terminal de `0 (sıfır)` yazmalıdır.<br>
   
-  Eğer 0 gördüyseniz artık araca sorunsuz bir şekilde bağlanabilir ve kullanabilirsiniz.
+  Eğer `0 (sıfır)` gördüyseniz artık araca sorunsuz bir şekilde bağlanabilir ve kullanabilirsiniz.<br>
   
-  2.YÖNTEM
-   Ayarlar ==> Kablosuz ==> Pi_CAR ==> Gelişmiş Seçenekler
-   
-   şifreyi yazınız: TRaspberry
-   IP ayarları = Statik
-   Ip adresi = 192.168.57.57
-   Ağ geçidi = 192.168.57.1
-   Ağ önek uzunluğu = 24
-   DNS 1 = 8.8.8.8
-   DNS 2 = 8.8.4.4
-   
-   Yukarıdaki gerekli bilgileri girdikten sonra bağlan seçeneğine tıklayınız. Ve ip adresi alıp bağlanacaktır. Sonra size Kablosuz bağlantıda internet erişimi yok diye bir uyarı gelirse  Bu ağ için bir daha sorma seçeneğini seçtikten sonra EVET basınız. 
-   
+* **2.YÖNTEM**
+   * Ayarlar ==> Kablosuz ==> Pi_CAR ==> Gelişmiş Seçenekler
+   <br>
+   şifreyi yazınız: TRaspberry<br>
+   IP ayarları = Statik<br>
+   Ip adresi = 192.168.57.57<br>
+   Ağ geçidi = 192.168.57.1<br>
+   Ağ önek uzunluğu = 24<br>
+   DNS 1 = 8.8.8.8<br>
+   DNS 2 = 8.8.4.4<br>
+   <br>
+   Yukarıdaki gerekli bilgileri girdikten sonra bağlan seçeneğine tıklayınız. Ve ip adresi alıp bağlanacaktır. Sonra size **Kablosuz bağlantıda internet erişimi yok** diye bir uyarı gelirse  **Bu ağ için bir daha sorma** seçeneğini seçtikten sonra `EVET` basınız. <br><br>
+   **VİDEOLU ANLATIM**
+    
+   [![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/youtube%20play2.png)](https://youtu.be/qp3TYz8y5Tc)
+
    Ve herşey tamam artık uygulamayı kullanabilirsiniz.
    
    
