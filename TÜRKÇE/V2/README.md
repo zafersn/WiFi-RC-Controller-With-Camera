@@ -163,13 +163,13 @@ Android uygulamamızı yükledikten sonra normal şartlar altında araç üzerin
       * Ayarlar ==> Geliştirici Seçenekleri ==> Açık konumuna getiriiniz.
       * Ayarlar ==> Geliştirici Seçenekleri ==> USB hata ayıklamasını aktif hale getiriniz
   
-  Şimdi telefonunuzu bilgisayara bağlı olduğuna ve telefonun bilgisayar tarafından tanındığına emin oldukdan sonra (Tanınmadıysa driverleri yükleyiniz) Android studio ortamında görüldüğünü kontrol etmelisiniz.En basit kontrol Shift +F10 tuşuna basarak açılan ekranda sizin telefon modeliniz gözükmesi lazım.<br>
+  Şimdi telefonunuzu bilgisayara bağlı olduğuna ve telefonun bilgisayar tarafından tanındığına emin oldukdan sonra (Tanınmadıysa driverleri yükleyiniz) Android studio ortamında görüldüğünü kontrol etmelisiniz.En basit kontrol Shift +F10 tuşuna basarak açılan ekranda sizin telefon modeliniz gözükmesi lazım.<br><br>
   ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/telefon%20algilama.PNG)
   
   Şimdi yapmamız gereken sol altta Terminal sekmesi tıklamamız yada Alt + F12 basmanız.
   Açılan terminal ekranın da sırayla ;
   * `adb shell`
-  * `settings put global captive_portal_detection_enabled 0`<br>
+  * `settings put global captive_portal_detection_enabled 0`<br><br>
   
    ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/terminal%20detection%20enable%200.PNG)
    
@@ -188,11 +188,11 @@ Android uygulamamızı yükledikten sonra normal şartlar altında araç üzerin
    DNS 1 = 8.8.8.8<br>
    DNS 2 = 8.8.4.4<br>
    <br>
-   Yukarıdaki gerekli bilgileri girdikten sonra bağlan seçeneğine tıklayınız. Ve ip adresi alıp bağlanacaktır. Sonra size **Kablosuz bağlantıda internet erişimi yok** diye bir uyarı gelirse  **Bu ağ için bir daha sorma** seçeneğini seçtikten sonra `EVET` basınız. <br><br>
-   **VİDEOLU ANLATIM**
+   Yukarıdaki gerekli bilgileri girdikten sonra bağlan seçeneğine tıklayınız. Ve ip adresi alıp bağlanacaktır. Sonra size **Kablosuz bağlantıda internet erişimi yok** diye bir uyarı gelirse  **Bu ağ için bir daha sorma** seçeneğini seçtikten sonra `EVET` basınız. <br><br><br>
+   **VİDEOLU ANLATIM**<br>
     
    [![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/youtube%20play2.png)](https://youtu.be/qp3TYz8y5Tc)
-
+<br>
    Ve herşey tamam artık uygulamayı kullanabilirsiniz.
    
    
