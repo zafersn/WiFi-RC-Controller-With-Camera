@@ -176,13 +176,13 @@ We have 2 Alternative methods for solving this problem.
 * **2nd METHOD**
    * Settings ==> Wireless ==> Pi_CAR ==> Advanced Options
    <br>
-   Password: TRaspberry<br>
-   IP settings = Statik<br>
-   Ip address = 192.168.57.57<br>
-   Gateway = 192.168.57.1<br>
-   Network prefix length = 24<br>
-   DNS 1 = 8.8.8.8<br>
-   DNS 2 = 8.8.4.4<br>
+   **Password:** TRaspberry<br>
+   **IP settings** = Statik<br>
+   **Ip address** = 192.168.57.57<br>
+   **Gateway** = 192.168.57.1<br>
+   **Network prefix length** = 24<br>
+   **DNS 1** = 8.8.8.8<br>
+   **DNS 2** = 8.8.4.4<br>
    <br>
    Once you have entered the required information above, click Connect. And get ip address and connect. Then if you get a warning that you do not have internet access on your wireless connection, press yes again after you select the Ask again for this network option. <br><br><br>
    **VIDEO EXPRESSION**<br>
