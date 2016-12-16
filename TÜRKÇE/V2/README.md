@@ -258,11 +258,11 @@ Uygulamanın çalışma prensibini ve tanıtımını kısaca açıklayalım.
 
 ## **ADIM 1:**
 <br>
- 1.Pi_CAR'I Raspberry pi 2 için ya da  raspberry pi 3'ün Üzerindeki dahili Wi-Fi modülü kullanarak yönetmek istiyorsanız.Bu [**linteki**](https://drive.google.com/file/d/0B6yjwSAqPTgfX1dsaVVJZThEN2c/view?usp=sharing) işletim sistemini indirerek SD karta yazdırınız.
+ 1.Pi_CAR'I Raspberry pi 2 için ya da  raspberry pi 3'ün Üzerindeki dahili Wi-Fi modülü kullanarak yönetmek istiyorsanız.Bu [**linteki**](https://drive.google.com/open?id=0B6yjwSAqPTgfdEV1eTlfZ0lVbW8) işletim sistemini indirerek SD karta yazdırınız.
 <br>
 
 
- 2.Pi_CAR'I Raspberry pi 3 'ün  Üzerinden harici olarak taktığınız Wi-Fi modüşü kullarak yönetmek istiyorsanız.Bu [**linteki**](https://drive.google.com/file/d/0B6yjwSAqPTgfYkhxWEN2dXBIQlU/view?usp=sharing) işletim sistemini indiriniz.
+ 2.Pi_CAR'I Raspberry pi 3 'ün  Üzerinden harici olarak taktığınız Wi-Fi modüşü kullarak yönetmek istiyorsanız.Bu [**linteki**](https://drive.google.com/open?id=0B6yjwSAqPTgfR3lKQVl5SXRpbFE) işletim sistemini indiriniz.
 <br>
 
 ## **ADIM 2**
