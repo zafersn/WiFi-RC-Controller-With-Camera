@@ -180,13 +180,13 @@ Android uygulamamızı yükledikten sonra normal şartlar altında araç üzerin
 * **2.YÖNTEM**
    * Ayarlar ==> Kablosuz ==> Pi_CAR ==> Gelişmiş Seçenekler
    <br>
-   şifreyi yazınız: TRaspberry<br>
-   IP ayarları = Statik<br>
-   Ip adresi = 192.168.57.57<br>
-   Ağ geçidi = 192.168.57.1<br>
-   Ağ önek uzunluğu = 24<br>
-   DNS 1 = 8.8.8.8<br>
-   DNS 2 = 8.8.4.4<br>
+   şifreyi yazınız: **TRaspberry**<br>
+   IP ayarları = **Statik**<br>
+   Ip adresi = **192.168.57.57**<br>
+   Ağ geçidi = **192.168.57.1**<br>
+   Ağ önek uzunluğu = **24**<br>
+   DNS 1 = **8.8.8.8**<br>
+   DNS 2 = **8.8.4.4**<br>
    <br>
    Yukarıdaki gerekli bilgileri girdikten sonra bağlan seçeneğine tıklayınız. Ve ip adresi alıp bağlanacaktır. Sonra size **Kablosuz bağlantıda internet erişimi yok** diye bir uyarı gelirse  **Bu ağ için bir daha sorma** seçeneğini seçtikten sonra `EVET` basınız. <br><br><br>
    **VİDEOLU ANLATIM**<br>
