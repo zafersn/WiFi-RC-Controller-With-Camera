@@ -8,7 +8,7 @@
 **CONTROL**|ANDROID|ANDROID
 **CAMERA**|THERE IS|THERE IS
 **SETUP**|Through the ".img" file |Manual installation
-**Release date**||30 Jul 2016
+**Release date**|16 Dec 2016|30 Jul 2016
 
 # Innovation coming with "V2"
 * Ability to connect directly to the vehicle,Connect and use hotspots created on the vehicle without being connected to a fixed Wifi mode (Created hotspot on Raspberry Pi).
