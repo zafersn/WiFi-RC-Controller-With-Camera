@@ -257,10 +257,10 @@ Let's briefly explain the working principle and the introduction of the applicat
 
 ## **STEP 1:**
 <br>
-1.If you want to manage Pi_CAR via Raspberry pi 2 or  the built-in Wi-Fi module on the Raspberry Pi 3.Download the operating system on [**this link**](https://drive.google.com/file/d/0B6yjwSAqPTgfX1dsaVVJZThEN2c/view?usp=sharing)  and print to the SD card.
+1.If you want to manage Pi_CAR via Raspberry pi 2 or  the built-in Wi-Fi module on the Raspberry Pi 3.Download the operating system on [**this link**](https://drive.google.com/open?id=0B6yjwSAqPTgfdEV1eTlfZ0lVbW8)  and print to the SD card.
 <br>
 
-2.If you want to manage Pi_CAR by using Wi-Fi module externally mounted on raspberry pi 3. Download the operating system on [**this link**](https://drive.google.com/file/d/0B6yjwSAqPTgfYkhxWEN2dXBIQlU/view?usp=sharing)  and print to the SD card.
+2.If you want to manage Pi_CAR by using Wi-Fi module externally mounted on raspberry pi 3. Download the operating system on [**this link**](https://drive.google.com/open?id=0B6yjwSAqPTgfR3lKQVl5SXRpbFE)  and print to the SD card.
 <br>
 
 ## **STEP 2**
