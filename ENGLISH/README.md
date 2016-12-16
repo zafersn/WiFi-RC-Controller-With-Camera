@@ -1,6 +1,7 @@
 # <p align="center"> <b>RASPBERRY PI- ARDUINO ANDROID-CONTROLLED RC-CAR ROVER WITH LIVE VIDEO STREAMING</b></p>
 # ----------------------------- Pi_CAR ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/raspi_car.png) --------------------------
-<br><br>#Differences between V2 and V1
+<br><br>
+# Differences between V2 and V1
 
  Pi_CAR| V2 | V1
 ------------ | -------------|-------
