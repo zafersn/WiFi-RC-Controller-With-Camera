@@ -12,7 +12,7 @@ Malzeme Adı| Adet
 Arduino Nano / UNO / Mega| 1
 Raspberry Pi| 1
 Raspberry Pi Camera Modülü| 1
-Wi-Fi Adaptör| 1
+Wi-Fi Adaptör| 1 (Pi 3 için isteğe bağlı)
 L298N,BTS7960,L293 Motor Sürücü| 1 yada 2 
 DC MOTOR|  2  yada   4
 12V Lipo Batarya| 1
