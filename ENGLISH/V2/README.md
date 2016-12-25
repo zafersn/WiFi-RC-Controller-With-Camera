@@ -10,7 +10,7 @@ Product Name| Piece
 Arduino Nano / UNO / Mega| 1
 Raspberry Pi| 1
 Raspberry Pi Camera Module| 1
-Wi-Fi Dongle| 1
+Wi-Fi Dongle| 1 (Optional for Pi 3)
 L298N,BTS7960,L293 Motor Drive| 1 or 2 
 DC MOTOR|  2  or   4
 12V Lipo Battery| 1
