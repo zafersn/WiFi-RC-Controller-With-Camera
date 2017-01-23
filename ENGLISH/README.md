@@ -3,7 +3,7 @@
 <br><br>
 # Differences between V3,V2 and V1
 
- Pi_CAR|v3 | V2 | V1
+ Pi_CAR|V3 | V2 | V1
 ------------ |----------|-------------|-------
 **COMMUNICATION**|UDP |UDP |TCP
 **RANGE** |(It changes according to "WiFi Dongle") 10m -- Motion |(It changes according to "WiFi Dongle") 10m -- Motion|(It changes according to "WiFi Dongle") 10m --Constant
