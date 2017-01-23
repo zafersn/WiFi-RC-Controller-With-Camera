@@ -20,9 +20,10 @@
 * The Windows application was developed. Fly Joystick was used to control the vehicle.
 * VR support added (2 axes movement of camera according to head movements).<br>
 **NOTE:** When VR mode is selected, a second device is required for motion control of the vehicle. Likewise, a second android phone can be used with the help of other control interfaces or with the aid of a Fly joystick on a Windows PC.<br>
-#--------------------------------V3--------------------------------
+
+# --------------------------------V3--------------------------------
 ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V3Images/images/raspv3.2.png)
-# Pi_CAR Version 3  Türkçe açıklama ve kurulum bilgileri için, [Buraya tıklayın!](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/ENGLISH/V3) **(RECOMMENDED)**
+# For Pi_CAR Version 3;  English description and setup information, [Click here!](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/ENGLISH/V3) **(RECOMMENDED)**
 
 
 # Innovation coming with "V2"
