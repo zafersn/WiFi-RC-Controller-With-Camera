@@ -15,16 +15,16 @@
 **YAYIN TARIHI**|Çok yakında|16 Aralık 2016|30 Tem. 2016
 
 # V3 ILE BIRLIKTE GELEN YENILIKLER
-* Android üzerinde yeni kontrol arayüzler eklendi. (JOYTICK, VR)
+* Android üzerinde yeni kontrol arayüzler eklendi. (JOYSTICK, VR)
 * Kamera 2 eksen hareketli hale getirildi.(JOYSTICK VE VR ARAYÜZLERİNDE)
-* Araç servo motor ile direksiyon kontrolü yazılımları eklendi.
-* Windows ortamından Fly Joystick yardımı ile aracın kontrol edilmesi için kontrol uygulaması eklendi.
+* Yeni RC Araç desteği eklendi.(Servo motor ile direksiyon  kontrolünü sağlayan yazılımlar eklendi.)
+* Windows uygulaması geliştirildi. Fly Joystick yardımı ile aracın kontrol edilmesi sağlandı.
 * VR desteği eklendi.(Kafa hareketlerine göre kameranın 2 eksen hareketi ve görüntünün aktarılması.)<br>
-**NOT:** VR modu seçildiğinde aracın hareket kontrolü için 2. bir cihaza ihtiyaç duyulmaktadır. Buda yine aynı şekilde isteğe bağlı olarak ikinci bir android telefon üzerinden diğer kontrol arayüzleri yardımı ile ya da Windows PC üzerinde Fly Joystick yardımı ile gerçekleştirilebilmektedir.
+**NOT:** VR modu seçildiğinde aracın hareket kontrolü için 2. bir cihaza ihtiyaç duyulmaktadır. Buda yine aynı şekilde isteğe bağlı olarak ikinci bir android telefon üzerinden diğer kontrol arayüzleri yardımı ile ya da Windows PC üzerinde Fly Joystick yardımı ile gerçekleştirilebilmektedir.<br>
 
 #--------------------------------V3--------------------------------
 ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V3Images/images/raspv3.2.png)
-# Pi_CAR Version 3  Türkçe açıklama ve kurulum bilgileri için, [Buraya tıklayın!](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/TÜRKÇE/V3) **(TAVSİYE EDİLEN)**
+# Pi_CAR Version 3  Türkçe açıklama ve kurulum bilgileri için, [Buraya tıklayın!](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/TÜRKÇE/V3) **(TAVSİYE EDİLEN)** <br><br>
 
 
 
