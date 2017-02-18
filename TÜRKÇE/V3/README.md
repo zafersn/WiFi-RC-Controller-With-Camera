@@ -284,7 +284,7 @@ Pi_CAR windows uygulamasında camera desteği yoktur. Kamera görüntüsünü ol
 <br>
 
 ## **ADIM 2**
-Raspbery pi  pin bağlantılarını ve yapılmış örnek araçlar için  Bu [**linteken**](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/T%C3%9CRK%C3%87E/V2/androidToRaspberryTurkce) bakınız!
+Raspbery pi  pin bağlantılarını ve yapılmış örnek araçlar için  Bu [**linteken**](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/edit/master/T%C3%9CRK%C3%87E/V3/select_vehicle_type.md) bakınız!
 ## **ADIM 3**
 Android kontrol yazılımıda  Bu [**linteken**](https://play.google.com/store/apps/details?id=com.stackcuriosity.tooght) indirerek
 telefonunuza  yükleyiniz.
