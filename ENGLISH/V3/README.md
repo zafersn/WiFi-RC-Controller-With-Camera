@@ -42,10 +42,9 @@ Win32DiskImager is the program that is required to print the operating system to
 We will need to write the  the   operating system containing vehicle control software.**The point to be noted here is that when selecting the operating systems listed below, download it according to the Wi-Fi module in your hand and print it to the sd card.**Modems supported by Operating Systems and Operating Systems are given below.
 <br>
 ### Downloadable operating system for Raspberry Pi 3
-We have 2 alternative methods for Raspberry pi 3;<br>
 
-1. Using built-in Wi-Fi directly on Raspberry Pi. <br>
-2. Using an external USB Wifi adapter.(It is the recommended method for distance and data speed. Of course this will vary depending on the Wi-Fi adapter you use.)
+Using built-in Wi-Fi directly on Raspberry Pi. <br>
+
 <br>
 
 ### 1.If you want to manage Pi_CAR via Raspberry pi 2 or  the built-in Wi-Fi module on the Raspberry Pi 3.Download the operating system on [**this link**](https://drive.google.com/open?id=0B6yjwSAqPTgfcHRRLXYwMHZ6RWs)  and print to the SD card.
