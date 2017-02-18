@@ -44,11 +44,9 @@ Win32DiskImager SD karta işletim sistemi yazdırmamız için gerekli olan progr
 Raspberry pi mize kuracağımız araç kontrol yazılımlarınıda içinde bulunduran işletim sistemini SD karta yazdımamız gerekmektedir.Burada DİKKAT edilmesi gereken nokta, **aşağıda linkleri verilen işletim sistemlerini seçerken elinizde bulunan Wi-Fi adaptörlere ve raspberry pi modelinize göre işletim sistemini indirmeniz ve sd karta yazdırmanızdır.** İşletim sistemleri ve destekledikleri modemler aşağıda verilmektedir.
 
 ### Raspberry Pi 3  İçin indirilebilir işletim sistemi
-Raspberry pi 3 için 2 alternatif yöntemimiz vardır;<br>
 
-1. si doğrudan raspberry pi üzerindeki dahili Wi-Fi kullanmak. <br>
-2. Harici olarak USB Wi-Fi adaptör kullanmak(Mesafe ve veri hızı bakımından tavsiye edilen yöntemdir. Tabi bu kullanacağınız Wi-Fi adaptöre göre değişebilir.)
-<br>
+Doğrudan raspberry pi üzerindeki dahili Wi-Fi kullanmak. <br>
+
 
 ### 1.Pi_CAR'I Raspberry pi 2 için ya da  raspberry pi 3'ün Üzerindeki dahili Wi-Fi modülü kullanarak yönetmek istiyorsanız.Bu [**linteki**](https://drive.google.com/open?id=0B6yjwSAqPTgfcHRRLXYwMHZ6RWs) işletim sistemini indirerek SD karta yazdırınız.
 
@@ -84,7 +82,7 @@ Yazma işlemi tamamlandıktan sonra SD kartınızı bilgisayardan çıkartıp Ra
 Artık yapmanız gereken SADECE Raspberry' nize  gerekli güç ve motor sürücüleri bağlantılarını yaptıktan sonra araca monte etmenizdir.
 <br>
 
-## Örnek araç seçimi ve aracınıza uygun pin bağlantısı için [tıklayınız!](https://github.com/zafersn/seraotomasyon/blob/master/select_vehicle_type.md)
+## Örnek araç seçimi ve aracınıza uygun pin bağlantısı için [tıklayınız!](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/T%C3%9CRK%C3%87E/V3/select_vehicle_type.md)
 
 
 # Proje anlatımında anlaşılmayan bir konu, öneriniz ve ya istekleriniz için lütfen [SORUNUZ!](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/issues)
