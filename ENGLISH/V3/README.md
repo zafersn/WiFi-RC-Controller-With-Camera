@@ -242,7 +242,7 @@ Let's briefly explain the working principle and the introduction of the applicat
 ### WINDOWS "Pi_CAR" APPLICATION INSTALLATION AND CONFIGURATION SETTINGS:
 * Pi_CAR has no camera support in windows application, Without a camera view, free use is offered for those who want to drive vehicle.
 * **For the activation of the application you need to have your internet connection during the initial installation.** Appart from that, there is nothing  to pay attention to.
-* The installation  of the application is extremely simple. All you have to do  is install the setup file.<br>
+* The installation  of the application is extremely simple. All you have to do  is install the [setup file.](https://drive.google.com/open?id=0B6yjwSAqPTgfWGlRX3F0T08tYW8)<br>
 
 <p align="center">
  <a href="https://drive.google.com/open?id=0B6yjwSAqPTgfWGlRX3F0T08tYW8"><img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V3Images/images/windows_pi_cart.png"/></a>
