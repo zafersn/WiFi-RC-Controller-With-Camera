@@ -245,7 +245,7 @@ Let's briefly explain the working principle and the introduction of the applicat
 * The installation  of the application is extremely simple. All you have to do  is install the setup file.<br>
 
 <p align="center">
- <a href="https://play.google.com/store/apps/details?id=com.stackcuriosity.tooght"><img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V3Images/images/windows_pi_cart.png"/></a>
+ <a href="https://drive.google.com/open?id=0B6yjwSAqPTgfWGlRX3F0T08tYW8"><img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V3Images/images/windows_pi_cart.png"/></a>
 </p>
 ### APPLICATION USAGE AND TIPS. <br>
 * Windows application; There is only Fly joystick  support at the moment to control the vehicle..<br><br>
@@ -283,7 +283,7 @@ Let's briefly explain the working principle and the introduction of the applicat
 </p>
 
 ## **ADIM 4** 
-* Download and installation the windows control software from this [**link**](https://play.google.com/store/apps/details?id=com.stackcuriosity.tooght) 
+* Download and installation the windows control software from this [**link**](https://drive.google.com/open?id=0B6yjwSAqPTgfWGlRX3F0T08tYW8) 
 
 <p align="center">
  <a href="https://play.google.com/store/apps/details?id=com.stackcuriosity.tooght"><img src="https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V3Images/images/windows_pi_cart.png"/></a>
