@@ -12,7 +12,7 @@
 **CONTROL CARDS** |RASPBERRY PI|RASPBERRY PI+ARDUINO|RASPBERRY PI+ARDUINO
 **CAMERA** |THERE IS (JOYSTICK, VR CONTROLLED)|THERE IS (CONSTANT)|THERE IS (CONSTANT)
 **SETUP** |Through the ".img" file |Through the ".img" file |Manual installation
-**RELEASE DATE**|Coming soon |16 Dec 2016|30 Jul 2016
+**RELEASE DATE**|February 22, 2017 |16 Dec 2016|30 Jul 2016
 # Innovation coming with "V3"
 * New control interfaces have been added on Android. **(JOYSTICK, VR)**
 * Camera moved on 2 axes **(JOYSTICK AND VR INTERFACES)**
