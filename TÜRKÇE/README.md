@@ -12,7 +12,7 @@
 **KONTROL KARTLARI**|RASPBERRY PI|RASPBERRY PI+ARDUINO|RASPBERRY PI+ARDUINO
 **KAMERA**|VAR(JOYSTICK, VR KONTROLLÜ)|VAR (SABİT)|VAR (SABİT)
 **KURULUM**|.img dosyası üzerinden|.img dosyası üzerinden |Elle kurulum
-**YAYIN TARIHI**|Çok yakında|16 Aralık 2016|30 Tem. 2016
+**YAYIN TARIHI**|22 Şubat 2017|16 Aralık 2016|30 Tem. 2016
 
 # V3 ILE BIRLIKTE GELEN YENILIKLER
 * Android üzerinde yeni kontrol arayüzler eklendi. **(JOYSTICK, VR)**
