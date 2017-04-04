@@ -51,10 +51,12 @@ MOTOR DRIVE FOR LEFT ENABLE PIN| GPIO 24
 ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V3Images/images/pin_baglanti_servo_schmatic_en.PNG)
 <br><br>
 
-Raspberry pi L298 pin connection: 
+## Raspberry pi L298 pin connection:
+<br>
 ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V3Images/images/pi_car_l928_motor_drive.PNG)
 <br><br>
-Raspberry pi  4 Amper L298 pin connection:
+## Raspberry pi  4 Amper L298 pin connection:
+<br>
 ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V3Images/images/pi_car_l928_4A_motor_drive.PNG)
 
 ## Please  [ask!](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/issues) what you do not understand.
