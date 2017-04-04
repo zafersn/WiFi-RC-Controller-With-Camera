@@ -50,6 +50,20 @@ MOTOR SURUCU ICIN LEFT ENABLE PIN| GPIO 24
 ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V3Images/images/sevolu_pinbaglantisi_schematic.PNG)
 <br><br>
 
+## Raspberry pi L298 pin connection:
+<br>
+
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V3Images/images/pi_car_l928_motor_drive.PNG)
+
+<br><br>
+
+## Raspberry pi  4 Amper L298 pin connection:
+
+<br>
+
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V3Images/images/pi_car_l928_4A_motor_drive.PNG)
+
+<br><br>
 
 # Proje anlatımında anlaşılmayan bir konu, öneriniz ve ya istekleriniz için lütfen [SORUNUZ!](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/issues)
 
@@ -69,7 +83,10 @@ MOTOR SURUCU ICIN LEFT ENABLE PIN| GPIO 24
 
 
 <br>
-![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V3Images/images/IMG_20160201_001625.jpg)<br><br>
+
+![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V3Images/images/IMG_20160201_001625.jpg)
+
+<br><br>
 
 
 ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V3Images/images/IMG_20151122_142027.jpg)
