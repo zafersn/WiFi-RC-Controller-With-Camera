@@ -157,6 +157,7 @@ Android uygulamamızı yükledikten sonra normal şartlar altında araç üzerin
 #### Raspberry pi bağlantı bilgileri
 * Android uygulamanızı indirdikten sonra sizi aşağıdaki gibi bir ekran karşılayacaktır.Artık yapmanız gereken şey sadece aracı kontrol etmek olacaktır.
 <br>
+
 ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V3Images/images/Screenshot_20170124-151222.png)
 
 
