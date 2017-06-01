@@ -90,6 +90,7 @@ Artık yapmanız gereken SADECE Raspberry' nize  gerekli güç ve motor sürüc�
 <br>
 Video'lu anlatım: 
 <br>
+
 [![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V2Images/images/youtube%20play2.png)](https://youtu.be/yNLug0DhQlc)
 
 ## ![Screen Shot](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/blob/master/V3Images/images/android-icon32x32.png)   ANDROID:<br>   
