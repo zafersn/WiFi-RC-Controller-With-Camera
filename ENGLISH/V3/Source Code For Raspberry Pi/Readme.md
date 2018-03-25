@@ -4,6 +4,9 @@
 	You can find examples of<br><br>
 	
   * UDP Communication,
+  
   * GPIO Pin Control and PWM generation,
+  
   * Running shell commands with Python,
+  
   * Motion Control Alagorites.
