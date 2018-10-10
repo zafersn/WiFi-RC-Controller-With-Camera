@@ -9,6 +9,6 @@
 
 
 ## Pi Communication Board. Coming Soon !!! 
-![overview](https://github.com/zafersn/pi_communition_board/blob/master/img/pi_communition%20board5.png)
+![overview](https://github.com/zafersn/pi_communition_board/blob/master/img/Block%20Diagram4.png)
 
  
