@@ -20,9 +20,9 @@
 
 Piece | Product Name | Price
 -----|-------|-------
-1 | TX Board | 35 $
+1 | TX Board | 40 $
 1 | RX Board | 35 $
-2 | total | 70 $
+2 | TX Board and RX Board| 70 $
 
 ## For detail information about those boards:<br> 
 
