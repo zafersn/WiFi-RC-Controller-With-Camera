@@ -29,6 +29,6 @@ Piece | Product Name | Price
 # For English description, [Click here!](https://github.com/zafersn/pi_communition_board/blob/master/README-EN.md)  <br><br>
 # Türkçe açıklama için, [Buraya tıklayın!](https://github.com/zafersn/pi_communition_board/blob/master/README-TR.md) <br><br>
  
-## Please contact us for questions.
+## Please contact us for questions:
 [Linkedin](https://www.linkedin.com/in/zafersn93/)
 
