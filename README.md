@@ -8,7 +8,16 @@
 # Türkçe açıklama ve kurulum bilgileri için, [Buraya tıklayın!](https://github.com/zafersn/WiFi-RC-Controller-With-Camera/tree/master/T%C3%9CRK%C3%87E) <br><br>
 
 
-## Pi Communication Board. Coming Soon !!! 
-![overview](https://github.com/zafersn/pi_communition_board/blob/master/img/Block%20Diagram4.png)
+# Pi_CAR JOYSTICK BOARD<br><br>
 
+adet | ürün | price 
+1 | TX Board | 35 $
+1 | RX Board | 35 $
+2 | total | 70 $
+![logo](https://github.com/zafersn/pi_communition_board/blob/master/img/LOGO_Pi_car_comboard.png)
+
+![overview](https://github.com/zafersn/pi_communition_board/blob/master/img/IMG_20181014_155126.jpg)
+
+# For English description, [Click here!](https://github.com/zafersn/pi_communition_board/blob/master/README-EN.md)  <br><br>
+# Türkçe açıklama için, [Buraya tıklayın!](https://github.com/zafersn/pi_communition_board/blob/master/README-TR.md) <br><br>
  
