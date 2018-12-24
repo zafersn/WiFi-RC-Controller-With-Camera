@@ -18,7 +18,7 @@
 ![overview](https://github.com/zafersn/pi_communition_board/blob/master/img/IMG_20181014_155126.jpg)
 
 
-adet | ürün | price
+Piece | Product Name | Price
 -----|-------|-------
 1 | TX Board | 35 $
 1 | RX Board | 35 $
